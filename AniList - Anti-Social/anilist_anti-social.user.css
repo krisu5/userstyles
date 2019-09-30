@@ -1,0 +1,28 @@
+/* ==UserStyle==
+@name         AniList - Anti-Social
+@namespace    github.com/krisu5/userstyles
+@version      2018-10-19
+@license      unlicense
+@preprocessor default
+==/UserStyle== */
+@-moz-document domain("anilist.co") {
+.activity-edit, .nav a[href$="social"], .home .activity-feed-wrap, .activity-feed .actions, .activity-feed [href^="/activity/"]
+{ display: none !important; }
+
+.home { grid-template-columns: inherit !important; }
+
+.home .review-card .summary { width: 96% !important; }
+
+.home div .sense { min-height: 0 !important; }
+
+.activity-feed .time {
+    top: inherit !important;
+    bottom: 12px !important;
+}
+
+.activity-feed .time .action {
+    position: absolute !important;
+    bottom: 20px !important;
+    right: -10px !important;
+}
+}
