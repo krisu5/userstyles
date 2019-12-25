@@ -1,8 +1,8 @@
 # Twitter - Clean 2019 Design (Now With Light Blue™)
 
-![screenshot](screenshot.png)
-
 ### [Click to install](https://github.com/krisu5/userstyles/raw/master/Twitter%20-%20Clean%202019%20Design%20(Now%20With%20Light%20Blue)/twitter_2019_clean_design_now_with_light_blue.user.css)
+
+![screenshot](screenshot.png)
 
 *It's same new Twitter, except little bit better and much cleaner.*
 
