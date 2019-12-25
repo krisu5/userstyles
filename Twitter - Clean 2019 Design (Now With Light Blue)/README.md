@@ -6,6 +6,8 @@
 
 Changes white background color to light blue (only enabled in white theme), removes annoying elements such as trends, promoted tweets, "who to follow" boxes (and more with recommended uBlock filterlist!) and other really minor tweaks.
 
+**See the notes at the bottom!**
+
 ![Userstyle screenshot](screenshot.png)
 
 ## Notes
