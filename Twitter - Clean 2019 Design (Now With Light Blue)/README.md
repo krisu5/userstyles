@@ -2,11 +2,11 @@
 
 ### [Click to install](https://github.com/krisu5/userstyles/raw/master/Twitter%20-%20Clean%202019%20Design%20(Now%20With%20Light%20Blue)/twitter_2019_clean_design_now_with_light_blue.user.css)
 
-![screenshot](screenshot.png)
-
 *It's same new Twitter, except little bit better and much cleaner.*
 
 Changes white background color to light blue (only enabled in white theme), removes annoying elements such as trends, promoted tweets, "who to follow" boxes (and more with recommended uBlock filterlist!) and other really minor tweaks.
+
+![Userstyle screenshot](screenshot.png)
 
 ## Notes
 
