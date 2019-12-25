@@ -4,7 +4,7 @@
 
 *Simple tweaks for removing most of the social features (like the feed on front page).*
 
-![Userstyle screenshot](screenshot.png)
+![Userstyle screenshot](screenshot.jpg)
 
 ## Changelog
 
