@@ -10,7 +10,7 @@ Changes white background color to light blue (only enabled in white theme), remo
 
 ## Notes
 
-This userstyle can't remove everything because of limitations of current CSS.
+This userstyle can't remove everything because limitations of current CSS.
 So I also made uBlock filterlist that removes even more elements, that are harder to do otherwise.
 
 **Get filterlist here:** https://pastebin.com/raw/bDE8fjGT
