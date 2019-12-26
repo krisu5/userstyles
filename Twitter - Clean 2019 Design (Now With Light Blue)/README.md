@@ -17,8 +17,8 @@ So I also made uBlock filterlist that removes even more elements, that are harde
 
 **Get filterlist here:** https://pastebin.com/raw/bDE8fjGT
 
-- First, if you haven't already, install **uBlock Origin:** Chrome extension or Firefox extension
-- Then: How to import manually a filterlist
+- First, if you haven't already, install **uBlock Origin:** [Chrome extension](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm) or [Firefox extension](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
+- Then: [How to import manually a filterlist](https://github.com/gorhill/uBlock/wiki/Filter-lists-from-around-the-web)
 - Also: You can copy the filter rules and add manually to uBlock Origin if you want, but you miss updates.
 
 This userstyle and filterlist works **ONLY** with default english language (I'm not adding support for other languages). Works best with white theme, but other themes are partially supported for element blocks.
