@@ -15,7 +15,7 @@ Changes white background color to light blue (only enabled in white theme), remo
 This userstyle can't remove everything because limitations of current CSS.
 So I also made uBlock filterlist that removes even more elements, that are harder to do otherwise.
 
-**Get filterlist here:** https://pastebin.com/raw/bDE8fjGT
+**[Click here to see the filterlist](https://raw.githubusercontent.com/krisu5/userstyles/master/Twitter%20-%20Clean%202019%20Design%20(Now%20With%20Light%20Blue)/filterlist.txt)**
 
 - First, if you haven't already, install **uBlock Origin:** [Chrome extension](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm) or [Firefox extension](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
 - Then: [How to import manually a filterlist](https://github.com/gorhill/uBlock/wiki/Filter-lists-from-around-the-web)
