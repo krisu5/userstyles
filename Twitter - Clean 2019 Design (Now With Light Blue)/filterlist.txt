@@ -1,0 +1,19 @@
+! Title: Twitter - Recommended Extra Blocks for "Clean 2019 Design" CSS
+! Expires: 4 days
+! Description: Recommended Additional Filters for "Twitter - Clean 2019 Design (Now With Light Blue™)" Userstyle
+! Homepage: https://userstyles.org/styles/173920/twitter-clean-2019-design-now-with-light-blue
+! Last updated: 2019-12-17
+!
+! How to add this filterlist: https://github.com/gorhill/uBlock/wiki/Filter-lists-from-around-the-web
+
+twitter.com##div[data-testid="primaryColumn"] .css-1dbjc4n:has(div[data-testid="tweet"]) .r-qklmqi:has(div[data-testid="UserCell"])
+twitter.com##div[data-testid="sidebarColumn"] .r-ku1wi2:has(span:has-text(/^Welcome/))
+twitter.com##div[data-testid="sidebarColumn"] .r-t23y2h:has(div[aria-label="Timeline: Trending now"])
+twitter.com##div[aria-label^="Timeline: "][aria-label$="’s Tweets"] .r-1adg3ll:has(span:has-text(/^Who to follow/))
+twitter.com##div[aria-label^="Timeline: "][aria-label$="’s Tweets"] .r-1adg3ll:has(span:has-text(/^Promoted Tweet/))
+twitter.com##.r-1adg3ll:has(a[href="/who_to_follow"]:has-text(/^Show more/))
+twitter.com##.r-1adg3ll:has(a[href="/i/connect_people"]:has-text(/^Show more/))
+twitter.com##.r-1adg3ll:has(article[role="article"]:has-text(Promoted))
+twitter.com##.r-qklmqi:has(h2:has(span:has-text(/^People/)))
+twitter.com##.r-qklmqi:has(h2:has(span:has-text(/^More replies/)))
+twitter.com##body:not(:has(div[aria-label="Timeline: Explore"])) .r-qklmqi:has(span.r-1qd0xha:has-text(/^See more about this Topic/))
