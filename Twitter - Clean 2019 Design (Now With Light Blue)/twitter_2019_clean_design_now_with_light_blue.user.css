@@ -12,7 +12,7 @@
 
 @-moz-document domain("twitter.com") {
 :root {
-    --blue: rgba(24, 161, 242, 0.05);
+    --blue: rgba(24, 161, 242 ,0.05);
     --gray: rgba(230, 236, 240, 0.55);
 }
 
@@ -31,6 +31,13 @@ body[style^="background-color: rgb(255, 255, 255);"] .r-1u4rsef { /* <--- Hover 
     background-color: var(--gray) !important;
 }
 
+/* v--- Missing BG to sections [SETTINGS PAGE] ---v */ 
+body[style^="background-color: rgb(255, 255, 255);"] section[aria-label="Section navigation"],
+body[style^="background-color: rgb(255, 255, 255);"] section[aria-label="Section details"]
+{
+	background: #fff;
+}
+
 
 /* ==============================
    ====== Blocked elements ======
@@ -42,13 +49,13 @@ div > .css-1dbjc4n.r-1adg3ll > .css-1dbjc4n.r-1or9b2r:empty, /* <--- Empty space
 
 div[aria-label^="Timeline: "][aria-label$="’s Tweets"] .r-1adg3ll .r-k5y9r7:empty, /* <--- Empty space [PROFILE PAGE TIMELINE] */
 
+.css-1dbjc4n.r-1adg3ll a[href^="/search?q="][href*="&f=user"], /* <--- "See more" link [SEARCH PAGE] */
+
 div[data-testid="sidebarColumn"] .css-1dbjc4n.r-1u4rsef.r-9cbz99.r-t23y2h.r-1phboty.r-rs99b7.r-1udh08x, /* <--- "Trending now" & "Who to follow" boxes [SIDEBAR, WHITE] */
 
 div[data-testid="sidebarColumn"] .css-1dbjc4n.r-1uaug3w.r-1uhd6vh.r-t23y2h.r-1phboty.r-rs99b7.r-1udh08x, /* <--- "Trending now" & "Who to follow" boxes [SIDEBAR, DIM] */
 
 div[data-testid="sidebarColumn"] .css-1dbjc4n.r-1ysxnx4.r-k0dy70.r-t23y2h.r-1phboty.r-rs99b7.r-1udh08x, /* <--- "Trending now" & "Who to follow" boxes [SIDEBAR, LIGHTS OUT] */
-
-.css-1dbjc4n.r-1adg3ll a[href^="/search?q="][href*="&f=user"], /* <--- "See more" link [SEARCH PAGE] */
 
 /* v--- "Who to follow" boxes [PROFILE PAGE TIMELINE] ---v */ 
 div[aria-label^="Timeline: "][aria-label$="’s Tweets"] div .r-1or9b2r:empty,
@@ -61,7 +68,7 @@ div.css-1dbjc4n.r-1adg3ll > a[href^="/i/related_users/"]
 
 
 /* ==========================
-   ====== Misc. tweaks ======
+   ====== Misc. tweaks ====== 
    ========================== */
 
 div[data-testid="sidebarColumn"] form[role="search"] {
@@ -70,7 +77,7 @@ div[data-testid="sidebarColumn"] form[role="search"] {
     margin-top: -7px;
 }
 
-form[role="search"] .r-1f0042m { /* <--- Search result box */
+form[role="search"] .r-1f0042m { /* <--- Search suggestions box */
     margin-top: 4px;
 }
 
@@ -99,7 +106,7 @@ nav[aria-label="Footer"] {
 
 @media only screen and (min-width: 1282px) {
 	
-    /* v--- Toaster alert at the bottom ---v */
+	/* v--- Toaster alert at the bottom ---v */
     div[data-testid="toast"] {
         border-radius: 15px 15px 0 0;
         width: 600px;
