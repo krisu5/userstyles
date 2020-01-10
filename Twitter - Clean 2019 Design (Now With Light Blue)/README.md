@@ -31,7 +31,7 @@ This userstyle and filterlist works **ONLY** with default english language (I'm 
 ## Changelog
 
 - *2020-01-11:* Add missing white BG at settings section.
-- *2019-09-10:* "Trending now" & "Who to follow" sidebar box blocks fixed, another new element blocked
+- *2019-09-10:* "Trending now" & "Who to follow" sidebar box blocks fixed, new element blocked
 - *2019-08-26:* "Link with thumbnail" element margin fixed
 - *2019-08-24:* Improved toaster alert + misc. changes that I have forgot
 - *2019-08-17:* "Promote Mode" & "Twitter Ads" menu links blocked
