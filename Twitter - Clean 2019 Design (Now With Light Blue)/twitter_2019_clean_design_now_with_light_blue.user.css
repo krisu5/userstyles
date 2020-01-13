@@ -5,7 +5,7 @@
 @namespace    github.com/krisu5/userstyles
 @homepageURL  https://github.com/krisu5/userstyles/tree/master/Twitter%20-%20Clean%202019%20Design%20(Now%20With%20Light%20Blue)
 @supportURL   https://github.com/krisu5/userstyles/issues
-@version      1.1.7
+@version      1.1.8
 @license      unlicense
 @preprocessor default
 ==/UserStyle== */
@@ -35,7 +35,7 @@ body[style^="background-color: rgb(255, 255, 255);"] .r-1u4rsef { /* <--- Hover 
 body[style^="background-color: rgb(255, 255, 255);"] section[aria-label="Section navigation"],
 body[style^="background-color: rgb(255, 255, 255);"] section[aria-label="Section details"]
 {
-	background: #fff;
+    background: #fff;
 }
 
 
@@ -86,7 +86,7 @@ div > .css-1dbjc4n.r-qklmqi.r-1adg3ll:empty { /* <--- Empty element with border 
 }
 
 .css-1dbjc4n.r-t23y2h.r-1phboty.r-rs99b7.r-1udh08x.r-o7ynqc.r-1j63xyz[aria-haspopup="false"] { /* <--- Link with thumbnail left or top [TIMELINE] */
-	margin-top: 5px;
+    margin-top: 5px;
     margin-bottom: 5px;
 }
 
@@ -105,8 +105,8 @@ nav[aria-label="Footer"] {
 }
 
 @media only screen and (min-width: 1282px) {
-	
-	/* v--- Toaster alert at the bottom ---v */
+    
+/* v--- Toaster alert at the bottom ---v */
     div[data-testid="toast"] {
         border-radius: 15px 15px 0 0;
         width: 600px;
@@ -126,7 +126,7 @@ nav[aria-label="Footer"] {
 }
 }
 
-@-moz-document regexp(".*\\://twitter.com/settings/.*"), regexp(".*\\://twitter.com/.*\\/follow.*"), regexp(".*\\://twitter.com/.*\\/status/.*\\/retweets.*"), regexp(".*\\://twitter.com/.*\\/status/.*\\/likes.*"), regexp(".*\\://twitter.com/search.*&f=user") {
+@-moz-document regexp(".*\\://twitter.com/settings/.*"), regexp(".*\\://twitter.com/.*\\/follow.*"), regexp(".*\\://twitter.com/.*\\/status/.*\\/retweets.*"), regexp(".*\\://twitter.com/.*\\/status/.*\\/likes.*"), regexp(".*\\://twitter.com/search.*&f=user"), regexp(".*\\://twitter.com/hashtag/.*&f=user") {
 /* ==========================
    ====== Whitelist #1 ======
    ========================== */
