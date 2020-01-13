@@ -30,6 +30,7 @@ This userstyle and filterlist works **ONLY** with default english language (I'm 
 
 ## Changelog
 
+- *2020-01-13:* Fix people section at "hashtag search" page
 - *2020-01-11:* Add missing white BG at settings section.
 - *2019-09-10:* "Trending now" & "Who to follow" sidebar box blocks fixed, new element blocked
 - *2019-08-26:* "Link with thumbnail" element margin fixed
