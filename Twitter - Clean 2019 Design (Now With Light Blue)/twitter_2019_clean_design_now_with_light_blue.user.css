@@ -31,7 +31,7 @@ body[style^="background-color: rgb(255, 255, 255);"] .r-1u4rsef { /* <--- Hover 
     background-color: var(--gray) !important;
 }
 
-/* v--- Missing BG to sections [SETTINGS PAGE] ---v */ 
+/* v--- Missing BG to sections [SETTINGS] ---v */ 
 body[style^="background-color: rgb(255, 255, 255);"] section[aria-label="Section navigation"],
 body[style^="background-color: rgb(255, 255, 255);"] section[aria-label="Section details"]
 {
@@ -47,7 +47,7 @@ div[role="menu"] a[href^="https://ads.twitter.com/"], /* <--- "Promote Mode" & "
 
 div > .css-1dbjc4n.r-1adg3ll > .css-1dbjc4n.r-1or9b2r:empty, /* <--- Empty space [TIMELINE] */
 
-div[aria-label^="Timeline: "][aria-label$="’s Tweets"] .r-1adg3ll .r-k5y9r7:empty, /* <--- Empty space [PROFILE PAGE TIMELINE] */
+div[aria-label^="Timeline: "][aria-label$="’s Tweets"] .r-1adg3ll .r-k5y9r7:empty, /* <--- Empty space [PROFILE TIMELINE] */
 
 .css-1dbjc4n.r-1adg3ll a[href^="/search?q="][href*="&f=user"], /* <--- "See more" link [SEARCH PAGE] */
 
@@ -57,7 +57,7 @@ div[data-testid="sidebarColumn"] .css-1dbjc4n.r-1uaug3w.r-1uhd6vh.r-t23y2h.r-1ph
 
 div[data-testid="sidebarColumn"] .css-1dbjc4n.r-1ysxnx4.r-k0dy70.r-t23y2h.r-1phboty.r-rs99b7.r-1udh08x, /* <--- "Trending now" & "Who to follow" boxes [SIDEBAR, LIGHTS OUT] */
 
-/* v--- "Who to follow" boxes [PROFILE PAGE TIMELINE] ---v */ 
+/* v--- "Who to follow" boxes [PROFILE TIMELINE] ---v */ 
 div[aria-label^="Timeline: "][aria-label$="’s Tweets"] div .r-1or9b2r:empty,
 div > .css-1dbjc4n.r-qklmqi.r-1adg3ll > .css-1dbjc4n.r-1wtj0ep,
 .css-1dbjc4n.r-qklmqi.r-1adg3ll > div[data-testid="UserCell"],
@@ -78,7 +78,19 @@ div[data-testid="sidebarColumn"] form[role="search"] {
 }
 
 form[role="search"] .r-1f0042m { /* <--- Search suggestions box */
-    margin-top: 4px;
+    margin-top: 8px;
+    border-radius: 10px;
+    scrollbar-width: thin; /* Experimental CSS, Firefox only for now */
+    scrollbar-color: #1da1f2 transparent; /* Experimental CSS, Firefox only for now */
+}
+
+form[role="search"] .r-1f0042m::-webkit-scrollbar { /* <--- Scrollbar for search suggestions box (Chromium only) */
+    width: 6px;
+    background: transparent; 
+}
+
+form[role="search"] .r-1f0042m::-webkit-scrollbar-thumb { /* <--- Scrollbar for search suggestions box (Chromium only) */
+    background-color: #1da1f2;
 }
 
 div > .css-1dbjc4n.r-qklmqi.r-1adg3ll:empty { /* <--- Empty element with border [TIMELINE] */
@@ -86,8 +98,8 @@ div > .css-1dbjc4n.r-qklmqi.r-1adg3ll:empty { /* <--- Empty element with border 
 }
 
 .css-1dbjc4n.r-t23y2h.r-1phboty.r-rs99b7.r-1udh08x.r-o7ynqc.r-1j63xyz[aria-haspopup="false"] { /* <--- Link with thumbnail left or top [TIMELINE] */
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
 
 div[data-testid="previewInterstitial"] * { /* <--- For videos / GIFs (at least I accidentally select these all the time...) */
@@ -96,7 +108,7 @@ div[data-testid="previewInterstitial"] * { /* <--- For videos / GIFs (at least I
     user-select: none;
 }
 
-svg.r-yucp9h { /* <--- Retweet / like / follower icons [NOTIFICATIONS PAGE] */
+svg.r-yucp9h { /* <--- Retweet / like / follower icons [NOTIFICATIONS] */
     height: 1.45em;
 }
 
