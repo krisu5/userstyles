@@ -30,6 +30,7 @@ This userstyle and filterlist works **ONLY** with default english language (I'm 
 
 ## Changelog
 
+- *2020-02-06:* Remove the footer's negative margin, code cleanup + other minor tweaks
 - *2020-01-19:* Style tweaks for search suggestions (thin custom scrollbar, bit rounder box)
 - *2020-01-13:* Fix people section at "hashtag search" page
 - *2020-01-11:* Add missing white BG at settings section

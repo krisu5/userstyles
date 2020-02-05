@@ -5,18 +5,12 @@
 @namespace    github.com/krisu5/userstyles
 @homepageURL  https://github.com/krisu5/userstyles/tree/master/Twitter%20-%20Clean%202019%20Design%20(Now%20With%20Light%20Blue)
 @supportURL   https://github.com/krisu5/userstyles/issues
-@version      1.1.8
+@version      1.1.9
 @license      unlicense
 @preprocessor default
 ==/UserStyle== */
 
 @-moz-document domain("twitter.com") {
-:root {
-    --blue: rgba(24, 161, 242 ,0.05);
-    --gray: rgba(230, 236, 240, 0.55);
-}
-
-
 /* ==================================================
    ====== Colors (only enabled in white theme) ======
    ================================================== */
@@ -24,11 +18,11 @@
 body[style^="background-color: rgb(255, 255, 255);"],
 body[style^="background-color: rgb(255, 255, 255);"] div[data-testid="sidebarColumn"] form[role="search"]
 {
-    background-color: var(--blue) !important;
+    background-color: rgba(24, 161, 242, 0.05) !important;
 }
 
 body[style^="background-color: rgb(255, 255, 255);"] .r-1u4rsef { /* <--- Hover / focus color [TWEETS] */
-    background-color: var(--gray) !important;
+    background-color: rgba(230, 236, 240, 0.55) !important;
 }
 
 /* v--- Missing BG to sections [SETTINGS] ---v */ 
@@ -84,12 +78,12 @@ form[role="search"] .r-1f0042m { /* <--- Search suggestions box */
     scrollbar-color: #1da1f2 transparent; /* Experimental CSS, Firefox only for now */
 }
 
-form[role="search"] .r-1f0042m::-webkit-scrollbar { /* <--- Scrollbar for search suggestions box (Chromium only) */
+form[role="search"] .r-1f0042m::-webkit-scrollbar { /* <--- Scrollbar #1, Chromium & Safari only [SEARCH SUGGESTIONS BOX] */
     width: 6px;
     background: transparent; 
 }
 
-form[role="search"] .r-1f0042m::-webkit-scrollbar-thumb { /* <--- Scrollbar for search suggestions box (Chromium only) */
+form[role="search"] .r-1f0042m::-webkit-scrollbar-thumb { /* <--- Scrollbar #2, Chromium & Safari only [SEARCH SUGGESTIONS BOX] */
     background-color: #1da1f2;
 }
 
@@ -97,12 +91,16 @@ div > .css-1dbjc4n.r-qklmqi.r-1adg3ll:empty { /* <--- Empty element with border 
     border-bottom-width: 0;
 }
 
-.css-1dbjc4n.r-t23y2h.r-1phboty.r-rs99b7.r-1udh08x.r-o7ynqc.r-1j63xyz[aria-haspopup="false"] { /* <--- Link with thumbnail left or top [TIMELINE] */
+.css-1dbjc4n.r-t23y2h.r-1phboty.r-rs99b7.r-1udh08x.r-o7ynqc.r-1j63xyz[aria-haspopup="false"] { /* <--- Link with thumbnail left or top [TWEETS] */
     margin-top: 2px;
     margin-bottom: 2px;
 }
 
-div[data-testid="previewInterstitial"] * { /* <--- For videos / GIFs (at least I accidentally select these all the time...) */
+div[data-testid="tweet"] .css-1dbjc4n.r-18u37iz.r-1wtj0ep { /* <--- Div with name, username, time and "more" menu [TWEETS] */
+    margin-bottom: 1px;
+}
+
+div[data-testid="previewInterstitial"] * { /* <--- For videos / GIFs, prevents accidental selecting [TWEETS] */
     -moz-user-select: none;
     -webkit-user-select: none;
     user-select: none;
@@ -110,10 +108,6 @@ div[data-testid="previewInterstitial"] * { /* <--- For videos / GIFs (at least I
 
 svg.r-yucp9h { /* <--- Retweet / like / follower icons [NOTIFICATIONS] */
     height: 1.45em;
-}
-
-nav[aria-label="Footer"] {
-    margin-top: -10px;
 }
 
 @media only screen and (min-width: 1282px) {
