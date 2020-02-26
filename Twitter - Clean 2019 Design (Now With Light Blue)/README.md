@@ -30,6 +30,7 @@ This userstyle and filterlist works **ONLY** with default english language (I'm 
 
 ## Changelog
 
+- *2020-02-26:* Related to previous fix, now targets all the tweet status URLs
 - *2020-02-25:* Fixed tweet status page that has "?ref_src=" URL parameter
 - *2020-02-06:* Removed the footer's negative margin, code cleanup + other minor tweaks
 - *2020-01-19:* Style tweaks for search suggestions (thin custom scrollbar, bit rounder box)
