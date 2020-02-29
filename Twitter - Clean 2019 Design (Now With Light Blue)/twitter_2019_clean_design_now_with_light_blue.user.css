@@ -5,7 +5,7 @@
 @namespace    github.com/krisu5/userstyles
 @homepageURL  https://github.com/krisu5/userstyles/tree/master/Twitter%20-%20Clean%202019%20Design%20(Now%20With%20Light%20Blue)
 @supportURL   https://github.com/krisu5/userstyles/issues
-@version      1.2.2
+@version      1.2.3
 @license      unlicense
 @preprocessor default
 ==/UserStyle== */
@@ -40,6 +40,8 @@ body[style^="background-color: rgb(255, 255, 255);"] section[aria-label="Section
 div[role="menu"] a[href^="https://ads.twitter.com/"], /* <--- "Promote Mode" & "Twitter Ads" menu links [MORE MENU] */
 
 div > .css-1dbjc4n.r-1adg3ll > .css-1dbjc4n.r-1or9b2r:empty, /* <--- Empty space [TIMELINE] */
+
+div[aria-label="Timeline: Conversation"] div > .css-1dbjc4n.r-1adg3ll > .css-1dbjc4n.r-1or9b2r:empty, /* <--- Empty space [TWEET CONVERSATION] */
 
 div[aria-label^="Timeline: "][aria-label$="’s Tweets"] .r-1adg3ll .r-k5y9r7:empty, /* <--- Empty space [PROFILE TIMELINE] */
 
