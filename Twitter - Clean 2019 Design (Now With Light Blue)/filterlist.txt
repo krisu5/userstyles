@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Description: Recommended Additional Filters for "Twitter - Clean 2019 Design (Now With Light Blue™)" Userstyle
 ! Homepage: https://userstyles.org/styles/173920/twitter-clean-2019-design-now-with-light-blue
-! Last updated: 2020-03-05
+! Last updated: 2020-03-06
 !
 ! How to add this filterlist: https://github.com/gorhill/uBlock/wiki/Filter-lists-from-around-the-web
 
@@ -10,6 +10,8 @@ twitter.com##div[data-testid="primaryColumn"] .css-1dbjc4n:has(div[data-testid="
 twitter.com##div[data-testid="primaryColumn"] .r-1adg3ll:has(a[href^="/i/connect_people"]:has-text(/^Show more/))
 twitter.com##div[data-testid="sidebarColumn"] .r-ku1wi2:has(span:has-text(/^Welcome/))
 twitter.com##div[data-testid="sidebarColumn"] .r-t23y2h:has(div[aria-label="Timeline: Trending now"])
+twitter.com##div[aria-label^="Timeline:"] .r-1adg3ll:has(a[href^="/i/flow/topics_selector"]:has-text(/^More Topics/))
+twitter.com##div[aria-label^="Timeline:"] .r-1adg3ll:has(path[d^="M18.265 3.314c-3.45-3.45-9.07-3.45-12.52 0-3.45 3.44-3.45 9.06"])
 twitter.com##div[aria-label^="Timeline: "][aria-label$="’s Tweets"] .r-1adg3ll:has(span:has-text(/^Who to follow/))
 twitter.com##div[aria-label^="Timeline: "][aria-label$="’s Tweets"] .r-1adg3ll:has(span:has-text(/^Promoted Tweet/))
 twitter.com##.r-1adg3ll:has(a[href="/who_to_follow"]:has-text(/^Show more/))
