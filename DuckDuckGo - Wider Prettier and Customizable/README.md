@@ -4,14 +4,16 @@
 
 > Also available at [Greasy Fork]()
 
-Customizable UserCSS for DuckDuckGo, that has:
-- IBM Plex font
-- Wider layout
-- Bigger font
+Customizable UserCSS for DuckDuckGo, that has features such as:
+- IBM Plex font *(enabled by default)*
+- Wider layout for 1920px or wider screens *(enabled by default)*
+- Bigger font *(enabled by default)*
+- Force hide visited link checkmark
+- Delay showing sidebar in the pageload *(enabled by default)*
 
-⚠ ***See the notes at the bottom!***
+⚠ ***Read the notes at the bottom!***
 
-![Userstyle screenshot](screenshots/1_default.png)
+![Userstyle screenshot, all settings enabled](screenshots/1_default.png)
 
 **Other screenshots:**
 1. [wider layout disabled](screenshots/2_no_wider_layout.png)
@@ -21,7 +23,8 @@ Customizable UserCSS for DuckDuckGo, that has:
 
 ## Notes
 
-
+- IBM Plex font loads externally from [jsDelivr CDN](https://www.jsdelivr.com/package/npm/@openfonts/ibm-plex-sans_all). If you want to disable the font, check the link below this.
+- [How to customize settings for UserCSS style](https://github.com/openstyles/stylus/wiki/UserCSS#how-do-i-customize-usercss)
 
 ## Changelog
 
