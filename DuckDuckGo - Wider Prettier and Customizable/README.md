@@ -5,11 +5,11 @@
 > Also available at [Greasy Fork]()
 
 Customizable UserCSS for DuckDuckGo, that has features such as:
-- IBM Plex font *(enabled by default)*
-- Wider layout for 1920px or wider screens *(enabled by default)*
-- Bigger font *(enabled by default)*
+- IBM Plex font **(enabled by default)**
+- Wider layout for 1920px or wider screens **(enabled by default)**
+- Bigger font **(enabled by default)**
 - Force hide visited link checkmark
-- Delay showing sidebar in the pageload *(enabled by default)*
+- Delay showing sidebar in the pageload **(enabled by default)**
 
 ⚠ ***Read the notes at the bottom!***
 
