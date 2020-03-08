@@ -1,0 +1,202 @@
+/* ==UserStyle==
+@name           DuckDuckGo - Wider, Prettier and Customizable
+@namespace      github.com/krisu5/userstyles
+@version        1.0.0
+@description    Customizable UserCSS for DuckDuckGo
+@author         krisu
+@preprocessor stylus
+@var checkbox wideScreen "Wider layout (for 1920px+ wide resolution)" 1
+@var checkbox biggerFont "Bigger font (recommended when 'Wider layout' is enabled)" 1
+@var checkbox hideCheckmark "Force hide visited link checkmark" 0
+@var checkbox sidebarAnimation "Delay showing sidebar in the pageload" 1
+@var checkbox ibm-plex-font "Use 'IBM Plex' font (external load)" 1
+==/UserStyle== */
+
+@-moz-document domain("duckduckgo.com") {
+    
+/* =========================================================== */
+/* === [Toggle] Wider layout (for 1920px+ wide resolution) === */
+/* =========================================================== */
+
+if wideScreen {
+    .cw { max-width: 1700px; }
+
+    .has-zcm .header { width: 1063px; }
+
+    .header__search-wrap { max-width: 905px; }
+
+    .zcm-wrap--header { max-width: inherit; }
+
+    .header__search-wrap, .content__internal { padding-right: 0; }
+
+    .modal--dropdown--settings.is-showing { left: 852px; }
+
+    .results--main {
+            max-width: 900px;
+            margin-right: 50px;
+    }
+
+    .result--more {
+        width: 920px;
+        margin-left: -10px;
+    }
+
+    .module--carousel__item:not(:last-child) { margin-right: 1.6%; }
+}
+
+    
+/* ========================================================================= */
+/* === [Toggle] Bigger font (recommended when "Wider layout" is enabled) === */
+/* ========================================================================= */
+    
+    if biggerFont { html { font-size: 99%; } } 
+    
+
+/* ================================================== */
+/* === [Toggle] Force hide visited link checkmark === */
+/* ================================================== */
+
+    if hideCheckmark { .result__check { display: none; } }
+    
+    
+/* ====================================================== */
+/* === [Toggle] Delay showing sidebar in the pageload === */
+/* ====================================================== */
+
+if sidebarAnimation {
+    .results--sidebar {
+        animation: showSidebar 0.75s ease-in-out 0.75s forwards;
+        /* animation time = approximated load time for search results at left */
+        opacity: 0;
+    }
+
+    @keyframes showSidebar { to { opacity: 1; } }
+}
+
+    
+/* ==================================================== */
+/* === [Toggle] Use "IBM Plex" font (external load) === */
+/* ==================================================== */
+    
+if ibm-plex-font {
+    body, input, textarea, .search__input--adv { font-family: "IBM Plex Sans", "DDG_ProximaNova","DDG_ProximaNova_UI_0","DDG_ProximaNova_UI_1","DDG_ProximaNova_UI_2","DDG_ProximaNova_UI_3","DDG_ProximaNova_UI_4","DDG_ProximaNova_UI_5","DDG_ProximaNova_UI_6","Proxima Nova"; }
+
+    #zero_click_wrapper, #zero_click_wrapper input, #zero_click_wrapper textarea { font-family: "DDG_ProximaNova","DDG_ProximaNova_UI_0","DDG_ProximaNova_UI_1","DDG_ProximaNova_UI_2","DDG_ProximaNova_UI_3","DDG_ProximaNova_UI_4","DDG_ProximaNova_UI_5","DDG_ProximaNova_UI_6","Proxima Nova"; }
+
+    .result__title, #links .result__title b, #links .result__title strong {
+            padding-bottom: 1px !important;
+            font-weight: 500 !important;
+    }
+
+    /* ibm-plex-sans-400normal - all */
+    @font-face {
+        font-family: 'IBM Plex Sans';
+        font-style: normal;
+        font-display: swap;
+        font-weight: 400;
+        src:
+            local('IBM Plex Sans'),
+            local('IBMPlexSans'), 
+            url('https://cdn.jsdelivr.net/npm/@openfonts/ibm-plex-sans_all@1.44.0/files/ibm-plex-sans-all-400.woff2') format('woff2');
+    }
+
+    /* ibm-plex-sans-500normal - all */
+    @font-face {
+        font-family: 'IBM Plex Sans';
+        font-style: normal;
+        font-display: swap;
+        font-weight: 500;
+        src:
+            local('IBM Plex Sans Medium'),
+            local('IBMPlexSans-Medium'), 
+            url('https://cdn.jsdelivr.net/npm/@openfonts/ibm-plex-sans_all@1.44.0/files/ibm-plex-sans-all-500.woff2') format('woff2');
+    }
+
+    /* ibm-plex-sans-600normal - all */
+    @font-face {
+        font-family: 'IBM Plex Sans';
+        font-style: normal;
+        font-display: swap;
+        font-weight: 600;
+        src:
+            local('IBM Plex Sans SemiBold'),
+            local('IBMPlexSans-SemiBold'), 
+            url('https://cdn.jsdelivr.net/npm/@openfonts/ibm-plex-sans_all@1.44.0/files/ibm-plex-sans-all-600.woff2') format('woff2');
+    }
+}
+
+
+/* =============== */
+/* === Results === */
+/* =============== */
+
+.result.highlight { background: hsl(0, 0%, 98%); }
+
+.result__a { line-height: 1.3; }
+
+.result__icon { margin-top: -6px; }
+    
+
+/* ========================= */
+/* === Results seperator === */
+/* ========================= */
+
+.result__pagenum {
+    font-size: 15px;
+    margin-top: -4px;
+}
+
+.result__pagenum--side {
+    padding: 5px 10px;
+    background-color: #fafafa;
+    border-radius: 50%;
+    border: 1px solid #d9d9d9;
+}
+
+.result--sep { margin: 1em auto 1.25em; }
+
+.result--sep--hr::before {
+    background-color: #d9d9d9;
+    right: 0px;
+}
+
+
+/* ============================== */
+/* === Instant Answer modules === */
+/* ============================== */
+
+.zci--calculator .tile__calc .tile__past-calc { height: 60px; }
+
+.zci--timer .name { margin-top: 27px; }
+
+.zci--timer .time_display { margin-top: -20px; }
+
+.zci--timer .corner_btn.reset { top: 5px; }
+
+.zci--timer .corner_btn.close { top: -3px; }
+
+.zci--timer .play_pause a:after {
+    right: 0;
+    bottom: 0;
+}
+
+.tile__ctrl__btn {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+
+/* ============= */
+/* === Misc. === */
+/* ============= */
+    
+.module__link--two-line { padding-bottom: 5px; }
+
+.about-profiles { padding-bottom: 5px; }
+
+.dropdown__switch { margin-top: 10.5px; }
+
+.dropdown__button::after { margin-top: -5px; }
+    
+}
