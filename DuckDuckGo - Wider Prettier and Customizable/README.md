@@ -4,11 +4,16 @@
 
 > Also available at [Greasy Fork]()
 
-
+Customizable UserCSS for DuckDuckGo, that has:
+- IBM Plex font
+- Wider layout
+- Bigger font
 
 ⚠ ***See the notes at the bottom!***
 
 ![Userstyle screenshot](screenshots/1_default.png)
+
+**Other screenshots:** [wider layout disabled](screenshots/2_no_wider_layout.png), [bigger font disabled](3_no_bigger_font.png), [IBM Plex font disabled](4_no_ibm_plex.png), [all settings enabled but with DDG's official dark theme](5_all_settings_but_with_dark_theme.png)
 
 ## Notes
 
