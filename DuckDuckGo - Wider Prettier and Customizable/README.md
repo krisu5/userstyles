@@ -4,7 +4,9 @@
 
 > Also available at [Greasy Fork]()
 
-Customizable UserCSS for DuckDuckGo, that has toggleable features such as:
+*Customizable UserCSS for DuckDuckGo* 🦆
+
+Toggleable features such as:
 - IBM Plex webfont **(enabled by default)**
 - Wider layout for 1920px or wider screens **(enabled by default)**
 - Bigger font **(enabled by default)**
