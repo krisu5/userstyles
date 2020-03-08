@@ -16,10 +16,10 @@ Customizable UserCSS for DuckDuckGo, that has features such as:
 ![Userstyle screenshot, all settings enabled](screenshots/1_default.png)
 
 **Other screenshots:**
-1. [wider layout disabled](screenshots/2_no_wider_layout.png)
-2. [bigger font disabled](screenshots/3_no_bigger_font.png)
+1. [Wider layout disabled](screenshots/2_no_wider_layout.png)
+2. [Bigger font disabled](screenshots/3_no_bigger_font.png)
 3. [IBM Plex font disabled](screenshots/4_no_ibm_plex.png)
-4. [all settings enabled but with DDG's official dark theme](screenshots/5_all_settings_but_with_dark_theme.png)
+4. [All settings enabled but with DDG's official dark theme](screenshots/5_all_settings_but_with_dark_theme.png)
 
 ## Notes
 
