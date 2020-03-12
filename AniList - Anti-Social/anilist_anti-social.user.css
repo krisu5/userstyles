@@ -1,5 +1,6 @@
 /* ==UserStyle==
 @name         AniList - Anti-Social
+@description  Simple tweaks for removing most of the social features (like the feed on front page)
 @author       krisu (https://github.com/krisu5)
 @namespace    github.com/krisu5/userstyles
 @homepageURL  https://github.com/krisu5/userstyles/tree/master/AniList%20-%20Anti-Social
@@ -7,6 +8,7 @@
 @license      unlicense
 @preprocessor default
 ==/UserStyle== */
+
 @-moz-document domain("anilist.co") {
 .activity-edit, .nav a[href$="social"], .home .activity-feed-wrap, .activity-feed .actions, .activity-feed [href^="/activity/"]
 { display: none !important; }
