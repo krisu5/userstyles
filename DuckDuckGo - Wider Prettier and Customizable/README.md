@@ -31,4 +31,5 @@ Toggleable features such as:
 
 ## Changelog
 
+- *2020-03-12:* Add breakpoint for wide layout, move webfont to the top (so it loads bit faster), prettify the code
 - *2020-03-08:* Initial release
