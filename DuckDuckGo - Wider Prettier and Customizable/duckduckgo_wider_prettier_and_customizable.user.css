@@ -7,21 +7,73 @@
 @supportURL     https://github.com/krisu5/userstyles/issues
 @version        1.0.0
 @license        unlicense
-@preprocessor stylus
-@var checkbox wideScreen "Wider layout (for 1920px+ wide resolution)" 1
-@var checkbox biggerFont "Bigger font (recommended when 'Wider layout' is enabled)" 1
-@var checkbox hideCheckmark "Force hide visited link checkmark" 0
-@var checkbox sidebarAnimation "Delay showing sidebar in the pageload" 1
-@var checkbox ibm-plex-font "Use 'IBM Plex' font (external load)" 1
+@preprocessor   stylus
+@var checkbox   ibm-plex-font      "Use 'IBM Plex' font (external load)"                        1
+@var checkbox   wideScreen         "Wider layout (for 1920px+ wide resolution)"                 1
+@var checkbox   biggerFont         "Bigger font (recommended when 'Wider layout' is enabled)"   1
+@var checkbox   hideCheckmark      "Force hide visited link checkmark"                          0
+@var checkbox   sidebarAnimation   "Delay showing sidebar in the pageload"                      1
 ==/UserStyle== */
 
 @-moz-document domain("duckduckgo.com") {
+/* ==================================================== */
+/* === [Toggle] Use "IBM Plex" font (external load) === */
+/* ==================================================== */
+    
+if ibm-plex-font {
+    /* ibm-plex-sans-400normal - all */
+    @font-face {
+        font-family: 'IBM Plex Sans';
+        font-style: normal;
+        font-display: swap;
+        font-weight: 400;
+        src:
+         local('IBM Plex Sans'),
+         local('IBMPlexSans'), 
+         url('https://cdn.jsdelivr.net/npm/@openfonts/ibm-plex-sans_all@1.44.0/files/ibm-plex-sans-all-400.woff2') format('woff2');
+    }
+
+    /* ibm-plex-sans-500normal - all */
+    @font-face {
+        font-family: 'IBM Plex Sans';
+        font-style: normal;
+        font-display: swap;
+        font-weight: 500;
+        src:
+         local('IBM Plex Sans Medium'),
+         local('IBMPlexSans-Medium'), 
+         url('https://cdn.jsdelivr.net/npm/@openfonts/ibm-plex-sans_all@1.44.0/files/ibm-plex-sans-all-500.woff2') format('woff2');
+    }
+
+    /* ibm-plex-sans-600normal - all */
+    @font-face {
+        font-family: 'IBM Plex Sans';
+        font-style: normal;
+        font-display: swap;
+        font-weight: 600;
+        src:
+         local('IBM Plex Sans SemiBold'),
+         local('IBMPlexSans-SemiBold'), 
+         url('https://cdn.jsdelivr.net/npm/@openfonts/ibm-plex-sans_all@1.44.0/files/ibm-plex-sans-all-600.woff2') format('woff2');
+    }
+		
+    body, input, textarea, .search__input--adv { font-family: "IBM Plex Sans", "DDG_ProximaNova","DDG_ProximaNova_UI_0","DDG_ProximaNova_UI_1","DDG_ProximaNova_UI_2","DDG_ProximaNova_UI_3","DDG_ProximaNova_UI_4","DDG_ProximaNova_UI_5","DDG_ProximaNova_UI_6","Proxima Nova"; }
+
+    #zero_click_wrapper, #zero_click_wrapper input, #zero_click_wrapper textarea { font-family: "DDG_ProximaNova","DDG_ProximaNova_UI_0","DDG_ProximaNova_UI_1","DDG_ProximaNova_UI_2","DDG_ProximaNova_UI_3","DDG_ProximaNova_UI_4","DDG_ProximaNova_UI_5","DDG_ProximaNova_UI_6","Proxima Nova"; }
+
+    .result__title, #links .result__title b, #links .result__title strong {
+            padding-bottom: 1px !important;
+            font-weight: 500 !important;
+    }
+}
+
     
 /* =========================================================== */
 /* === [Toggle] Wider layout (for 1920px+ wide resolution) === */
 /* =========================================================== */
 
 if wideScreen {
+	@media only screen and (min-width: 1460px) {
     .cw { max-width: 1700px; }
 
     .has-zcm .header { width: 1063px; }
@@ -32,11 +84,11 @@ if wideScreen {
 
     .header__search-wrap, .content__internal { padding-right: 0; }
 
-    .modal--dropdown--settings.is-showing { left: 852px; }
+    .modal--dropdown--settings.is-showing { margin-left: -108px; }
 
     .results--main {
-            max-width: 900px;
-            margin-right: 50px;
+        max-width: 900px;
+        margin-right: 50px;
     }
 
     .result--more {
@@ -45,6 +97,7 @@ if wideScreen {
     }
 
     .module--carousel__item:not(:last-child) { margin-right: 1.6%; }
+	}
 }
 
     
@@ -69,63 +122,11 @@ if wideScreen {
 if sidebarAnimation {
     .results--sidebar {
         animation: showSidebar 0.75s ease-in-out 0.75s forwards;
-        /* animation time = approximated load time for search results at left */
+        /* animation time = approximated load time for search results links */
         opacity: 0;
     }
 
     @keyframes showSidebar { to { opacity: 1; } }
-}
-
-    
-/* ==================================================== */
-/* === [Toggle] Use "IBM Plex" font (external load) === */
-/* ==================================================== */
-    
-if ibm-plex-font {
-    body, input, textarea, .search__input--adv { font-family: "IBM Plex Sans", "DDG_ProximaNova","DDG_ProximaNova_UI_0","DDG_ProximaNova_UI_1","DDG_ProximaNova_UI_2","DDG_ProximaNova_UI_3","DDG_ProximaNova_UI_4","DDG_ProximaNova_UI_5","DDG_ProximaNova_UI_6","Proxima Nova"; }
-
-    #zero_click_wrapper, #zero_click_wrapper input, #zero_click_wrapper textarea { font-family: "DDG_ProximaNova","DDG_ProximaNova_UI_0","DDG_ProximaNova_UI_1","DDG_ProximaNova_UI_2","DDG_ProximaNova_UI_3","DDG_ProximaNova_UI_4","DDG_ProximaNova_UI_5","DDG_ProximaNova_UI_6","Proxima Nova"; }
-
-    .result__title, #links .result__title b, #links .result__title strong {
-            padding-bottom: 1px !important;
-            font-weight: 500 !important;
-    }
-
-    /* ibm-plex-sans-400normal - all */
-    @font-face {
-        font-family: 'IBM Plex Sans';
-        font-style: normal;
-        font-display: swap;
-        font-weight: 400;
-        src:
-            local('IBM Plex Sans'),
-            local('IBMPlexSans'), 
-            url('https://cdn.jsdelivr.net/npm/@openfonts/ibm-plex-sans_all@1.44.0/files/ibm-plex-sans-all-400.woff2') format('woff2');
-    }
-
-    /* ibm-plex-sans-500normal - all */
-    @font-face {
-        font-family: 'IBM Plex Sans';
-        font-style: normal;
-        font-display: swap;
-        font-weight: 500;
-        src:
-            local('IBM Plex Sans Medium'),
-            local('IBMPlexSans-Medium'), 
-            url('https://cdn.jsdelivr.net/npm/@openfonts/ibm-plex-sans_all@1.44.0/files/ibm-plex-sans-all-500.woff2') format('woff2');
-    }
-
-    /* ibm-plex-sans-600normal - all */
-    @font-face {
-        font-family: 'IBM Plex Sans';
-        font-style: normal;
-        font-display: swap;
-        font-weight: 600;
-        src:
-            local('IBM Plex Sans SemiBold'),
-            local('IBMPlexSans-SemiBold'), 
-            url('https://cdn.jsdelivr.net/npm/@openfonts/ibm-plex-sans_all@1.44.0/files/ibm-plex-sans-all-600.woff2') format('woff2');
-    }
 }
 
 
@@ -193,13 +194,17 @@ if ibm-plex-font {
 /* ============= */
 /* === Misc. === */
 /* ============= */
-    
-.module__link--two-line { padding-bottom: 5px; }
 
-.about-profiles { padding-bottom: 5px; }
-
+.zcm__sep--h:before { top: 0.2em; }
+	
+.zcm__sep--h+.zcm__item { padding-left: 0.85em; }
+	
 .dropdown__switch { margin-top: 10.5px; }
 
 .dropdown__button::after { margin-top: -5px; }
+
+.module__link--two-line { padding-bottom: 5px; }
+	
+.about-profiles { padding-bottom: 5px; }
     
 }
