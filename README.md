@@ -1,5 +1,8 @@
 # Userstyles by krisu
 
+[![Greasy Fork Profile](https://img.shields.io/badge/Profile-Greasy%20Fork-%23670000?style=for-the-badge)](https://greasyfork.org/en/users/872-krisu?language=css) 
+[![Userstyles.org Profile](https://img.shields.io/badge/Profile-Userstyles.org-%233498db?style=for-the-badge)](https://userstyles.org/users/7865)
+
 - [Anilist - **Anti-Social**](/AniList%20-%20Anti-Social)
   - *Simple tweaks for removing most of the social features (like the feed on front page).*
   
