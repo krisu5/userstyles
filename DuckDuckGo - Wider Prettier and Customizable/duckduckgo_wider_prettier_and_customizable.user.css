@@ -56,7 +56,7 @@ if ibm-plex-font {
          local('IBMPlexSans-SemiBold'), 
          url('https://cdn.jsdelivr.net/npm/@openfonts/ibm-plex-sans_all@1.44.0/files/ibm-plex-sans-all-600.woff2') format('woff2');
     }
-		
+        
     body, input, textarea, .search__input--adv { font-family: "IBM Plex Sans", "DDG_ProximaNova","DDG_ProximaNova_UI_0","DDG_ProximaNova_UI_1","DDG_ProximaNova_UI_2","DDG_ProximaNova_UI_3","DDG_ProximaNova_UI_4","DDG_ProximaNova_UI_5","DDG_ProximaNova_UI_6","Proxima Nova"; }
 
     #zero_click_wrapper, #zero_click_wrapper input, #zero_click_wrapper textarea { font-family: "DDG_ProximaNova","DDG_ProximaNova_UI_0","DDG_ProximaNova_UI_1","DDG_ProximaNova_UI_2","DDG_ProximaNova_UI_3","DDG_ProximaNova_UI_4","DDG_ProximaNova_UI_5","DDG_ProximaNova_UI_6","Proxima Nova"; }
@@ -73,7 +73,7 @@ if ibm-plex-font {
 /* =========================================================== */
 
 if wideScreen {
-	@media only screen and (min-width: 1460px) {
+    @media only screen and (min-width: 1460px) {
     .cw { max-width: 1700px; }
 
     .has-zcm .header { width: 1063px; }
@@ -97,7 +97,7 @@ if wideScreen {
     }
 
     .module--carousel__item:not(:last-child) { margin-right: 1.6%; }
-	}
+    }
 }
 
     
@@ -196,15 +196,15 @@ if sidebarAnimation {
 /* ============= */
 
 .zcm__sep--h:before { top: 0.2em; }
-	
+    
 .zcm__sep--h+.zcm__item { padding-left: 0.85em; }
-	
+    
 .dropdown__switch { margin-top: 10.5px; }
 
 .dropdown__button::after { margin-top: -5px; }
 
 .module__link--two-line { padding-bottom: 5px; }
-	
+    
 .about-profiles { padding-bottom: 5px; }
     
 }
