@@ -74,29 +74,29 @@ if ibm-plex-font {
 
 if wideScreen {
     @media only screen and (min-width: 1460px) {
-    .cw { max-width: 1700px; }
+        .cw { max-width: 1700px; }
 
-    .has-zcm .header { width: 1063px; }
+        .has-zcm .header { width: 1063px; }
 
-    .header__search-wrap { max-width: 905px; }
+        .header__search-wrap { max-width: 905px; }
 
-    .zcm-wrap--header { max-width: inherit; }
+        .zcm-wrap--header { max-width: inherit; }
 
-    .header__search-wrap, .content__internal { padding-right: 0; }
+        .header__search-wrap, .content__internal { padding-right: 0; }
 
-    .modal--dropdown--settings.is-showing { margin-left: -108px; }
+        .modal--dropdown--settings.is-showing { margin-left: -108px; }
 
-    .results--main {
-        max-width: 900px;
-        margin-right: 50px;
-    }
+        .results--main {
+            max-width: 900px;
+            margin-right: 50px;
+        }
 
-    .result--more {
-        width: 920px;
-        margin-left: -10px;
-    }
+        .result--more {
+            width: 920px;
+            margin-left: -10px;
+        }
 
-    .module--carousel__item:not(:last-child) { margin-right: 1.6%; }
+        .module--carousel__item:not(:last-child) { margin-right: 1.6%; }
     }
 }
 
