@@ -62,8 +62,8 @@ if ibm-plex-font {
     #zero_click_wrapper, #zero_click_wrapper input, #zero_click_wrapper textarea { font-family: "DDG_ProximaNova","DDG_ProximaNova_UI_0","DDG_ProximaNova_UI_1","DDG_ProximaNova_UI_2","DDG_ProximaNova_UI_3","DDG_ProximaNova_UI_4","DDG_ProximaNova_UI_5","DDG_ProximaNova_UI_6","Proxima Nova"; }
 
     .result__title, #links .result__title b, #links .result__title strong {
-            padding-bottom: 1px !important;
-            font-weight: 500 !important;
+        padding-bottom: 1px !important;
+        font-weight: 500 !important;
     }
 }
 
