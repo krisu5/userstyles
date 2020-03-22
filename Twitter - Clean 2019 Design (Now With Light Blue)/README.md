@@ -11,13 +11,16 @@
   - And more with **recommended uBlock filterlist!**
 - Other really minor tweaks / style changes.
 
-⚠ ***See the notes at the bottom!***
+⚠ ***Read the notes at the bottom!***
 
-![Userstyle screenshot](screenshot.png)
+![Userstyle screenshot](screenshots/1_default.jpg)
+
+**Other screenshots:**
+- [Increase color contrast enabled](screenshots/2_increase_color_contrast_enabled.png)
 
 ## Notes
 
-This userstyle can't remove everything because limitations of current CSS.
+This userstyle can't remove everything because limitations of current CSS and complexity of layout.
 So I also made uBlock filterlist that removes even more elements, that are harder to do otherwise.
 
 **[Click here to see the filterlist](https://raw.githubusercontent.com/krisu5/userstyles/master/Twitter%20-%20Clean%202019%20Design%20(Now%20With%20Light%20Blue)/filterlist.txt)**
@@ -31,6 +34,7 @@ This userstyle and filterlist works **ONLY** with default english language (I'm 
 
 ## Changelog
 
+- *2020-03-22:* Sidebar boxes blocked when "Increase color contrast" is enabled, wider toaster on settings
 - *2020-03-01:* Blocked empty space in the "tweet conversation" pages
 - *2020-02-26:* Related to previous fix, now targets all the tweet status URLs
 - *2020-02-25:* Fixed tweet status page that has "?ref_src=" URL parameter
