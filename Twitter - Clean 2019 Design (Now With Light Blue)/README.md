@@ -13,7 +13,7 @@
 
 ⚠ ***Read the notes at the bottom!***
 
-![Userstyle screenshot](screenshots/1_default.jpg)
+![Userstyle screenshot](screenshots/1_screenshot.jpg)
 
 **Other screenshots:**
 - [Increase color contrast enabled](screenshots/2_increase_color_contrast_enabled.png)
