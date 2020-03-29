@@ -1,0 +1,113 @@
+/* ==UserStyle==
+@name         Imgur - Minimal and Anti-Social for non-Imgurians
+@description  Removes all the unnecessary stuff, for people that's not interested about Imgur culture.
+@author       krisu (https://github.com/krisu5)
+@namespace    github.com/krisu5/userstyles
+@homepageURL  https://github.com/krisu5/userstyles/tree/master/Imgur%20-%20Minimal%20and%20Anti-Social%20for%20non-Imgurians
+@supportURL   https://github.com/krisu5/userstyles/issues
+@version      1.0.0
+@license      unlicense
+@preprocessor default
+==/UserStyle== */
+@-moz-document url("https://imgur.com/"), url-prefix("https://imgur.com/upload") {
+/* ----------------------------------------------
+   _____               _                          
+  |  ___|             | |                         
+  | |_ _ __ ___  _ __ | |_ _ __   __ _  __ _  ___ 
+  |  _| '__/ _ \| '_ \| __| '_ \ / _` |/ _` |/ _ \
+  | | | | | (_) | | | | |_| |_) | (_| | (_| |  __/
+  \_| |_|  \___/|_| |_|\__| .__/ \__,_|\__, |\___|
+                          | |           __/ |     
+                          |_|          |___/
+   ---------------------------------------------- */
+
+.InteractiveBackground, .Message.welcome, .TrendingTags, .CoverChangeGallery,
+.Spinner-contentWrapper, .NewCover.isFixed, .Button.upload img, .PopUpClose
+{ display: none !important; }
+
+body, html { overflow-y: hidden !important; }
+
+.Button.upload {
+	position: fixed !important;
+	top: 50% !important;
+	left: 50% !important;
+	transform: translate(-50%, -50%) !important;
+	width: 80% !important;
+	height: 70% !important;
+	font-size: 350% !important;
+	display: flex !important;
+	justify-content: center !important;
+	align-items: center !important;
+}
+
+.NewCover { background: transparent !important; }
+}
+
+@-moz-document domain("imgur.com") {
+/* --------------------------------
+   _____       _ _                 
+  |  __ \     | | |                
+  | |  \/ __ _| | | ___ _ __ _   _ 
+  | | __ / _` | | |/ _ \ '__| | | |
+  | |_\ \ (_| | | |  __/ |  | |_| |
+   \____/\__,_|_|_|\___|_|   \__, |
+                              __/ |
+                             |___/
+   -------------------------------- */
+
+/* ================================
+   ======= NEW DESIGN (2020) ======
+   ================================ */
+
+.CommentsList, .Footer, .Gallery-Sidebar, .NavbarNotifications, .Searchbar, .Navigation-Container, .Gallery-CommentsCounter,
+.share-fb, .share-twttr, .Gallery-Vote, .share-reddit, .share-email, .share-report, .CoverPostMeta.Display, .ButtonBackToTop,
+.Gallery-Content--tags
+{ display: none !important; }
+
+body:not([class=""]) { background-color: #27292d; }
+
+.NewCover.GalleryCover.isFixed, .NewCover.isFixed .GoUp {
+	visibility: hidden !important;
+	transition: inherit !important;
+	opacity: 0 !important;
+	box-shadow: none !important;
+}
+
+.Navbar-signup { margin-left: 15px !important; }
+
+.Gallery-EngagementBarContainer {
+	top: 0px !important;
+	padding-top: 13px !important;
+	position: inherit !important;
+}
+
+.Gallery-Share { height: auto !important; }
+
+.loadMore { margin-bottom: 25px !important; }
+
+
+
+/* ================================
+   ========== OLD DESIGN ==========
+   ================================ */
+
+.Open-Save-To-Folder-Button, #cta-container, #comments-container, .left #recommendations,
+.next-prev, #right-content, .search-container, #notification-container, .post-action *
+{ display: none !important; }
+
+#topbar .account { left: -175px !important; }
+
+.post-pad {
+    transform: translateX(20%) !important;
+    margin-bottom: 20px !important;
+}
+
+.post-action {
+	padding: 0 !important;
+	min-height: 15px !important;
+}
+}
+
+@-moz-document url-prefix("https://zip.imgur.com/") {
+body { background: #fff; }
+}
