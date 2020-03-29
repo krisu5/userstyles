@@ -1,6 +1,6 @@
-# Imgur - Minimal and Anti-Social for non-Imgurians
+# Imgur - Minimal Design for non-Imgurians
 
-### [Click to install](https://github.com/krisu5/userstyles/raw/master/Imgur%20-%20Minimal%20and%20Anti-Social%20for%20non-Imgurians/imgur_-_minimal_and_anti-social_for_non-imgurians.user.css)
+### [Click to install](https://github.com/krisu5/userstyles/raw/master/Imgur%20-%20Minimal%20Design%20for%20non-Imgurians/imgur_-_minimal_and_anti-social_for_non-imgurians.user.css)
 
 > Also available at [Greasy Fork](#null) and [Userstyles.org](#null)
 
