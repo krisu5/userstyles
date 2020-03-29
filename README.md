@@ -10,7 +10,7 @@
   - *Customizable UserCSS for DuckDuckGo, that has toggleable features.*
   - Please **read the notes** at the bottom about external webfont and how to disable it (if you want).
   
-- [Imgur - Minimal and Anti-Social for non-Imgurians](/Imgur%20-%20Minimal%20and%20Anti-Social%20for%20non-Imgurians)
+- [Imgur - **Minimal and Anti-Social for non-Imgurians**](/Imgur%20-%20Minimal%20and%20Anti-Social%20for%20non-Imgurians)
   - *Removes all the unnecessary stuff, for people that's not interested about Imgur culture.*
 
 - [Twitter - **Clean 2019 Design (Now With Light Blue™)**](/Twitter%20-%20Clean%202019%20Design%20(Now%20With%20Light%20Blue))
