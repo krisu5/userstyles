@@ -1,5 +1,5 @@
 /* ==UserStyle==
-@name         Imgur - Minimal design for non-Imgurians
+@name         Imgur - Minimal Design for non-Imgurians
 @description  Removes all the unnecessary stuff, for people that's not interested about Imgur culture.
 @author       krisu (https://github.com/krisu5)
 @namespace    github.com/krisu5/userstyles
@@ -9,6 +9,7 @@
 @license      unlicense
 @preprocessor default
 ==/UserStyle== */
+
 @-moz-document url("https://imgur.com/"), url-prefix("https://imgur.com/upload") {
 /* ----------------------------------------------
    _____               _                          
