@@ -20,4 +20,5 @@ Works with old and new gallery design!
 
 ## Changelog
 
+- *2020-03-30:* Changes to frontpage's new post button, fixes to album edit pages
 - *2020-03-29:* Initial release
