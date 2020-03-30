@@ -35,7 +35,6 @@ body, html { overflow-y: hidden !important; }
 	transform: translate(-50%, -50%) !important;
 	width: 65% !important;
 	height: 55% !important;
-	font-size: 0;
 	border-radius: 25px !important;
 	display: flex !important;
 	justify-content: center !important;
@@ -45,8 +44,7 @@ body, html { overflow-y: hidden !important; }
 .Button.upload:hover:before { border-radius: 25px !important; }
 
 .Button.upload:after {
-    content: "New Upload";
-    font-size: 55pt;
+    font-size: 55pt !important;
 }
 
 .NewCover { background: transparent !important; }
@@ -62,7 +60,7 @@ body, html { overflow-y: hidden !important; }
    \____/\__,_|_|_|\___|_|   \__, |
                               __/ |
                              |___/
-   & Upload page
+   & Everything else
    -------------------------------- */
 
 /* ================================
@@ -70,11 +68,23 @@ body, html { overflow-y: hidden !important; }
    ================================ */
 
 .CommentsList, .Footer, .Gallery-Sidebar, .NavbarNotifications, .Searchbar, .Navigation-Container, .Gallery-CommentsCounter,
-.share-fb, .share-twttr, .Gallery-Vote, .share-reddit, .share-email, .share-report, .CoverPostMeta.Display, .ButtonBackToTop,
+[class*="share-btn"]:not(.share-btn-other):not(.share-btn-download), .Gallery-Vote, .CoverPostMeta.Display, .ButtonBackToTop,
 .Gallery-Content--tags, .TagManager.PostOptions-section, .TagSuggestion-container
 { display: none !important; }
 
 body:not([class=""]) { background-color: #27292d; }
+
+.Button.upload { font-size: 0; }
+
+.Button.upload:after {
+    content: "Upload";
+    font-size: 15px;
+}
+
+.Button.upload img {
+	margin-right: 9px;
+	margin-top: -7px;
+}
 
 .NewCover.GalleryCover.isFixed, .NewCover.isFixed .GoUp {
 	visibility: hidden !important;
