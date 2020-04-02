@@ -20,6 +20,7 @@ Works with old and new gallery design!
 
 ## Changelog
 
+- *2020-04-02:* Better "engagment bar" blocking (removes april fools button and any new element in the future)
 - *2020-03-30 #2:* Fix share button blocks, button text change
 - *2020-03-30 #1:* Changes to frontpage's new post button, fixes to album edit pages
 - *2020-03-29:* Initial release

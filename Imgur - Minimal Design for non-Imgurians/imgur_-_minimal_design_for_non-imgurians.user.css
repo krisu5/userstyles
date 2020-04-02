@@ -5,7 +5,7 @@
 @namespace    github.com/krisu5/userstyles
 @homepageURL  https://github.com/krisu5/userstyles/tree/master/Imgur%20-%20Minimal%20and%20Anti-Social%20for%20non-Imgurians
 @supportURL   https://github.com/krisu5/userstyles/issues
-@version      1.0.2
+@version      1.0.3
 @license      unlicense
 @preprocessor default
 ==/UserStyle== */
@@ -29,16 +29,16 @@
 body, html { overflow-y: hidden !important; }
 
 .Button.upload {
-	position: fixed !important;
-	top: 50% !important;
-	left: 50% !important;
-	transform: translate(-50%, -50%) !important;
-	width: 65% !important;
-	height: 55% !important;
-	border-radius: 25px !important;
-	display: flex !important;
-	justify-content: center !important;
-	align-items: center !important;
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 65% !important;
+    height: 55% !important;
+    border-radius: 25px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
 }
 
 .Button.upload:hover:before { border-radius: 25px !important; }
@@ -67,9 +67,10 @@ body, html { overflow-y: hidden !important; }
    ======= NEW DESIGN (2020) ======
    ================================ */
 
-.CommentsList, .Footer, .Gallery-Sidebar, .NavbarNotifications, .Searchbar, .Navigation-Container, .Gallery-CommentsCounter,
-[class*="share-btn"]:not(.share-btn-other):not(.share-btn-download), .Gallery-Vote, .CoverPostMeta.Display, .ButtonBackToTop,
-.Gallery-Content--tags, .TagManager.PostOptions-section, .TagSuggestion-container
+.CommentsList, .Footer, .Gallery-Sidebar, .NavbarNotifications, .Searchbar, .Navigation-Container,
+[class*="share-btn"]:not(.share-btn-other):not(.share-btn-download), .CoverPostMeta.Display,
+.Gallery-EngagementBarContainer div[class^="Gallery-"]:not([class^="Gallery-Share"]),
+.ButtonBackToTop, .Gallery-Content--tags, .TagManager.PostOptions-section, .TagSuggestion-container
 { display: none !important; }
 
 body:not([class=""]) { background-color: #27292d; }
@@ -82,23 +83,23 @@ body:not([class=""]) { background-color: #27292d; }
 }
 
 .Button.upload img {
-	margin-right: 9px;
-	margin-top: -7px;
+    margin-right: 9px;
+    margin-top: -7px;
 }
 
 .NewCover.GalleryCover.isFixed, .NewCover.isFixed .GoUp {
-	visibility: hidden !important;
-	transition: inherit !important;
-	opacity: 0 !important;
-	box-shadow: none !important;
+    visibility: hidden !important;
+    transition: inherit !important;
+    opacity: 0 !important;
+    box-shadow: none !important;
 }
 
 .Navbar-signup { margin-left: 15px !important; }
 
 .Gallery-EngagementBarContainer {
-	top: 0px !important;
-	padding-top: 13px !important;
-	position: inherit !important;
+    top: 0px !important;
+    padding-top: 13px !important;
+    position: inherit !important;
 }
 
 .Gallery-Share { height: auto !important; }
@@ -129,8 +130,8 @@ body:not([class=""]) { background-color: #27292d; }
 ul.post-options-extra { margin-top: 20px !important; }
 
 .post-action {
-	padding: 0 !important;
-	min-height: 15px !important;
+    padding: 0 !important;
+    min-height: 15px !important;
 }
 }
 
