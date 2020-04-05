@@ -4,10 +4,11 @@
 
 > Also available at [Greasy Fork](https://greasyfork.org/en/scripts/397799-anilist-anti-social) and [Userstyles.org](https://userstyles.org/styles/165051/anilist-anti-social)
 
-*Simple tweaks for removing most of the social features (like the feed on front page).*
+*Simple tweaks for removing most of the social features (like the feed on front page).* 🎎
 
 ![Userstyle screenshot](screenshot.jpg)
 
 ## Changelog
 
+- *2020-04-06:* Profile activity feed fixed
 - *2018-10-19:* Initial release

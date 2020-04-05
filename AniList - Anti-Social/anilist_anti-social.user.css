@@ -4,7 +4,7 @@
 @author       krisu (https://github.com/krisu5)
 @namespace    github.com/krisu5/userstyles
 @homepageURL  https://github.com/krisu5/userstyles/tree/master/AniList%20-%20Anti-Social
-@version      1.0.0
+@version      1.0.1
 @license      unlicense
 @preprocessor default
 ==/UserStyle== */
@@ -19,14 +19,24 @@
 
 .home div .sense { min-height: 0 !important; }
 
-.activity-feed .time {
-    top: inherit !important;
-    bottom: 12px !important;
+[label="Unsubscribe"], [label="Subscribe"], .extras-dropdown { position: relative !important; }
+
+.activity-feed [label="Unsubscribe"], .activity-feed [label="Subscribe"] {
+    top: 19px !important;
+    right: calc(-100% + 39px) !important;
 }
 
-.activity-feed .time .action {
-    position: absolute !important;
-    bottom: 20px !important;
-    right: -10px !important;
+.activity-feed .extras-dropdown {
+    top: 20px !important;
+    right: calc(-100% + 37px) !important;
+}
+
+.activity-extras-dropdown { overflow: hidden !important; }
+
+.activity-feed .has-label[label="Unsubscribe"]:hover:before,
+.activity-feed .has-label[label="Subscribe"]:hover:before {
+    top: -31px !important;
+    left: inherit !important;
+    right: calc(-100% - 8px) !important;
 }
 }
