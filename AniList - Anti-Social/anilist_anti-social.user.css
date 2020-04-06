@@ -9,6 +9,7 @@
 @preprocessor default
 ==/UserStyle== */
 
+@-moz-document domain("anilist.co") {
 /* ==================================
    ======== Blocked elements ========
    ================================== */
