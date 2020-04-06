@@ -9,7 +9,7 @@
 ![Userstyle screenshot](screenshots/1_homepage_top.jpg)
 
 **Other screenshots:**
-- 1. [Bottom of the homepage](screenshots/2_homepage_bottom.png) (no footer in the screenshot)
+- [Bottom of the homepage](screenshots/2_homepage_bottom.png) (no footer in the screenshot)
 
 ## Changelog
 
