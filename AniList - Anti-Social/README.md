@@ -10,5 +10,6 @@
 
 ## Changelog
 
-- *2020-04-06:* Profile activity feed fixed
+- *2020-04-06 #2:* Small correction to previous update
+- *2020-04-06 #1:* Profile activity feed fixed
 - *2018-10-19:* Initial release

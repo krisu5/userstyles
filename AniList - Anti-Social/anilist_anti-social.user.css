@@ -19,7 +19,8 @@
 
 .home div .sense { min-height: 0 !important; }
 
-[label="Unsubscribe"], [label="Subscribe"], .extras-dropdown { position: relative !important; }
+.activity-feed [label="Unsubscribe"], .activity-feed [label="Subscribe"], .activity-feed .extras-dropdown
+{ position: relative !important; }
 
 .activity-feed [label="Unsubscribe"], .activity-feed [label="Subscribe"] {
     top: 19px !important;
