@@ -1,6 +1,6 @@
 # DuckDuckGo - Wider, Prettier and Customizable
 
-### [Click to install](https://github.com/krisu5/userstyles/raw/master/DuckDuckGo%20-%20Wider%20Prettier%20and%20Customizable/duckduckgo_wider_prettier_and_customizable.user.css)
+### 📦 <a href="https://github.com/krisu5/userstyles/raw/master/DuckDuckGo%20-%20Wider%20Prettier%20and%20Customizable/duckduckgo_wider_prettier_and_customizable.user.css" target="_blank">Click to install</a>
 
 > Also available at [Greasy Fork](https://greasyfork.org/en/scripts/397561-duckduckgo-wider-prettier-and-customizable)
 

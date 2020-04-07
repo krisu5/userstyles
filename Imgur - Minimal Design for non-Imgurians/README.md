@@ -1,6 +1,6 @@
 # Imgur - Minimal Design for non-Imgurians
 
-### [Click to install](https://github.com/krisu5/userstyles/raw/master/Imgur%20-%20Minimal%20Design%20for%20non-Imgurians/imgur_-_minimal_design_for_non-imgurians.user.css)
+### 📦 <a href="https://github.com/krisu5/userstyles/raw/master/Imgur%20-%20Minimal%20Design%20for%20non-Imgurians/imgur_-_minimal_design_for_non-imgurians.user.css" target="_blank">Click to install</a>
 
 > Also available at [Greasy Fork](https://greasyfork.org/en/scripts/398960-imgur-minimal-design-for-non-imgurians) and [Userstyles.org](https://userstyles.org/styles/181729/imgur-minimal-design-for-non-imgurians)
 
