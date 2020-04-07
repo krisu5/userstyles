@@ -1,6 +1,6 @@
 # Twitter - Clean 2019 Design (Now With Light Blue™)
 
-### 📦 <a href="https://github.com/krisu5/userstyles/raw/master/Twitter%20-%20Clean%202019%20Design%20(Now%20With%20Light%20Blue)/twitter_2019_clean_design_now_with_light_blue.user.css" target="_blank">Click to install</a>
+### 📦 [Click to install](https://github.com/krisu5/userstyles/raw/master/Twitter%20-%20Clean%202019%20Design%20(Now%20With%20Light%20Blue)/twitter_2019_clean_design_now_with_light_blue.user.css)
 
 > Also available at [Greasy Fork](https://greasyfork.org/en/scripts/394318-twitter-clean-2019-design-now-with-light-blue) and [Userstyles.org](https://userstyles.org/styles/173920/twitter-clean-2019-design-now-with-light-blue)
 

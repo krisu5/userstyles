@@ -1,6 +1,6 @@
 # AniList - Anti-Social
 
-### 📦 <a href="https://github.com/krisu5/userstyles/raw/master/AniList%20-%20Anti-Social/anilist_anti-social.user.css" target="_blank">Click to install</a>
+### 📦 [Click to install](https://github.com/krisu5/userstyles/raw/master/AniList%20-%20Anti-Social/anilist_anti-social.user.css)
 
 > Also available at [Greasy Fork](https://greasyfork.org/en/scripts/397799-anilist-anti-social) and [Userstyles.org](https://userstyles.org/styles/165051/anilist-anti-social)
 
