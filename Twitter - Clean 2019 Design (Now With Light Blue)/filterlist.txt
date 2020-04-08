@@ -1,7 +1,7 @@
 ! Title: Twitter - Recommended Extra Blocks for "Clean 2019 Design" CSS
 ! Expires: 4 days
 ! Description: Recommended Additional Filters for "Twitter - Clean 2019 Design (Now With Light Blue™)" Userstyle
-! Homepage: https://userstyles.org/styles/173920/twitter-clean-2019-design-now-with-light-blue
+! Homepage: https://github.com/krisu5/userstyles/raw/master/Twitter%20-%20Clean%202019%20Design%20(Now%20With%20Light%20Blue)/
 ! Last updated: 2020-04-09
 
 ! How to add this filterlist: https://github.com/gorhill/uBlock/wiki/Filter-lists-from-around-the-web
