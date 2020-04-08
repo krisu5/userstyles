@@ -37,15 +37,17 @@ body[style^="background-color: rgb(255, 255, 255);"] section[aria-label="Section
    ====== Blocked elements ======
    ============================== */
 
-div[role="menu"] a[href^="https://ads.twitter.com/"], /* <--- "Promote Mode" & "Twitter Ads" menu links [MORE MENU] */
-
 div > .css-1dbjc4n.r-1adg3ll > .css-1dbjc4n.r-1or9b2r:empty, /* <--- Empty space [TIMELINE] */
+
+div[aria-label^="Timeline"] .r-1adg3ll .r-k5y9r7, /* <--- Empty space [TIMELINE] */
+
+div[aria-label^="Timeline:"][aria-label$="’s Tweets"] .r-1adg3ll .r-k5y9r7:empty, /* <--- Empty space [PROFILE TIMELINE] */
 
 div[aria-label="Timeline: Conversation"] div > .css-1dbjc4n.r-1adg3ll > .css-1dbjc4n.r-1or9b2r:empty, /* <--- Empty space [TWEET CONVERSATION] */
 
-div[aria-label^="Timeline: "][aria-label$="’s Tweets"] .r-1adg3ll .r-k5y9r7:empty, /* <--- Empty space [PROFILE TIMELINE] */
-
 .css-1dbjc4n.r-1adg3ll a[href^="/search?q="][href*="&f=user"], /* <--- "See more" link [SEARCH PAGE] */
+
+div[role="menu"] a[href^="https://ads.twitter.com/"], /* <--- "Promote Mode" & "Twitter Ads" menu links [MORE MENU] */
 
 div[data-testid="sidebarColumn"] .css-1dbjc4n.r-t23y2h.r-1phboty.r-rs99b7.r-1udh08x.r-1u4rsef.r-9cbz99,  /* <--- "Trending now" & "Who to follow" boxes [SIDEBAR, WHITE] */
 
@@ -120,7 +122,7 @@ svg.r-yucp9h { /* <--- Retweet / like / follower icons [NOTIFICATIONS] */
 
 @media only screen and (min-width: 1282px) {
     
-/* v--- Toaster alert [SETTINGS] ---v */
+/* v--- Toaster alert ---v */
     div[data-testid="toast"] {
         border-radius: 15px 15px 0 0;
         width: 600px;
