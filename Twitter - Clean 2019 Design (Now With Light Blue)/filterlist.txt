@@ -8,7 +8,7 @@
 
 twitter.com##body:has(div[aria-label^="Timeline: Search"]) .r-1adg3ll:has(a[href^="/search?q="][href$="&src=related_query_click"])
 twitter.com##body:not(:has(div[aria-label="Timeline: Explore"])) .r-qklmqi:has(span.r-1qd0xha:has-text(/^See more about this Topic/))
-twitter.com##body:not(:has(div[aria-label^="Timeline: Search"])):not(:has(div[aria-label="Timeline: Topics"])) .r-1adg3ll:not(:has(span:has-text(/Following|Unfollow/))):has(path[d^="M18.265 3.314c-3.45-3.45-9.07-3.45-12.52 0-3.45"])
+twitter.com##body:not(:has(div[aria-label^="Timeline: Search"])):not(:has(div[aria-label="Timeline: Topics"])):not(:has(div[aria-label="Timeline: Conversation"])) .r-1adg3ll:not(:has(span:has-text(/Following|Unfollow/))):has(path[d^="M18.265 3.314c-3.45-3.45-9.07-3.45-12.52 0-3.45"])
 twitter.com##div[data-testid="primaryColumn"] .css-1dbjc4n:has(div[data-testid="tweet"]) .r-qklmqi:has(div[data-testid="UserCell"])
 twitter.com##div[data-testid="primaryColumn"] .r-1adg3ll:has(a[href^="/i/connect_people"]:has-text(/^Show more/))
 twitter.com##div[data-testid="sidebarColumn"] .r-ku1wi2:has(span:has-text(/^Welcome/))
