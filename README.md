@@ -4,7 +4,7 @@
 [![Userstyles.org Profile](https://img.shields.io/badge/Profile-Userstyles.org-%233498db?style=for-the-badge)](https://userstyles.org/users/7865)
 
 - [Anilist - **Anti-Social**](/AniList%20-%20Anti-Social)
-  - *Simple tweaks for removing most of the social features (like the feed on front page).*
+  - *Mostly simple tweaks for removing most of the social features (like the feed on front page).*
   
 - [DuckDuckGo - **Wider, Prettier and Customizable**](/DuckDuckGo%20-%20Wider%20Prettier%20and%20Customizable)
   - *Customizable UserCSS for DuckDuckGo, that has toggleable features.*
