@@ -4,7 +4,7 @@
 @author       krisu (https://github.com/krisu5)
 @namespace    github.com/krisu5/userstyles
 @homepageURL  https://github.com/krisu5/userstyles/tree/master/AniList%20-%20Anti-Social
-@version      1.0.2
+@version      1.0.3
 @license      unlicense
 @preprocessor default
 ==/UserStyle== */
@@ -27,6 +27,31 @@
 .home .review-card .summary { width: 96% !important; }
 
 .home div .sense { min-height: 0 !important; }
+
+.home .review-card.no-banner:before {
+    content: "";
+    height: 80px;
+    color: rgba(0,0,0,0);
+    background: linear-gradient(rgb(var(--color-foreground)), rgba(var(--color-text),.1));
+}
+
+.site-theme-contrast .home .review-card.no-banner:before, .site-theme-dark .home .review-card.no-banner:before
+{ background: linear-gradient(rgb(var(--color-foreground)), rgb(var(--color-foreground-blue))); }
+
+.home .review-card.no-banner:hover:before {
+    content: "Read Full Preview";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(var(--color-overlay),.8) !important;
+    color: rgb(var(--color-text-bright));
+    height: 80px;
+    transition: background .6s, color .2s;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.site-theme-dark .home .review-card.no-banner:hover:before { background: rgba(255,255,255,.1) !important; }
 
 @media screen and (min-width: 1040px) {
     .home > div:not(.activity-feed-wrap) > div:not(.list-previews):not(.recent-threads):not(.recent-reviews) > div > 
