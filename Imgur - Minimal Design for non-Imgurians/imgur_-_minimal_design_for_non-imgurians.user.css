@@ -5,7 +5,7 @@
 @namespace    github.com/krisu5/userstyles
 @homepageURL  https://github.com/krisu5/userstyles/tree/master/Imgur%20-%20Minimal%20and%20Anti-Social%20for%20non-Imgurians
 @supportURL   https://github.com/krisu5/userstyles/issues
-@version      1.0.3
+@version      1.0.4
 @license      unlicense
 @preprocessor default
 ==/UserStyle== */
@@ -70,7 +70,8 @@ body, html { overflow-y: hidden !important; }
 .CommentsList, .Footer, .Gallery-Sidebar, .NavbarNotifications, .Searchbar, .Navigation-Container,
 [class*="share-btn"]:not(.share-btn-other):not(.share-btn-download), .CoverPostMeta.Display,
 .Gallery-EngagementBarContainer div[class^="Gallery-"]:not([class^="Gallery-Share"]),
-.ButtonBackToTop, .Gallery-Content--tags, .TagManager.PostOptions-section, .TagSuggestion-container
+.ButtonBackToTop, .Gallery-Content--tags, .TagManager.PostOptions-section, .TagSuggestion-container,
+.toast2, .BottomAd-container
 { display: none !important; }
 
 body:not([class=""]) { background-color: #27292d; }
@@ -121,7 +122,7 @@ body:not([class=""]) { background-color: #27292d; }
 #topbar .account { left: -175px !important; }
 
 .post-pad {
-    transform: translateX(20%) !important;
+    transform: translateX(22.5%) !important;
     margin-bottom: 20px !important;
 }
 

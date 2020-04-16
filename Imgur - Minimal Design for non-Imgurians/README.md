@@ -20,6 +20,7 @@ Works with old and new gallery design!
 
 ## Changelog
 
+- *2020-04-17:* New blocks ("watch ad" toaster and bottom ad container)
 - *2020-04-02:* Better futureproof "engagement bar" blocking (removes april fools button)
 - *2020-03-30 #2:* Fix share button blocks, button text change
 - *2020-03-30 #1:* Changes to frontpage's new post button, fixes to album edit pages
