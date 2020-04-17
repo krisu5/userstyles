@@ -5,13 +5,13 @@
 @namespace    github.com/krisu5/userstyles
 @homepageURL  https://github.com/krisu5/userstyles/tree/master/Imgur%20-%20Minimal%20and%20Anti-Social%20for%20non-Imgurians
 @supportURL   https://github.com/krisu5/userstyles/issues
-@version      1.0.4
+@version      1.0.5
 @license      unlicense
 @preprocessor default
 ==/UserStyle== */
 
 @-moz-document url("https://imgur.com/"), url-prefix("https://imgur.com/upload") {
-/* ----------------------------------------------
+/* -----------------------------------------------
    _____               _                          
   |  ___|             | |                         
   | |_ _ __ ___  _ __ | |_ _ __   __ _  __ _  ___ 
@@ -20,7 +20,7 @@
   \_| |_|  \___/|_| |_|\__| .__/ \__,_|\__, |\___|
                           | |           __/ |     
                           |_|          |___/
-   ---------------------------------------------- */
+  ------------------------------------------------ */
 
 .InteractiveBackground, .Message.welcome, .TrendingTags, .CoverChangeGallery,
 .Spinner-contentWrapper, .NewCover.isFixed, .PopUpClose, .Button.upload img
@@ -61,7 +61,7 @@ body, html { overflow-y: hidden !important; }
                               __/ |
                              |___/
    & Everything else
-   -------------------------------- */
+  --------------------------------- */
 
 /* ================================
    ======= NEW DESIGN (2020) ======
@@ -69,9 +69,8 @@ body, html { overflow-y: hidden !important; }
 
 .CommentsList, .Footer, .Gallery-Sidebar, .NavbarNotifications, .Searchbar, .Navigation-Container,
 [class*="share-btn"]:not(.share-btn-other):not(.share-btn-download), .CoverPostMeta.Display,
-.Gallery-EngagementBarContainer div[class^="Gallery-"]:not([class^="Gallery-Share"]),
-.ButtonBackToTop, .Gallery-Content--tags, .TagManager.PostOptions-section, .TagSuggestion-container,
-.toast2, .BottomAd-container
+.Gallery-EngagementBarContainer, .ButtonBackToTop, .Gallery-Content--tags, .TagManager.PostOptions-section,
+.TagSuggestion-container, .toast2, .BottomAd-container
 { display: none !important; }
 
 body:not([class=""]) { background-color: #27292d; }
@@ -104,6 +103,12 @@ body:not([class=""]) { background-color: #27292d; }
 }
 
 .Gallery-Share { height: auto !important; }
+
+.Gallery-Content--descr {
+    background: rgba(0,0,0,.3) !important;
+    padding: 20px !important;
+    border-radius: 10px !important;
+}
 
 .loadMore { margin-bottom: 25px !important; }
 
