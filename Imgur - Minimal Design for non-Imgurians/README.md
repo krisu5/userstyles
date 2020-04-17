@@ -20,7 +20,7 @@ Works with old and new gallery design!
 
 ## Changelog
 
-- *2020-04-17 #2:* Fix blocks, added styling to gallery descriptions
+- *2020-04-17 #2:* Fixed blocks, added styling to gallery descriptions
 - *2020-04-17 #1:* New blocks ("watch ad" toaster and bottom ad container)
 - *2020-04-02:* Better futureproof "engagement bar" blocking (removes april fools button)
 - *2020-03-30 #2:* Fix share button blocks, button text change
