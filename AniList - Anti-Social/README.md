@@ -13,7 +13,8 @@
 
 ## Changelog
 
-- *2020-04-10:* Homepage's review boxes with no banners now has more consistent look.
+- *2020-04-19:* Minor fixes
+- *2020-04-10:* Homepage's review boxes with no banners now has more consistent look
 - *2020-04-06 #2:* Homepage's "Trending" and "Newly added" sections now has better design, code prettified
 - *2020-04-06 #1:* Profile activity feed fixed
 - *2018-10-19:* Initial release

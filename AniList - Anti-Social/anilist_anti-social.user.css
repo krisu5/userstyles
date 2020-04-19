@@ -4,7 +4,7 @@
 @author       krisu (https://github.com/krisu5)
 @namespace    github.com/krisu5/userstyles
 @homepageURL  https://github.com/krisu5/userstyles/tree/master/AniList%20-%20Anti-Social
-@version      1.0.3
+@version      1.0.4
 @license      unlicense
 @preprocessor default
 ==/UserStyle== */
@@ -37,6 +37,8 @@
 
 .site-theme-contrast .home .review-card.no-banner:before, .site-theme-dark .home .review-card.no-banner:before
 { background: linear-gradient(rgb(var(--color-foreground)), rgb(var(--color-foreground-blue))); }
+
+.review-card.no-banner .content { justify-content: start !important; }
 
 .home .review-card.no-banner:hover:before {
     content: "Read Full Preview";
@@ -109,4 +111,13 @@
     left: inherit !important;
     right: calc(-100% - 8px) !important;
 }
+
+
+/* ===============================
+   ============ MISC =============
+   =============================== */
+
+/* Review without banner: transition fix */
+.review [style='background-image: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");']
+{ opacity: 1 !important; }
 }
