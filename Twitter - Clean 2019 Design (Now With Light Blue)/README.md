@@ -34,6 +34,7 @@ This userstyle and filterlist works **ONLY** with default english language (I'm 
 
 ## Changelog
 
+- *2020-04-22:* Fixed moments, topics and bunch of other stuff I can't remember
 - *2020-04-09:* New "empty space" block
 - *2020-03-22:* Sidebar boxes blocked when "Increase color contrast" is enabled, wider toaster on settings
 - *2020-03-01:* Blocked empty space in the "tweet conversation" pages

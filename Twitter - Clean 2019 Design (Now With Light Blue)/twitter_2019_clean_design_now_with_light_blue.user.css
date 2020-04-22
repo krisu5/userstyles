@@ -5,7 +5,7 @@
 @namespace    github.com/krisu5/userstyles
 @homepageURL  https://github.com/krisu5/userstyles/tree/master/Twitter%20-%20Clean%202019%20Design%20(Now%20With%20Light%20Blue)
 @supportURL   https://github.com/krisu5/userstyles/issues
-@version      1.2.5
+@version      1.2.6
 @license      unlicense
 @preprocessor uso
 ==/UserStyle== */
@@ -37,17 +37,17 @@ body[style^="background-color: rgb(255, 255, 255);"] section[aria-label="Section
    ====== Blocked elements ======
    ============================== */
 
-div > .css-1dbjc4n.r-1adg3ll > .css-1dbjc4n.r-1or9b2r:empty, /* <--- Empty space [TIMELINE] */
+.css-1dbjc4n.r-1adg3ll a[href^="/search?q="][href*="&f=user"], /* <--- "See more" link [SEARCH PAGE] */
+
+div[role="menu"] a[href^="https://ads.twitter.com/"], /* <--- "Promote Mode" & "Twitter Ads" menu links [MORE MENU] */
 
 div[aria-label^="Timeline"] .r-1adg3ll .r-k5y9r7, /* <--- Empty space [TIMELINE] */
+
+div > .css-1dbjc4n.r-1adg3ll > .css-1dbjc4n.r-1or9b2r:empty, /* <--- Empty space [TIMELINE] */
 
 div[aria-label^="Timeline:"][aria-label$="’s Tweets"] .r-1adg3ll .r-k5y9r7:empty, /* <--- Empty space [PROFILE TIMELINE] */
 
 div[aria-label="Timeline: Conversation"] div > .css-1dbjc4n.r-1adg3ll > .css-1dbjc4n.r-1or9b2r:empty, /* <--- Empty space [TWEET CONVERSATION] */
-
-.css-1dbjc4n.r-1adg3ll a[href^="/search?q="][href*="&f=user"], /* <--- "See more" link [SEARCH PAGE] */
-
-div[role="menu"] a[href^="https://ads.twitter.com/"], /* <--- "Promote Mode" & "Twitter Ads" menu links [MORE MENU] */
 
 div[data-testid="sidebarColumn"] .css-1dbjc4n.r-t23y2h.r-1phboty.r-rs99b7.r-1udh08x.r-1u4rsef.r-9cbz99,  /* <--- "Trending now" & "Who to follow" boxes [SIDEBAR, WHITE] */
 
@@ -164,11 +164,11 @@ svg.r-yucp9h { /* <--- Retweet / like / follower icons [NOTIFICATIONS] */
    ========================== */
 
 .css-1dbjc4n.r-qklmqi.r-1adg3ll > div[data-testid="UserCell"] {
-    display: inherit !important;
+    display: flex !important;
 }
 }
 
-@-moz-document regexp(".*\\://twitter.com/explore"), regexp(".*\\://twitter.com/.*\\/status/.*") {
+@-moz-document regexp(".*\\://twitter.com/explore"), regexp(".*\\://twitter.com/.*\\/status/.*"), regexp(".*\\://twitter.com/.*\\/moment.*"), regexp(".*\\://twitter.com/.*\\/topics.*") {
 /* ==========================
    ====== Whitelist #2 ======
    ========================== */
@@ -179,6 +179,6 @@ div > .css-1dbjc4n.r-qklmqi.r-1adg3ll > .css-1dbjc4n.r-1wtj0ep,
 .css-1dbjc4n.r-qklmqi.r-1adg3ll > div[data-testid="UserCell"],
 div.css-1dbjc4n.r-1adg3ll > a[href^="/i/related_users/"]
 {
-    display: inherit !important;
+    display: flex !important;
 }
 }
