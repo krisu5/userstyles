@@ -6,12 +6,10 @@ https://twitter.com/settings/muted/all
 https://twitter.com/settings/blocked/all
 https://twitter.com/messages/
 https://twitter.com/compose/tweet
-https://twitter.com/BarackObama/status/896523232098078720
-https://twitter.com/BarackObama/status/896523232098078720/retweets
-https://twitter.com/BarackObama/status/896523232098078720/likes
-https://twitter.com/BarackObama/followers
-https://twitter.com/BarackObama/following
+https://twitter.com/BarackObama/status/896523232098078720 (check also retweets and likes modals)
+https://twitter.com/BarackObama/following (check other tabs too)
 https://twitter.com/BarackObama/lists
-https://twitter.com/hashtag/madventures?src=hashtag_click
-https://twitter.com/search?q=anime
+https://twitter.com/hashtag/screenshotsaturday
+https://twitter.com/search?q=anime (check for topic suggestion)
 https://twitter.com/PixelProspector/moments
+https://twitter.com/AIR_News01/status/1253176380952473600 (check if tweet doesn't hide with topic icon)
