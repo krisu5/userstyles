@@ -5,7 +5,7 @@
 @namespace    github.com/krisu5/userstyles
 @homepageURL  https://github.com/krisu5/userstyles/tree/master/Imgur%20-%20Minimal%20and%20Anti-Social%20for%20non-Imgurians
 @supportURL   https://github.com/krisu5/userstyles/issues
-@version      1.0.5
+@version      1.0.6
 @license      unlicense
 @preprocessor default
 ==/UserStyle== */
@@ -96,13 +96,37 @@ body:not([class=""]) { background-color: #27292d; }
 
 .Navbar-signup { margin-left: 15px !important; }
 
-.Gallery-EngagementBarContainer {
-    top: 0px !important;
-    padding-top: 13px !important;
-    position: inherit !important;
+/* ------------------------------
+   Download button always visible
+   ------------------------------ */
+
+.Gallery-Options .Dropdown-title { display: none !important; }
+
+.Gallery-Options .Dropdown-menu {
+    display: inherit !important;
+    visibility: hidden !important;
 }
 
-.Gallery-Share { height: auto !important; }
+.Gallery-OptionsMenu .Dropdown-list {
+    margin: -51px 0 0 -155px !important;
+    padding: 17px 0 !important;
+}
+
+.Gallery-OptionsMenu button:not([class=""]) {
+    width: auto !important;
+    border-radius: 5px !important;
+    color: #b4b9c2 !important;
+    visibility: visible !important;
+}
+
+.Gallery-OptionsMenu button:hover {
+    background: #1bb76e !important;
+    color: #fff !important;
+}
+
+.Gallery-OptionsMenu button:hover .icon [fill] { fill: #fff !important; }
+
+/*  ------------------------------  */
 
 .Gallery-Content--descr {
     background: rgba(0,0,0,.3) !important;
@@ -110,7 +134,12 @@ body:not([class=""]) { background-color: #27292d; }
     border-radius: 10px !important;
 }
 
-.loadMore { margin-bottom: 25px !important; }
+.loadMore {
+	padding: 0 0 3px 0 !important;
+	margin-bottom: 25px !important;
+}
+
+.loadMore svg { margin-top: 3px !important; }
 
 .UploadPost .ImageDescription { padding: 0 24px 24px !important; }
 
