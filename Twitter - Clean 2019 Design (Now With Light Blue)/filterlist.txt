@@ -13,7 +13,7 @@ twitter.com##div[data-testid="primaryColumn"] .css-1dbjc4n:has(div[data-testid="
 twitter.com##div[data-testid="primaryColumn"] .r-1adg3ll:has(a[href^="/i/connect_people"]:has-text(/^Show more/))
 twitter.com##div[data-testid="sidebarColumn"] .r-ku1wi2:has(span:has-text(/^Welcome/))
 twitter.com##div[data-testid="sidebarColumn"] .r-t23y2h:has(div[aria-label="Timeline: Trending now"])
-twitter.com####div[aria-label^="Timeline:"]:not([aria-label$="Topics"]) .r-1adg3ll:has(a[href^="/i/flow/topics_selector"]:has-text(/^More Topics|Show more/))
+twitter.com##div[aria-label^="Timeline:"]:not([aria-label$="Topics"]) .r-1adg3ll:has(a[href^="/i/flow/topics_selector"]:has-text(/^More Topics|Show more/))
 twitter.com##div[aria-label^="Timeline:"][aria-label$="’s Tweets"] .r-1adg3ll:has(span:has-text(/^Who to follow|Promoted Tweet/))
 twitter.com##.r-1adg3ll:has(a[href="/who_to_follow"]:has-text(/^Show more/))
 twitter.com##.r-1adg3ll:has(article[role="article"]:has-text(Promoted))
