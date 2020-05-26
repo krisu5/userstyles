@@ -34,6 +34,7 @@ This userstyle and filterlist works **ONLY** with default english language (I'm 
 
 ## Changelog
 
+- *2020-05-27:* Events page added to the whitelist
 - *2020-04-22:* Fixed moments, topics and bunch of other stuff I can't remember
 - *2020-04-09:* New "empty space" block
 - *2020-03-22:* Sidebar boxes blocked when "Increase color contrast" is enabled, wider toaster on settings
@@ -56,7 +57,6 @@ This userstyle and filterlist works **ONLY** with default english language (I'm 
 - *2019-08-03 #2:* Search page fixed (now shows accounts on "people" section), explore page fixed
 - *2019-08-03 #1:* Small minor fix
 - *2019-08-02:* New element blocked, code cleanup
-- *2019-07-31:* Filterlist updated
 - *2019-07-29:* "Retweeted by" and "favorited by" modals fixed
 - *2019-07-28 #2:* Small border-related fix
 - *2019-07-28 #1:* Initial release
