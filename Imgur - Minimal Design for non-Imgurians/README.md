@@ -14,9 +14,8 @@ Works with old and new gallery design!
 1. [Frontpage before](screenshots/2_frontpage_before.jpg)
 2. [New gallery page after](screenshots/3_new_gallery_after.jpg)
 3. [New gallery page before](screenshots/4_new_gallery_before.jpg)
-4. [Download button at the gallery page](screenshots/5_download_button.jpg)
-5. [Old gallery page after](screenshots/6_old_gallery_after.jpg)
-6. [Old gallery page before](screenshots/7_old_gallery_before.jpg)
+4. [Old gallery page after](screenshots/5_old_gallery_after.jpg)
+5. [Old gallery page before](screenshots/6_old_gallery_before.jpg)
 
 ## Changelog
 
