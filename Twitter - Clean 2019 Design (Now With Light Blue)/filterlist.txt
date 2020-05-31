@@ -2,9 +2,11 @@
 ! Expires: 4 days
 ! Description: Recommended Additional Filters for "Twitter - Clean 2019 Design (Now With Light Blue™)" Userstyle
 ! Homepage: https://github.com/krisu5/userstyles/raw/master/Twitter%20-%20Clean%202019%20Design%20(Now%20With%20Light%20Blue)/
-! Last updated: 2020-05-30
+! Last updated: 2020-05-31
 
 ! How to add this filterlist: https://github.com/gorhill/uBlock/wiki/Filter-lists-from-around-the-web
+
+twitter.com#@#.r-1awozwy.css-1dbjc4n
 
 twitter.com##body:has(div[aria-label^="Timeline: Search"]) .r-1adg3ll:has(a[href^="/search?q="][href$="&src=related_query_click"])
 twitter.com##body:not(:has(div[aria-label="Timeline: Explore"])) .r-qklmqi:has(span.r-1qd0xha:has-text(/^See more about this Topic/i))
