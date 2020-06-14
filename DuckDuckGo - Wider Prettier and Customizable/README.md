@@ -12,6 +12,7 @@ Toggleable features such as:
 - Bigger font **(enabled by default)**
 - Force hide visited link checkmark
 - Delay showing sidebar in the pageload **(enabled by default)**
+- Hide feedback related links
 
 ⚠ ***Read the notes at the bottom!***
 
@@ -31,6 +32,7 @@ Toggleable features such as:
 
 ## Changelog
 
+- *2020-06-14:* Added new setting: "hide feedback related links" (not enabled in default), fix color picker when using bigger font + misc. fixes
 - *2020-05-11:* Fix sitemap under the search result when "wider layout" is enabled
 - *2020-03-12:* Add breakpoint for wide layout, move webfont to the top (so it loads bit faster), prettify the code
 - *2020-03-08:* Initial release
