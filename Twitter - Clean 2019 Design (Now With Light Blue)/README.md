@@ -34,6 +34,7 @@ This userstyle and filterlist works **ONLY** with default english language (I'm 
 
 ## Changelog
 
+- *2020-06-25:* Fixed / optimized regex
 - *2020-06-03:* List pages added to the whitelist
 - *2020-05-27:* Events page added to the whitelist
 - *2020-04-22:* Fixed moments, topics and bunch of other stuff I can't remember
