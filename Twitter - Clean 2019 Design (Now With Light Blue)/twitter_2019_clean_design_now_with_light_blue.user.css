@@ -168,7 +168,7 @@ svg.r-yucp9h { /* <--- Retweet / like / follower icons [NOTIFICATIONS] */
 }
 }
 
-@-moz-document regexp(".*\\\\://twitter.com/explore"), regexp(".*\\://twitter.com/.*\\/(status|moment|topics|events|lists).*") {
+@-moz-document regexp(".*\\://twitter.com/explore"), regexp(".*\\://twitter.com/.*\\/(status|moment|topics|events|lists).*") {
 /* ==========================
    ====== Whitelist #2 ======
    ========================== */
