@@ -19,6 +19,7 @@ Works with old and new gallery design!
 
 ## Changelog
 
+- *2020-06-28:* Added "disable adblock" footer box to blocks
 - *2020-04-27:* Always show download button in the new gallery design
 - *2020-04-17 #2:* Fixed blocks, added styling to gallery descriptions
 - *2020-04-17 #1:* New blocks ("watch ad" toaster and bottom ad container)
