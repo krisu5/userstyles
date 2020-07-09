@@ -5,7 +5,7 @@
 @namespace    github.com/krisu5/userstyles
 @homepageURL  https://github.com/krisu5/userstyles/tree/master/Twitter%20-%20Clean%202019%20Design%20(Now%20With%20Light%20Blue)
 @supportURL   https://github.com/krisu5/userstyles/issues
-@version      1.2.9
+@version      1.3.0
 @license      unlicense
 @preprocessor uso
 ==/UserStyle== */
@@ -49,17 +49,17 @@ div[aria-label^="Timeline:"][aria-label$="’s Tweets"] .r-1adg3ll .r-k5y9r7:emp
 
 div[aria-label="Timeline: Conversation"] div > .css-1dbjc4n.r-1adg3ll > .css-1dbjc4n.r-1or9b2r:empty, /* <--- Empty space [TWEET CONVERSATION] */
 
-div[data-testid="sidebarColumn"] .css-1dbjc4n.r-t23y2h.r-1phboty.r-rs99b7.r-1udh08x.r-1u4rsef.r-9cbz99,  /* <--- "Trending now" & "Who to follow" boxes [SIDEBAR, WHITE] */
+div[data-testid="sidebarColumn"] .css-1dbjc4n.r-1phboty.r-rs99b7.r-1udh08x.r-1ylenci.r-1u4rsef.r-9cbz99,           /* <--- "Trending now" & "Who to follow" boxes [SIDEBAR, WHITE] */
 
-div[data-testid="sidebarColumn"] .css-1dbjc4n.r-t23y2h.r-1phboty.r-rs99b7.r-1udh08x.r-1uaug3w.r-1uhd6vh, /* <--- "Trending now" & "Who to follow" boxes [SIDEBAR, DIM] */
+div[data-testid="sidebarColumn"] .css-1dbjc4n.r-1phboty.r-rs99b7.r-1udh08x.r-1ylenci.r-ku1wi2.r-1uaug3w.r-1uhd6vh, /* <--- "Trending now" & "Who to follow" boxes [SIDEBAR, DIM] */
 
-div[data-testid="sidebarColumn"] .css-1dbjc4n.r-t23y2h.r-1phboty.r-rs99b7.r-1udh08x.r-1ysxnx4.r-k0dy70,  /* <--- "Trending now" & "Who to follow" boxes [SIDEBAR, LIGHTS OUT] */
+div[data-testid="sidebarColumn"] .css-1dbjc4n.r-1phboty.r-rs99b7.r-1udh08x.r-1ylenci.r-ku1wi2.r-1ysxnx4.r-k0dy70,  /* <--- "Trending now" & "Who to follow" boxes [SIDEBAR, LIGHTS OUT] */
 
-div[data-testid="sidebarColumn"] .css-1dbjc4n.r-t23y2h.r-1phboty.r-rs99b7.r-1udh08x.r-e84r5y.r-1tlfku8,  /* <--- "Trending now" & "Who to follow" boxes [SIDEBAR, WHITE, INCREASE COLOR CONTRAST] */
+div[data-testid="sidebarColumn"] .css-1dbjc4n.r-1phboty.r-rs99b7.r-1udh08x.r-1ylenci.r-ku1wi2.r-e84r5y.r-1tlfku8,  /* <--- "Trending now" & "Who to follow" boxes [SIDEBAR, WHITE, INCREASE COLOR CONTRAST] */
 
-div[data-testid="sidebarColumn"] .css-1dbjc4n.r-t23y2h.r-1phboty.r-rs99b7.r-1udh08x.r-16hm58k.r-9wg5yf,  /* <--- "Trending now" & "Who to follow" boxes [SIDEBAR, DIM, INCREASE COLOR CONTRAST] */
+div[data-testid="sidebarColumn"] .css-1dbjc4n.r-1phboty.r-rs99b7.r-1udh08x.r-1ylenci.r-ku1wi2.r-16hm58k.r-9wg5yf,  /* <--- "Trending now" & "Who to follow" boxes [SIDEBAR, DIM, INCREASE COLOR CONTRAST] */
 
-div[data-testid="sidebarColumn"] .css-1dbjc4n.r-t23y2h.r-1phboty.r-rs99b7.r-1udh08x.r-b3or1f.r-1yj08i2,  /* <--- "Trending now" & "Who to follow" boxes [SIDEBAR, LIGHTS OUT, INCREASE COLOR CONTRAST] */
+div[data-testid="sidebarColumn"] .css-1dbjc4n.r-1phboty.r-rs99b7.r-1udh08x.r-1ylenci.r-ku1wi2.r-b3or1f.r-1yj08i2,  /* <--- "Trending now" & "Who to follow" boxes [SIDEBAR, LIGHTS OUT, INCREASE COLOR CONTRAST] */
 
 /* v--- "Who to follow" boxes [PROFILE TIMELINE] ---v */ 
 div[aria-label^="Timeline: "][aria-label$="’s Tweets"] div .r-1or9b2r:empty,
