@@ -19,6 +19,7 @@ Works with old and new gallery design!
 
 ## Changelog
 
+- *2020-07-12:* Added "Imgur Emerald" box on the frontpage to blocks
 - *2020-06-28:* Added "disable adblock" footer box to blocks
 - *2020-04-27:* Always show download button in the new gallery design
 - *2020-04-17 #2:* Fixed blocks, added styling to gallery descriptions

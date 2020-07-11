@@ -5,7 +5,7 @@
 @namespace    github.com/krisu5/userstyles
 @homepageURL  https://github.com/krisu5/userstyles/tree/master/Imgur%20-%20Minimal%20and%20Anti-Social%20for%20non-Imgurians
 @supportURL   https://github.com/krisu5/userstyles/issues
-@version      1.0.7
+@version      1.0.8
 @license      unlicense
 @preprocessor default
 ==/UserStyle== */
@@ -23,7 +23,8 @@
   ------------------------------------------------ */
 
 .InteractiveBackground, .Message.welcome, .TrendingTags, .CoverChangeGallery,
-.Spinner-contentWrapper, .NewCover.isFixed, .PopUpClose, .Button.upload img
+.Spinner-contentWrapper, .NewCover.isFixed, .PopUpClose, .Button.upload img,
+[class^="Emerald"]
 { display: none !important; }
 
 body, html { overflow-y: hidden !important; }
@@ -90,7 +91,6 @@ body:not([class=""]) { background-color: #27292d; }
 .NewCover.GalleryCover.isFixed, .NewCover.isFixed .GoUp {
     visibility: hidden !important;
     transition: inherit !important;
-    opacity: 0 !important;
     box-shadow: none !important;
 }
 
@@ -99,7 +99,7 @@ body:not([class=""]) { background-color: #27292d; }
 /* ------------------------------
    Download button always visible
    ------------------------------ */
-
+   
 .Gallery-Options .Dropdown-title { display: none !important; }
 
 .Gallery-Options .Dropdown-menu {
@@ -108,7 +108,7 @@ body:not([class=""]) { background-color: #27292d; }
 }
 
 .Gallery-OptionsMenu .Dropdown-list {
-    margin: -51px 0 0 -155px !important;
+    margin: -51px 0 0 -158px !important;
     padding: 17px 0 !important;
 }
 
@@ -171,5 +171,5 @@ ul.post-options-extra { margin-top: 20px !important; }
 }
 
 @-moz-document url-prefix("https://zip.imgur.com/") {
-body { background: #fff; }
+body { background: #fff !important; }
 }
