@@ -133,8 +133,8 @@ body:not([class=""]) { background-color: #27292d; }
 }
 
 .loadMore {
-	padding: 0 0 3px 0 !important;
-	margin-bottom: 25px !important;
+    padding: 0 0 3px 0 !important;
+    margin-bottom: 25px !important;
 }
 
 .loadMore svg { margin-top: 3px !important; }
