@@ -5,7 +5,7 @@
 @namespace    github.com/krisu5/userstyles
 @homepageURL  https://github.com/krisu5/userstyles/tree/master/Imgur%20-%20Minimal%20and%20Anti-Social%20for%20non-Imgurians
 @supportURL   https://github.com/krisu5/userstyles/issues
-@version      1.0.8
+@version      1.0.9
 @license      unlicense
 @preprocessor default
 ==/UserStyle== */
@@ -34,8 +34,8 @@ body, html { overflow-y: hidden !important; }
     top: 50% !important;
     left: 50% !important;
     transform: translate(-50%, -50%) !important;
-    width: 65% !important;
-    height: 55% !important;
+    width: 60vw !important;
+    height: 23vw !important;
     border-radius: 25px !important;
     display: flex !important;
     justify-content: center !important;
@@ -44,9 +44,7 @@ body, html { overflow-y: hidden !important; }
 
 .Button.upload:hover:before { border-radius: 25px !important; }
 
-.Button.upload:after {
-    font-size: 55pt !important;
-}
+.Button.upload:after { font-size: clamp(2rem, 5vw, 7rem) !important; }
 
 .NewCover { background: transparent !important; }
 }
