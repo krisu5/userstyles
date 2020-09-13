@@ -32,6 +32,7 @@ Toggleable features such as:
 
 ## Changelog
 
+- *2020-09-13:* Lots of small fixes
 - *2020-07-27:* Minor fixes
 - *2020-06-14:* Added new setting: "hide feedback related links" (not enabled by default), fix color picker when using bigger font + misc. fixes
 - *2020-05-11:* Fix sitemap under the search result when "wider layout" is enabled
