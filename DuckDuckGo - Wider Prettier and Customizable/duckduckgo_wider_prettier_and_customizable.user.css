@@ -13,7 +13,7 @@
 @var checkbox   biggerFont         "Bigger font (recommended when 'Wider layout' is enabled)"   1
 @var checkbox   hideCheckmark      "Force hide visited link checkmark"                          0
 @var checkbox   sidebarAnimation   "Delay showing sidebar in the pageload"                      1
-@var checkbox   hideFeedback       "Hide feedback related links"                                0
+@var checkbox   hideFeedback       "Hide feedback & promo related links"                        0
 ==/UserStyle== */
 
 @-moz-document domain("duckduckgo.com") {
@@ -31,7 +31,7 @@ if ibm-plex-font {
         src:
          local('IBM Plex Sans'),
          local('IBMPlexSans'), 
-         url('https://cdn.jsdelivr.net/npm/@openfonts/ibm-plex-sans_all@1.44.0/files/ibm-plex-sans-all-400.woff2') format('woff2');
+         url('https://cdn.jsdelivr.net/npm/@openfonts/ibm-plex-sans_all@1.44.1/files/ibm-plex-sans-all-400.woff2') format('woff2');
     }
 
     /* ibm-plex-sans-500normal - all */
@@ -43,7 +43,7 @@ if ibm-plex-font {
         src:
          local('IBM Plex Sans Medium'),
          local('IBMPlexSans-Medium'), 
-         url('https://cdn.jsdelivr.net/npm/@openfonts/ibm-plex-sans_all@1.44.0/files/ibm-plex-sans-all-500.woff2') format('woff2');
+         url('https://cdn.jsdelivr.net/npm/@openfonts/ibm-plex-sans_all@1.44.1/files/ibm-plex-sans-all-500.woff2') format('woff2');
     }
 
     /* ibm-plex-sans-600normal - all */
@@ -55,7 +55,7 @@ if ibm-plex-font {
         src:
          local('IBM Plex Sans SemiBold'),
          local('IBMPlexSans-SemiBold'), 
-         url('https://cdn.jsdelivr.net/npm/@openfonts/ibm-plex-sans_all@1.44.0/files/ibm-plex-sans-all-600.woff2') format('woff2');
+         url('https://cdn.jsdelivr.net/npm/@openfonts/ibm-plex-sans_all@1.44.1/files/ibm-plex-sans-all-600.woff2') format('woff2');
     }
         
     body, input, textarea, .search__input--adv { font-family: "IBM Plex Sans", "DDG_ProximaNova", "DDG_ProximaNova_UI_0", "DDG_ProximaNova_UI_1", "DDG_ProximaNova_UI_2", "DDG_ProximaNova_UI_3", "DDG_ProximaNova_UI_4", "DDG_ProximaNova_UI_5", "DDG_ProximaNova_UI_6", "Proxima Nova", system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif; }
@@ -102,6 +102,8 @@ if wideScreen {
         }
 
         .module--carousel__item:not(:last-child) { margin-right: 1.6%; }
+            
+        .module--places { max-width: inherit; }
     }
 }
 
@@ -121,7 +123,9 @@ if biggerFont {
    === [TOGGLE] Force hide visited link checkmark ===
    ================================================== */
 
-if hideCheckmark { .result__check { display: none; } }
+if hideCheckmark {
+    .result__check { display: none; }
+}
 
     
 /* ======================================================
@@ -139,11 +143,13 @@ if sidebarAnimation {
 }
 
 
-/* ============================================
-   === [TOGGLE] Hide feedback related links ===
-   ============================================ */
+/* ====================================================
+   === [TOGGLE] Hide feedback & promo related links ===
+   ==================================================== */
 
-if hideFeedback { .feedback-btn, .feedback-prompt__link { display: none; } }
+if hideFeedback {
+    .feedback-btn, [class^="feedback-prompt"], .header--text_promo { display: none; }
+}
 
 
 /* ===============
