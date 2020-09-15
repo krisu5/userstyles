@@ -20,6 +20,7 @@ Works with old and new gallery design!
 
 ## Changelog
 
+- *2020-09-15:* Tweaked image / video sizes, image modals are now scaled to 99% of browser viewport
 - *2020-07-27:* Blocks updated
 - *2020-07-17:* Upload button at frontpage is now responsive
 - *2020-07-12:* Added "Imgur Emerald" box on the frontpage to blocks

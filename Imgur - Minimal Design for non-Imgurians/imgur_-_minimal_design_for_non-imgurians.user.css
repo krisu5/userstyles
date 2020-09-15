@@ -5,7 +5,7 @@
 @namespace    github.com/krisu5/userstyles
 @homepageURL  https://github.com/krisu5/userstyles/tree/master/Imgur%20-%20Minimal%20and%20Anti-Social%20for%20non-Imgurians
 @supportURL   https://github.com/krisu5/userstyles/issues
-@version      1.1.0
+@version      1.1.1
 @license      unlicense
 @preprocessor default
 ==/UserStyle== */
@@ -24,7 +24,7 @@
 
 .InteractiveBackground, .Message.welcome, .TrendingTags, .CoverChangeGallery,
 .Spinner-contentWrapper, .NewCover.isFixed, .PopUpClose, .Button.upload img,
-[class^="Emerald"]
+[class^="Emerald"]:not(.EmeraldButton)
 { display: none !important; }
 
 body, html { overflow-y: hidden !important; }
@@ -92,7 +92,9 @@ body:not([class=""]) { background-color: #27292d; }
     box-shadow: none !important;
 }
 
-.Navbar-signup { margin-left: 15px !important; }
+.EmeraldButton { padding-left: 14px !important; }
+
+.ProfileNavbar-loggedIn .EmeraldButton { margin-right: 25px !important; }
 
 /* ------------------------------
    Download button always visible
@@ -124,7 +126,44 @@ body:not([class=""]) { background-color: #27292d; }
 
 .Gallery-OptionsMenu button:hover .icon [fill] { fill: #fff !important; }
 
-/*  ------------------------------  */
+/*  -----------------------------  */
+
+.Gallery-ContentWrapper .Gallery-Content--media { background-color: rgba(0,0,0,0.4) !important; }
+
+/* -------------------------
+   Image / video size tweaks
+   ------------------------- */
+
+/* ------- NOT MODAL ------- */
+
+.imageContainer img[loading="lazy"] {
+    max-height: 70vh !important;
+    height: 100% !important;
+}
+
+.Gallery-ContentWrapper .Gallery-Content--media video:not(.fullscreen) { max-height: 70vh !important; }
+
+/* -------- IN MODAL ------- */
+
+.ImageViewer > .Dialog-wrapper > div[style^="height:"] {
+    width: auto !important;
+    height: auto !important;
+}
+
+.ImageViewerContent img {
+    max-height: 99vh !important;
+    max-width: 99vw !important;
+    min-height: inherit !important;
+    border: 5px solid #fff !important;
+    border-radius: 6px !important;
+}
+
+.ImageViewer {
+    border: 0 !important;
+    border-radius: 0 !important;
+}
+
+/* ------------------------- */
 
 .Gallery-Content--descr {
     background: rgba(0,0,0,.3) !important;
