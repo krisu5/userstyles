@@ -20,7 +20,7 @@ Works with old and new gallery design!
 
 ## Changelog
 
-- *2020-09-16:* Gallery image loading CSS fix, [read more here](https://github.com/krisu5/userstyles/raw/master/Imgur%20-%20Minimal%20Design%20for%20non-Imgurians/image_loading.md)
+- *2020-09-16:* Gallery image loading CSS fix, [read more here](image_loading.md)
 - *2020-09-15:* Tweaked image / video sizes, image modals are now scaled to 99% of browser viewport
 - *2020-07-27:* Blocks updated
 - *2020-07-17:* Upload button at frontpage is now responsive
