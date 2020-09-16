@@ -5,7 +5,7 @@ When using Chrome or Chromium-based browsers (Brave, Opera, new Edge etc.), Imgu
 
 Problem is that it's noticeably worse quality, specially when using "Minimal Design for non-Imgurians" userstyle. [This is the best example of gallery were this happens](https://imgur.com/gallery/ku9zlNu) (here's [side by side screenshot comparison of Firefox and Brave](../../../raw/master/Imgur%20-%20Minimal%20Design%20for%20non-Imgurians/quality_example.jpg)).
 
-> **More in technical terms:** there's two IMG elements in image container, image with class "image-placeholder" and image with native HTML5 lazy loading (`loading=lazy`) property, both optimized WebPs. I'm not sure that IMG with "image-placeholder" class there does, maybe someone with more knowledge of JavaScript knows.
+> **More in technical terms:** there's two IMG elements in image container, image with class "image-placeholder" and image with native HTML5 lazy loading (`loading=lazy`) property, both optimized WebPs. I'm not sure what IMG with "image-placeholder" class really does there, maybe someone with more knowledge of JavaScript knows answer.
 > 
 > But what I garnered, it weirdly when right-clicking the image, it changes the URL of IMG of "image-placeholder" from WebP to original extension.
 > 
