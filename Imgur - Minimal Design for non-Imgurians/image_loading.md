@@ -3,7 +3,7 @@
 
 When using Chrome or Chromium-based browsers (Brave, Opera, new Edge etc.), Imgur serves non-modal images (meaning images that aren't clicked to zoomed bigger) as much smaller WebP format instead of PNG or JPG.
 
-Problem is that it's noticeably worse quality, specially when using "Minimal Design for non-Imgurians" userstyle. [This is the best example of gallery were this happens](https://imgur.com/gallery/ku9zlNu) (here's [side by side screenshot comparison of Firefox and Brave](../../../raw/master/quality_example.jpg)).
+Problem is that it's noticeably worse quality, specially when using "Minimal Design for non-Imgurians" userstyle. [This is the best example of gallery were this happens](https://imgur.com/gallery/ku9zlNu) (here's [side by side screenshot comparison of Firefox and Brave](../../../raw/master/Imgur%20-%20Minimal%20Design%20for%20non-Imgurians/quality_example.jpg)).
 
 > **More in technical terms:** there's two IMG elements in image container, image with class "image-placeholder" and image with native HTML5 lazy loading (`loading=lazy`) property, both optimized WebPs. I'm not sure that IMG with "image-placeholder" class there does, maybe someone with more knowledge of JavaScript knows.
 > 
