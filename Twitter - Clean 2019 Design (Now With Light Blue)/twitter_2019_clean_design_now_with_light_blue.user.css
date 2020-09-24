@@ -37,7 +37,7 @@ body[style^="background-color: rgb(255, 255, 255);"] section[aria-label="Section
    ====== Blocked elements ======
    ============================== */
 
-.css-1dbjc4n.r-1adg3ll a[href^="/search?q="][href*="&f=user"], /* <--- "See more" link [SEARCH PAGE] */
+section[aria-labelledby^="accessible-list"] a[href^="/search?q="][href*="&f=user"], /* <--- "See more" link [SEARCH PAGE] */
 
 div[role="menu"] a[href^="https://ads.twitter.com/"], /* <--- "Promote Mode" & "Twitter Ads" menu links [MORE MENU] */
 
