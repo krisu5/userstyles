@@ -98,7 +98,7 @@ body:not([class=""]) { background-color: #27292d; }
     padding: 9px 20px;
     border-radius: 3px;
     box-shadow: 0 6px 10px 0 rgba(27,28,30,.31);
-    text-shadow: none;
+    text-shadow: none !important;
 }
 
 .Navbar-signup {
