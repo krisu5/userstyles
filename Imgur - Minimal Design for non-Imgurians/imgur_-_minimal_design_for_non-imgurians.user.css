@@ -5,7 +5,7 @@
 @namespace    github.com/krisu5/userstyles
 @homepageURL  https://github.com/krisu5/userstyles/tree/master/Imgur%20-%20Minimal%20and%20Anti-Social%20for%20non-Imgurians
 @supportURL   https://github.com/krisu5/userstyles/issues
-@version      1.1.2
+@version      1.1.3
 @license      unlicense
 @preprocessor default
 ==/UserStyle== */
@@ -93,7 +93,24 @@ body:not([class=""]) { background-color: #27292d; }
     box-shadow: none !important;
 }
 
-.EmeraldButton { padding-left: 14px !important; }
+.Navbar-signin {
+    background: #5c940d;
+    padding: 9px 20px;
+    border-radius: 3px;
+    box-shadow: 0 6px 10px 0 rgba(27,28,30,.31);
+    text-shadow: none;
+}
+
+.Navbar-signup {
+    padding-left: 20px;
+    padding-right: 20px;
+    min-width: inherit !important;
+}
+
+.EmeraldButton {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+}
 
 .ProfileNavbar-loggedIn .EmeraldButton { margin-right: 25px !important; }
 
@@ -101,9 +118,11 @@ body:not([class=""]) { background-color: #27292d; }
    Download button always visible
    ------------------------------ */
    
-.Gallery-Options .Dropdown-title { display: none !important; }
+.Gallery-Options .Dropdown-title,
+.Gallery-OptionsMenu button[type="button"]:first-child
+{ display: none !important; }
 
-.Gallery-Options .Dropdown-menu {
+.Gallery-OptionsMenu .Dropdown-menu {
     display: inherit !important;
     visibility: hidden !important;
 }
@@ -126,10 +145,6 @@ body:not([class=""]) { background-color: #27292d; }
 }
 
 .Gallery-OptionsMenu button:hover .icon [fill] { fill: #fff !important; }
-
-/*  -----------------------------  */
-
-.Gallery-ContentWrapper .Gallery-Content--media { background-color: rgba(0,0,0,0.4) !important; }
 
 /* -------------------------
    Image / video size tweaks
@@ -172,6 +187,8 @@ img.image-placeholder {
 }
 
 /* ------------------------- */
+
+.Gallery-ContentWrapper .Gallery-Content--media { background-color: rgba(0,0,0,0.4) !important; }
 
 .Gallery-Content--descr {
     background: rgba(0,0,0,.3) !important;
