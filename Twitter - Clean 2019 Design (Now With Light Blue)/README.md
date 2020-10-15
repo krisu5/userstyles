@@ -34,7 +34,7 @@ This userstyle and filterlist works **ONLY** with default english language (I'm 
 
 ## Changelog
 
-- *2020-10-16:* "Show more" link at explore page blocked
+- *2020-10-16:* "Show more" link at explore page blocked, people search fixed
 - *2020-09-25:* "See more" link block at search page fixed
 - *2020-07-09:* "Trending now" & "Who to follow" box blocks fixed
 - *2020-06-25:* Fixed / optimized regex
