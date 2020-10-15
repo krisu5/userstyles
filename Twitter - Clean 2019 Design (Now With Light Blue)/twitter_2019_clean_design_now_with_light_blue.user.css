@@ -5,7 +5,7 @@
 @namespace    github.com/krisu5/userstyles
 @homepageURL  https://github.com/krisu5/userstyles/tree/master/Twitter%20-%20Clean%202019%20Design%20(Now%20With%20Light%20Blue)
 @supportURL   https://github.com/krisu5/userstyles/issues
-@version      1.3.1
+@version      1.3.2
 @license      unlicense
 @preprocessor uso
 ==/UserStyle== */
@@ -48,6 +48,8 @@ div > .css-1dbjc4n.r-1adg3ll > .css-1dbjc4n.r-1or9b2r:empty, /* <--- Empty space
 div[aria-label^="Timeline:"][aria-label$="’s Tweets"] .r-1adg3ll .r-k5y9r7:empty, /* <--- Empty space [PROFILE TIMELINE] */
 
 div[aria-label="Timeline: Conversation"] div > .css-1dbjc4n.r-1adg3ll > .css-1dbjc4n.r-1or9b2r:empty, /* <--- Empty space [TWEET CONVERSATION] */
+
+/div[aria-label="Timeline: Explore"] a[href^="/i/connect_people"], /* <--- "Show more" link [EXPLORE PAGE] */
 
 div[data-testid="sidebarColumn"] .css-1dbjc4n.r-1phboty.r-rs99b7.r-1udh08x.r-1ylenci.r-1u4rsef.r-9cbz99,           /* <--- "Trending now" & "Who to follow" boxes [SIDEBAR, WHITE] */
 
@@ -101,9 +103,9 @@ div > .css-1dbjc4n.r-qklmqi.r-1adg3ll:empty { /* <--- Empty element with border 
     border-bottom-width: 0;
 }
 
-.css-1dbjc4n.r-t23y2h.r-1phboty.r-rs99b7.r-1udh08x.r-o7ynqc.r-1j63xyz[aria-haspopup="false"] { /* <--- Link with thumbnail left or top [TWEETS] */
-    margin-top: 2px;
-    margin-bottom: 2px;
+div[data-testid="card.wrapper"] { /* <--- Link with thumbnail left or top [TWEETS] */
+    margin-top: 1px;
+    margin-bottom: 1px;
 }
 
 div[data-testid="tweet"] .css-1dbjc4n.r-18u37iz.r-1wtj0ep { /* <--- Div with name, username, time and "more" menu [TWEETS] */
