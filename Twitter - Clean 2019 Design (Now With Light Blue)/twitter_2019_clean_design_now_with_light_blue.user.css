@@ -49,7 +49,7 @@ div[aria-label^="Timeline:"][aria-label$="’s Tweets"] .r-1adg3ll .r-k5y9r7:emp
 
 div[aria-label="Timeline: Conversation"] div > .css-1dbjc4n.r-1adg3ll > .css-1dbjc4n.r-1or9b2r:empty, /* <--- Empty space [TWEET CONVERSATION] */
 
-/div[aria-label="Timeline: Explore"] a[href^="/i/connect_people"], /* <--- "Show more" link [EXPLORE PAGE] */
+div[aria-label="Timeline: Explore"] a[href^="/i/connect_people"], /* <--- "Show more" link [EXPLORE PAGE] */
 
 div[data-testid="sidebarColumn"] .css-1dbjc4n.r-1phboty.r-rs99b7.r-1udh08x.r-1ylenci.r-1u4rsef.r-9cbz99,           /* <--- "Trending now" & "Who to follow" boxes [SIDEBAR, WHITE] */
 
