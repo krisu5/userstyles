@@ -5,7 +5,7 @@
 @namespace    github.com/krisu5/userstyles
 @homepageURL  https://github.com/krisu5/userstyles/tree/master/Twitter%20-%20Clean%202019%20Design%20(Now%20With%20Light%20Blue)
 @supportURL   https://github.com/krisu5/userstyles/issues
-@version      1.3.2
+@version      1.3.3
 @license      unlicense
 @preprocessor uso
 ==/UserStyle== */
@@ -29,7 +29,7 @@ body[style^="background-color: rgb(255, 255, 255);"] .r-1u4rsef { /* <--- Hover 
 body[style^="background-color: rgb(255, 255, 255);"] section[aria-label="Section navigation"],
 body[style^="background-color: rgb(255, 255, 255);"] section[aria-label="Section details"]
 {
-    background: #fff;
+    background: #fff !important;
 }
 
 
@@ -51,17 +51,9 @@ div[aria-label="Timeline: Conversation"] div > .css-1dbjc4n.r-1adg3ll > .css-1db
 
 div[aria-label="Timeline: Explore"] a[href^="/i/connect_people"], /* <--- "Show more" link [EXPLORE PAGE] */
 
-div[data-testid="sidebarColumn"] .css-1dbjc4n.r-1phboty.r-rs99b7.r-1udh08x.r-1ylenci.r-1u4rsef.r-9cbz99,           /* <--- "Trending now" & "Who to follow" boxes [SIDEBAR, WHITE] */
+div[data-testid="sidebarColumn"] .css-1dbjc4n.r-1867qdf.r-1phboty.r-rs99b7.r-ku1wi2.r-1udh08x:not(.r-14lw9ot):not(.r-18bvks7):not(.r-1kqtdi0), /* <--- "What's happening" / "Who to follow" boxes [SIDEBAR] */
 
-div[data-testid="sidebarColumn"] .css-1dbjc4n.r-1phboty.r-rs99b7.r-1udh08x.r-1ylenci.r-ku1wi2.r-1uaug3w.r-1uhd6vh, /* <--- "Trending now" & "Who to follow" boxes [SIDEBAR, DIM] */
-
-div[data-testid="sidebarColumn"] .css-1dbjc4n.r-1phboty.r-rs99b7.r-1udh08x.r-1ylenci.r-ku1wi2.r-1ysxnx4.r-k0dy70,  /* <--- "Trending now" & "Who to follow" boxes [SIDEBAR, LIGHTS OUT] */
-
-div[data-testid="sidebarColumn"] .css-1dbjc4n.r-1phboty.r-rs99b7.r-1udh08x.r-1ylenci.r-ku1wi2.r-e84r5y.r-1tlfku8,  /* <--- "Trending now" & "Who to follow" boxes [SIDEBAR, WHITE, INCREASE COLOR CONTRAST] */
-
-div[data-testid="sidebarColumn"] .css-1dbjc4n.r-1phboty.r-rs99b7.r-1udh08x.r-1ylenci.r-ku1wi2.r-16hm58k.r-9wg5yf,  /* <--- "Trending now" & "Who to follow" boxes [SIDEBAR, DIM, INCREASE COLOR CONTRAST] */
-
-div[data-testid="sidebarColumn"] .css-1dbjc4n.r-1phboty.r-rs99b7.r-1udh08x.r-1ylenci.r-ku1wi2.r-b3or1f.r-1yj08i2,  /* <--- "Trending now" & "Who to follow" boxes [SIDEBAR, LIGHTS OUT, INCREASE COLOR CONTRAST] */
+div[data-testid="sidebarColumn"] [aria-label="Timeline: Trending now"], /* <--- "What's happening" box (just in case) [SIDEBAR] */
 
 /* v--- "Who to follow" boxes [PROFILE TIMELINE] ---v */ 
 div[aria-label^="Timeline: "][aria-label$="’s Tweets"] div .r-1or9b2r:empty,
@@ -83,7 +75,7 @@ div[data-testid="sidebarColumn"] form[role="search"] {
     margin-top: -7px;
 }
 
-form[role="search"] .r-1f0042m { /* <--- Search suggestions box */
+form[role="search"] .r-z2wwpe { /* <--- Search suggestions box */
     margin-top: 8px;
     border-radius: 10px;
     scrollbar-width: thin; /* Experimental CSS, Firefox only for now */
@@ -92,7 +84,7 @@ form[role="search"] .r-1f0042m { /* <--- Search suggestions box */
 
 form[role="search"] .r-1f0042m::-webkit-scrollbar { /* <--- Scrollbar #1, Chromium & Safari only [SEARCH SUGGESTIONS BOX] */
     width: 6px;
-    background: transparent; 
+    background: transparent;
 }
 
 form[role="search"] .r-1f0042m::-webkit-scrollbar-thumb { /* <--- Scrollbar #2, Chromium & Safari only [SEARCH SUGGESTIONS BOX] */
@@ -116,6 +108,14 @@ div[data-testid="previewInterstitial"] * { /* <--- For videos / GIFs, prevents a
     -moz-user-select: none;
     -webkit-user-select: none;
     user-select: none;
+}
+
+div[aria-label^="Timeline:"]:not([aria-label$="Notifications"]) article div[style="flex-basis: 49px;"] > svg { /* <--- Icon next to "X Retweeted / Liked" text [TWEETS] */
+    width: 16px !important;
+}
+
+[data-testid="socialContext"] { /* <--- "X Retweeted / Liked" text [TWEETS] */
+    font-weight: normal !important;
 }
 
 svg.r-yucp9h { /* <--- Retweet / like / follower icons [NOTIFICATIONS] */
