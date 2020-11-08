@@ -70,7 +70,8 @@ body, html { overflow-y: hidden !important; }
 .CommentsList, .Footer, .Gallery-Sidebar, .NavbarNotifications, .Searchbar, .Navigation-Container,
 [class*="share-btn"]:not(.share-btn-other):not(.share-btn-download), .CoverPostMeta.Display,
 .Gallery-EngagementBarContainer, .ButtonBackToTop, .Gallery-Content--tags, .TagManager.PostOptions-section,
-.TagSuggestion-container, .toast2, [class*="bottomad"], [class*="BottomAd"], .Footer-whitelist, .BottomRecirc
+.TagSuggestion-container, .toast2, [class*="bottomad"], [class*="BottomAd"], .Footer-whitelist,
+.BottomRecirc, .btn-wall--no
 { display: none !important; }
 
 body:not([class=""]) { background-color: #27292d; }
@@ -108,11 +109,26 @@ body:not([class=""]) { background-color: #27292d; }
 }
 
 .EmeraldButton {
+    font-size: 0;
     padding-left: 16px !important;
     padding-right: 16px !important;
 }
 
+.EmeraldButton:after {
+    content: "Support Imgur!";
+    font-size: 15px !important;
+}
+
 .ProfileNavbar-loggedIn .EmeraldButton { margin-right: 25px !important; }
+
+.btn-wall--yes {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    padding: 20px 0 22px !important;
+    font-size: 28px !important;
+    margin: 0 auto !important;
+}
 
 /* ------------------------------
    Download button always visible

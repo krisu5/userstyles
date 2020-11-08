@@ -20,6 +20,7 @@ Works with old and new gallery design!
 
 ## Changelog
 
+- *2020-11-08:* Only show "Yes, I'm over 18" button on 18+ galleries, "Go Ad-Free" button text changed to "Support Imgur!"
 - *2020-10-10:* "Explore posts" section blocked, max-height of images & videos slightly raised
 - *2020-10-01:* Fixed Emerald banner related blocking on the front page
 - *2020-09-25:* Added background color to "sign in" button, embed button blocked
