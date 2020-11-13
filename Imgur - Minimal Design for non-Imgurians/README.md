@@ -20,6 +20,7 @@ Works with old and new gallery design!
 
 ## Changelog
 
+- *2020-11-13:* Non-modal images back to 100% height, because of Imgur's changes
 - *2020-11-08:* Only show "Yes, I'm over 18" button on 18+ galleries, "Go Ad-Free" button text changed to "Support Imgur!"
 - *2020-10-10:* "Explore posts" section blocked, max-height of images & videos slightly raised
 - *2020-10-01:* Fixed Emerald banner related blocking on the front page
