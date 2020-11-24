@@ -5,10 +5,10 @@
 @namespace      github.com/krisu5/userstyles
 @homepageURL    https://github.com/krisu5/userstyles/tree/master/DuckDuckGo%20-%20Wider%20Prettier%20and%20Customizable
 @supportURL     https://github.com/krisu5/userstyles/issues
-@version        1.0.5
+@version        1.0.6
 @license        unlicense
 @preprocessor   stylus
-@var checkbox   ibm-plex-font      "Use 'IBM Plex' font (external load)"                        1
+@var checkbox   ibm-plex-font      "Use 'IBM Plex Sans' font (needs installation)"              1
 @var checkbox   wideScreen         "Wider layout (for 1920px+ wide resolution)"                 1
 @var checkbox   biggerFont         "Bigger font (recommended when 'Wider layout' is enabled)"   1
 @var checkbox   hideCheckmark      "Force hide visited link checkmark"                          0
@@ -17,54 +17,37 @@
 ==/UserStyle== */
 
 @-moz-document domain("duckduckgo.com") {
-/* ====================================================
-   === [TOGGLE] Use "IBM Plex" font (external load) ===
-   ==================================================== */
+/* =========================================================
+   === [TOGGLE] Use "IBM Plex Sans" font (needs installation) ===
+   ========================================================= */
     
 if ibm-plex-font {
-    /* ibm-plex-sans-400normal - all */
-    @font-face {
-        font-family: 'IBM Plex Sans';
-        font-style: normal;
-        font-display: swap;
-        font-weight: 400;
-        src:
-         local('IBM Plex Sans'),
-         local('IBMPlexSans'), 
-         url('https://cdn.jsdelivr.net/npm/@openfonts/ibm-plex-sans_all@1.44.1/files/ibm-plex-sans-all-400.woff2') format('woff2');
-    }
-
-    /* ibm-plex-sans-500normal - all */
-    @font-face {
-        font-family: 'IBM Plex Sans';
-        font-style: normal;
-        font-display: swap;
-        font-weight: 500;
-        src:
-         local('IBM Plex Sans Medium'),
-         local('IBMPlexSans-Medium'), 
-         url('https://cdn.jsdelivr.net/npm/@openfonts/ibm-plex-sans_all@1.44.1/files/ibm-plex-sans-all-500.woff2') format('woff2');
-    }
-
-    /* ibm-plex-sans-600normal - all */
-    @font-face {
-        font-family: 'IBM Plex Sans';
-        font-style: normal;
-        font-display: swap;
-        font-weight: 600;
-        src:
-         local('IBM Plex Sans SemiBold'),
-         local('IBMPlexSans-SemiBold'), 
-         url('https://cdn.jsdelivr.net/npm/@openfonts/ibm-plex-sans_all@1.44.1/files/ibm-plex-sans-all-600.woff2') format('woff2');
-    }
-        
+    /*
+    ###################
+    ## INSTALL FONTS ##
+    ###################
+    
+    - https://github.com/IBM/plex/releases/latest
+      (TrueType recommended for Windows, for others use OpenType)
+       
+      Go to "IBM-Plex-Sans" folder and install AT LEAST these fonts:
+         - Bold
+         - BoldItalic
+         - Italic
+         - Medium
+         - MediumItalic
+         - Regular
+         - SemiBold
+         - SemiBoldItalic
+    */
+    
     body, input, textarea, .search__input--adv { font-family: "IBM Plex Sans", "DDG_ProximaNova", "DDG_ProximaNova_UI_0", "DDG_ProximaNova_UI_1", "DDG_ProximaNova_UI_2", "DDG_ProximaNova_UI_3", "DDG_ProximaNova_UI_4", "DDG_ProximaNova_UI_5", "DDG_ProximaNova_UI_6", "Proxima Nova", system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif; }
 
     #zero_click_wrapper *:not(option):not(a) { font-family: "DDG_ProximaNova", "DDG_ProximaNova_UI_0", "DDG_ProximaNova_UI_1", "DDG_ProximaNova_UI_2", "DDG_ProximaNova_UI_3", "DDG_ProximaNova_UI_4", "DDG_ProximaNova_UI_5", "DDG_ProximaNova_UI_6", "Proxima Nova", system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif; }
         
     #zero_click_wrapper option { font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif; }
 
-    .result__title, #links .result__title b, #links .result__title strong {
+    .result__title, #links .result__title b, #links .result__title strong, .result__sitelink-row a {
         padding-bottom: 1px !important;
         font-weight: 500 !important;
     }
