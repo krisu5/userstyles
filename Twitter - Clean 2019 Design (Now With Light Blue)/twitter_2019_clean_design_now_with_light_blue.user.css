@@ -51,7 +51,7 @@ div[aria-label="Timeline: Conversation"] div > .css-1dbjc4n.r-1adg3ll > .css-1db
 
 div[aria-label="Timeline: Explore"] a[href^="/i/connect_people"], /* <--- "Show more" link [EXPLORE PAGE] */
 
-div[data-testid="sidebarColumn"] .css-1dbjc4n.r-1867qdf.r-1phboty.r-rs99b7.r-ku1wi2.r-1udh08x:not(.r-14lw9ot):not(.r-18bvks7):not(.r-1kqtdi0), /* <--- "What's happening" / "Who to follow" boxes [SIDEBAR] */
+div[data-testid="sidebarColumn"] .css-1dbjc4n.r-1867qdf.r-1phboty.r-rs99b7.r-1udh08x:not(.r-14lw9ot):not(.r-18bvks7):not(.r-1kqtdi0), /* <--- "What's happening" / "Who to follow" boxes [SIDEBAR] */
 
 div[data-testid="sidebarColumn"] [aria-label="Timeline: Trending now"], /* <--- "What's happening" box (just in case) [SIDEBAR] */
 
@@ -82,12 +82,12 @@ form[role="search"] .r-z2wwpe { /* <--- Search suggestions box */
     scrollbar-color: #1da1f2 transparent; /* Experimental CSS, Firefox only for now */
 }
 
-form[role="search"] .r-1f0042m::-webkit-scrollbar { /* <--- Scrollbar #1, Chromium & Safari only [SEARCH SUGGESTIONS BOX] */
+form[role="search"] .r-z2wwpe::-webkit-scrollbar { /* <--- Scrollbar #1, Chromium & Safari only [SEARCH SUGGESTIONS BOX] */
     width: 6px;
     background: transparent;
 }
 
-form[role="search"] .r-1f0042m::-webkit-scrollbar-thumb { /* <--- Scrollbar #2, Chromium & Safari only [SEARCH SUGGESTIONS BOX] */
+form[role="search"] .r-z2wwpe::-webkit-scrollbar-thumb { /* <--- Scrollbar #2, Chromium & Safari only [SEARCH SUGGESTIONS BOX] */
     background-color: #1da1f2;
 }
 
