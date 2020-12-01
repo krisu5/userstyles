@@ -190,7 +190,9 @@ div.css-1dbjc4n.r-1adg3ll > a[href^="/i/related_users/"]
    ====== Whitelist #3 ======
    ========================== */
 
-div > .css-1dbjc4n.r-1ny4l3l > .r-k5y9r7.r-5kkj8d:empty {
+div > .css-1dbjc4n.r-1ny4l3l > .r-k5y9r7.r-5kkj8d:empty,
+
+div > .css-1dbjc4n.r-qklmqi.r-1adg3ll > .css-1dbjc4n.r-1wtj0ep {
     display: flex !important;
 }
 }
