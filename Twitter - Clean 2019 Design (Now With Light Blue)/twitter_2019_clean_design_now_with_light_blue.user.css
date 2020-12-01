@@ -5,7 +5,7 @@
 @namespace    github.com/krisu5/userstyles
 @homepageURL  https://github.com/krisu5/userstyles/tree/master/Twitter%20-%20Clean%202019%20Design%20(Now%20With%20Light%20Blue)
 @supportURL   https://github.com/krisu5/userstyles/issues
-@version      1.3.4
+@version      1.3.5
 @license      unlicense
 @preprocessor uso
 ==/UserStyle== */
@@ -43,7 +43,7 @@ div[role="menu"] a[href^="https://ads.twitter.com/"], /* <--- "Promote Mode" & "
 
 div[aria-label^="Timeline"] .r-1adg3ll .r-k5y9r7, /* <--- Empty space [TIMELINE] */
 
-div > .css-1dbjc4n.r-1adg3ll > .css-1dbjc4n.r-1or9b2r:empty, /* <--- Empty space [TIMELINE] */
+div > .css-1dbjc4n.r-1ny4l3l > .r-k5y9r7.r-5kkj8d:empty, /* <--- Empty space [TIMELINE] */
 
 div[aria-label^="Timeline:"][aria-label$="’s Tweets"] .r-1adg3ll .r-k5y9r7:empty, /* <--- Empty space [PROFILE TIMELINE] */
 
@@ -122,7 +122,7 @@ svg.r-yucp9h { /* <--- Retweet / like / follower icons [NOTIFICATIONS] */
     height: 1.45em;
 }
 
-@media only screen and (min-width: 1282px) {
+@media (min-width: 1282px) {
     
 /* v--- Toaster alert ---v */
     div[data-testid="toast"] {
@@ -145,7 +145,7 @@ svg.r-yucp9h { /* <--- Retweet / like / follower icons [NOTIFICATIONS] */
 }
 
 @-moz-document regexp(".*\\://twitter.com/settings/.*") {
-@media only screen and (min-width: 1282px) {
+@media (min-width: 1282px) {
     
 /* v--- Toaster alert [SETTINGS] ---v */
     div[data-testid="toast"] {
@@ -170,17 +170,27 @@ svg.r-yucp9h { /* <--- Retweet / like / follower icons [NOTIFICATIONS] */
 }
 }
 
-@-moz-document regexp(".*\\://twitter.com/explore"), regexp(".*\\://twitter.com/.*\\/(status|moment|topics|events|lists).*") {
+@-moz-document regexp(".*\\://twitter.com/.*\\/(status|moment|topics|events|lists).*") {
 /* ==========================
    ====== Whitelist #2 ======
    ========================== */
 
-div > .css-1dbjc4n.r-1adg3ll > .css-1dbjc4n.r-1or9b2r:empty,
+div > .css-1dbjc4n.r-1ny4l3l > .r-k5y9r7.r-5kkj8d:empty,
 
 div > .css-1dbjc4n.r-qklmqi.r-1adg3ll > .css-1dbjc4n.r-1wtj0ep,
 .css-1dbjc4n.r-qklmqi.r-1adg3ll > div[data-testid="UserCell"],
 div.css-1dbjc4n.r-1adg3ll > a[href^="/i/related_users/"]
 {
+    display: flex !important;
+}
+}
+
+@-moz-document regexp(".*\\://twitter.com/explore.*") {
+/* ==========================
+   ====== Whitelist #3 ======
+   ========================== */
+
+div > .css-1dbjc4n.r-1ny4l3l > .r-k5y9r7.r-5kkj8d:empty {
     display: flex !important;
 }
 }
