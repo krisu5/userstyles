@@ -19,4 +19,5 @@ twitter.com##div[aria-label^="Timeline:"] .r-1adg3ll:has(span:has-text(/^Who to 
 twitter.com##div[aria-label="Timeline: Explore"] div[data-testid="UserCell"]:upward(2)
 twitter.com##.r-1adg3ll:has(article[role="article"]:has-text(Promoted))
 twitter.com##.r-1adg3ll:has(a[href="/i/timeline"]):has(div:matches-css(min-width: 70px))
+twitter.com##.r-1adg3ll:has(div[aria-label="Timeline: Carousel"])
 twitter.com##.r-qklmqi:has(h2:has(span:has-text(/^People|More replies/i)))
