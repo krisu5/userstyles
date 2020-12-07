@@ -5,7 +5,7 @@
 @namespace    github.com/krisu5/userstyles
 @homepageURL  https://github.com/krisu5/userstyles/tree/master/Imgur%20-%20Minimal%20and%20Anti-Social%20for%20non-Imgurians
 @supportURL   https://github.com/krisu5/userstyles/issues
-@version      1.1.8
+@version      1.1.9
 @license      unlicense
 @preprocessor default
 ==/UserStyle== */
@@ -24,7 +24,7 @@
 
 .InteractiveBackground, .Message.welcome, .TrendingTags, .CoverChangeGallery,
 .Spinner-contentWrapper, .NewCover.isFixed, .PopUpClose, .Button.upload img,
-[class*="Emerald"]:not(.EmeraldButton)
+[class*="Emerald"]:not(.EmeraldButton), .SnowFlakesBg
 { display: none !important; }
 
 body, html { overflow-y: hidden !important; }
