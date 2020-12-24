@@ -11,6 +11,7 @@ twitter.com#@#.r-1awozwy.css-1dbjc4n
 twitter.com##body:has(div[aria-label^="Timeline: Search"]) .r-1adg3ll:has(a[href^="/search?q="][href$="&src=related_query_click"])
 twitter.com##body:not(:has(div[aria-label="Timeline: Explore"])) .r-qklmqi:has(span.r-1qd0xha:has-text(/^See more about this Topic/i))
 twitter.com##div[data-testid="primaryColumn"] .css-1dbjc4n:has(div[data-testid="tweet"]) .r-qklmqi:has(div[data-testid="UserCell"])
+twitter.com##div[data-testid="primaryColumn"] .r-1adg3ll:has(h2:has(span:has-text(/^Who to follow/i)))
 twitter.com##div[data-testid="sidebarColumn"] .r-t23y2h:has(div[aria-label="Timeline: Trending now"])
 twitter.com##div[aria-label^="Timeline:"]:not([aria-label*="List"]) div[style^="position: absolute;"]:not(:has(article)):has(a[href^="/i/lists/"])
 twitter.com##div[aria-label^="Timeline:"]:not([aria-label$="Topics"]):not([aria-label$="Explore"]) .r-1adg3ll:has(a[href^="/i/"]:has-text(/^More Topics|Show more/i)):has(:not(span:has-text(/^Show more replies/i)))
