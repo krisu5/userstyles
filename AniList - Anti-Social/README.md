@@ -14,6 +14,7 @@
 
 ## Changelog
 
+- *2021-01-05:* Typo on non-bannered review boxes, user follow button blocked, dropdown menu UX tweaks
 - *2020-04-19:* Minor fixes
 - *2020-04-10:* Homepage's review boxes with no banners now has more consistent look
 - *2020-04-06 #2:* Homepage's "Trending" and "Newly added" sections now has better design, code prettified

@@ -4,7 +4,7 @@
 @author       krisu (https://github.com/krisu5)
 @namespace    github.com/krisu5/userstyles
 @homepageURL  https://github.com/krisu5/userstyles/tree/master/AniList%20-%20Anti-Social
-@version      1.0.4
+@version      1.0.5
 @license      unlicense
 @preprocessor default
 ==/UserStyle== */
@@ -14,7 +14,8 @@
    ======== Blocked elements ========
    ================================== */
 
-.activity-edit, .nav a[href$="social"], .home .activity-feed-wrap, .activity-feed .actions, .activity-feed [href^="/activity/"]
+.activity-edit, .nav a[href$="social"], .home .activity-feed-wrap, .activity-entry:not(.activity-text) .actions,
+.activity-feed [href^="/activity/"], .user .actions .nav-btn
 { display: none !important; }
 
 
@@ -41,7 +42,7 @@
 .review-card.no-banner .content { justify-content: start !important; }
 
 .home .review-card.no-banner:hover:before {
-    content: "Read Full Preview";
+    content: "Read Full Review";
     display: flex;
     align-items: center;
     justify-content: center;
@@ -120,4 +121,15 @@
 /* Review without banner: transition fix */
 .review [style='background-image: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");']
 { opacity: 1 !important; }
+
+/* Dropdown menu tweaks: UX fix attempt */
+.el-popper .popper__arrow { display: none !important; }
+    
+.el-dropdown-menu {
+    box-shadow: 0 1px 10px 0 rgba(49,54,68,.30) !important;
+    border-radius: 10px !important;
+    padding: 10px 0 !important;
+}
+    
+.el-popper[x-placement^="bottom"] { margin-top: 8px !important; }
 }
