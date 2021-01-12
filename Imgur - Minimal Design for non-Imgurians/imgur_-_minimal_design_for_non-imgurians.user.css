@@ -191,7 +191,7 @@ img.image-placeholder {
 
 .ImageViewerContent img {
     max-height: 99.5vh !important;
-    max-width: 99.5vw !important;
+    max-width: 99vw !important;
     min-height: inherit !important;
     border: 5px solid #fff !important;
     border-radius: 6px !important;
