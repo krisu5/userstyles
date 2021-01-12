@@ -5,7 +5,7 @@
 @namespace    github.com/krisu5/userstyles
 @homepageURL  https://github.com/krisu5/userstyles/tree/master/Imgur%20-%20Minimal%20and%20Anti-Social%20for%20non-Imgurians
 @supportURL   https://github.com/krisu5/userstyles/issues
-@version      1.1.9
+@version      1.2.0
 @license      unlicense
 @preprocessor default
 ==/UserStyle== */
@@ -109,7 +109,7 @@ body:not([class=""]) { background-color: #27292d; }
 }
 
 .EmeraldButton {
-    font-size: 0;
+    font-size: 0 !important;
     padding-left: 16px !important;
     padding-right: 16px !important;
 }
@@ -125,8 +125,8 @@ body:not([class=""]) { background-color: #27292d; }
     display: block !important;
     width: 100% !important;
     height: auto !important;
-    font-size: 28px !important;
     padding: 20px 0 22px !important;
+    font-size: 28px !important;
     margin: 0 auto !important;
 }
 
@@ -190,8 +190,8 @@ img.image-placeholder {
 }
 
 .ImageViewerContent img {
-    max-height: 99vh !important;
-    max-width: 99vw !important;
+    max-height: 99.5vh !important;
+    max-width: 99.5vw !important;
     min-height: inherit !important;
     border: 5px solid #fff !important;
     border-radius: 6px !important;
