@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Description: Recommended Additional Filters for "Twitter - Clean 2019 Design (Now With Light Blue™)" Userstyle
 ! Homepage: https://github.com/krisu5/userstyles/raw/master/Twitter%20-%20Clean%202019%20Design%20(Now%20With%20Light%20Blue)/
-! Last updated: 2021-01-26
+! Last updated: 2021-01-28
 
 ! How to add this filterlist: https://github.com/gorhill/uBlock/wiki/Filter-lists-from-around-the-web
 
@@ -11,10 +11,14 @@ twitter.com#@#.r-1awozwy.css-1dbjc4n
 twitter.com##div[data-testid="primaryColumn"] .css-1dbjc4n:has(div[data-testid="tweet"]) .r-qklmqi:has(div[data-testid="UserCell"])
 twitter.com##div[data-testid="primaryColumn"] .r-1adg3ll:has(h2:has(span:has-text(/^Who to follow/i)))
 twitter.com##div[data-testid="sidebarColumn"] .r-t23y2h:has(div[aria-label="Timeline: Trending now"])
-twitter.com##div[aria-label^="Timeline:"]:not([aria-label*="List"]) div[style^="position: absolute;"]:not(:has(article)):has(a[href^="/i/lists/"])
 twitter.com##div[aria-label^="Timeline:"]:not([aria-label$="Topics"]):not([aria-label$="Explore"]) .r-qklmqi:has([aria-labelledby*="topic-not-interested-button"])
-twitter.com##div[aria-label^="Timeline:"]:not([aria-label$="Topics"]):not([aria-label$="Explore"]):not([aria-label*="List"]) .r-1adg3ll:has(a[href^="/i/"]:has-text(/^More Topics|Show more/i)):has(:not(span:has-text(/^replies/i)))
-twitter.com##div[aria-label^="Timeline:"]:not([aria-label$="Topics"]):not([aria-label*="List"]) .r-1adg3ll:has(div[aria-label="Timeline: Carousel"])
+twitter.com##div[aria-label^="Timeline:"]:not([aria-label$="Topics"]):not([aria-label$="Explore"]):not([aria-label$="List"])  .r-1adg3ll:has(a[href^="/i/"]:has-text(/^More Topics|Show more/i)):has(:not(span:has-text(/^replies/i)))
+twitter.com##div[aria-label^="Timeline:"]:not([aria-label$="Topics"]):not([aria-label$="Your Lists"]) .r-1adg3ll:has(div[aria-label="Timeline: Carousel"])
+twitter.com##div[aria-label^="Timeline:"]:not([aria-label$="Your Lists"]):not([aria-label$="List"]) div[style^="position: absolute;"]:not(:has(article)):has(a[href^="/i/lists/"])
+twitter.com##div[aria-label="Timeline: Your Lists"] div[style^="position: absolute;"]:has(a[href^="/i/lists/"]:has(div[role="button"]:has-text(/^Follow|Unfollow/i)))
+twitter.com##div[aria-label="Timeline: Your Lists"] div[style^="position: absolute;"]:has(h2:has(span:has-text(/^Discover new Lists/i)))
+twitter.com##div[aria-label="Timeline: Your Lists"] div[style^="position: absolute;"]:has(a[href="/i/lists/suggested"])
+twitter.com##div[aria-label="Timeline: Your Lists"] div[style^="position: relative;"] div:nth-child(4):has(div:matches-css(height: 10px))
 twitter.com##div[aria-label="Timeline: Explore"] div[data-testid="UserCell"]:upward(2)
 twitter.com##.r-1adg3ll:has(article[role="article"]:has-text(Promoted))
 twitter.com##.r-1adg3ll:has(a[href="/i/timeline"]):has(div:matches-css(min-width: 70px))
