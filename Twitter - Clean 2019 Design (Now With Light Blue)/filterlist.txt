@@ -14,7 +14,7 @@ twitter.com##div[data-testid="sidebarColumn"] .r-t23y2h:has(div[aria-label="Time
 twitter.com##div[aria-label^="Timeline:"]:not([aria-label$="Topics"]):not([aria-label$="Explore"]) .r-qklmqi:has([aria-labelledby*="topic-not-interested-button"])
 twitter.com##div[aria-label^="Timeline:"]:not([aria-label$="Topics"]):not([aria-label$="Explore"]):not([aria-label$="List"])  .r-1adg3ll:has(a[href^="/i/"]:has-text(/^More Topics|Show more/i)):has(:not(span:has-text(/^replies/i)))
 twitter.com##div[aria-label^="Timeline:"]:not([aria-label$="Topics"]):not([aria-label$="Your Lists"]) .r-1adg3ll:has(div[aria-label="Timeline: Carousel"])
-twitter.com##div[aria-label^="Timeline:"]:not([aria-label$="Your Lists"]):not([aria-label$="List"]) div[style^="position: absolute;"]:not(:has(article)):has(a[href^="/i/lists/"])
+twitter.com##div[aria-label^="Timeline:"]:not([aria-label$="Lists"]):not([aria-label$="List"]) div[style^="position: absolute;"]:not(:has(article)):has(a[href^="/i/lists/"])
 twitter.com##div[aria-label="Timeline: Your Lists"] div[style^="position: absolute;"]:has(a[href^="/i/lists/"]:has(div[role="button"]:has-text(/^Follow|Unfollow/i)))
 twitter.com##div[aria-label="Timeline: Your Lists"] div[style^="position: absolute;"]:has(h2:has(span:has-text(/^Discover new Lists/i)))
 twitter.com##div[aria-label="Timeline: Your Lists"] div[style^="position: absolute;"]:has(a[href="/i/lists/suggested"])
