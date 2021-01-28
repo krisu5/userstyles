@@ -12,3 +12,4 @@
    - Regular
    - SemiBold
    - SemiBoldItalic
+4. Enable "Use 'IBM Plex Sans' font (needs installation)" option for the userstyle ([use this as guide if you don't know how](https://github.com/openstyles/stylus/wiki/UserCSS#how-do-i-customize-usercss))

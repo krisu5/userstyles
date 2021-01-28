@@ -7,12 +7,14 @@
 *Customizable UserCSS for DuckDuckGo* 🦆
 
 Toggleable features such as:
-- IBM Plex Sans font (**enabled by default,** see the notes at bottom)
+- IBM Plex Sans font (see the notes at bottom)
 - Wider layout for 1920px or wider screens (**enabled by default**)
 - Bigger font (**enabled by default**)
 - Force hide visited link checkmark
 - Delay showing sidebar in the pageload (**enabled by default**)
 - Hide feedback related links
+
+Also adds style tweaks for ["Try Google on Duck Duck Go - WF" userscript](https://greasyfork.org/en/scripts/389801-try-google-on-duck-duck-go-wf)
 
 ⚠ ***Read the notes at the bottom!***
 
@@ -32,6 +34,7 @@ Toggleable features such as:
 
 ## Changelog
 
+- *2021-01-28:* "IBM Plex Sans" font is not enabled by default anymore, added ["Try Google on Duck Duck Go - WF" userscript](https://greasyfork.org/en/scripts/389801-try-google-on-duck-duck-go-wf) style tweaks
 - *2020-11-24:* DuckDuckGo changed their [CSP](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP), so unfortunately external webfonts won't work anymore. You need to install the fonts, if you want to keep using "IBM Plex Sans" as main font ([more info here](installing_ibm-plex-sans.md))
 - *2020-09-13:* Lots of small fixes
 - *2020-07-27:* Minor fixes
