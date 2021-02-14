@@ -4,7 +4,8 @@
 @author       krisu (https://github.com/krisu5)
 @namespace    github.com/krisu5/userstyles
 @homepageURL  https://github.com/krisu5/userstyles/tree/master/AniList%20-%20Anti-Social
-@version      1.0.5
+@supportURL   https://github.com/krisu5/userstyles/issues
+@version      1.0.6
 @license      unlicense
 @preprocessor default
 ==/UserStyle== */
@@ -15,7 +16,7 @@
    ================================== */
 
 .activity-edit, .nav a[href$="social"], .home .activity-feed-wrap, .activity-entry:not(.activity-text) .actions,
-.activity-feed [href^="/activity/"], .user .actions .nav-btn
+.activity-feed [href^="/activity/"], .user .actions .nav-btn, .home .list-preview-wrap:nth-child(n+2) .size-toggle
 { display: none !important; }
 
 
@@ -24,6 +25,25 @@
    ================================== */
 
 .home { grid-template-columns: inherit !important; }
+    
+@media (min-width: 1041px) {
+    .home .list-preview-wrap:first-child .size-toggle { opacity: 1 !important; }
+    
+    .home.full-width .list-preview-wrap:first-child .section-header svg { margin-right: -53px; }
+    .home .list-preview-wrap:first-child .section-header svg            { margin-right: -36px; }
+
+    .home.full-width .list-preview-wrap:first-child .section-header:after { content: "Compress" !important; }
+
+    .home .list-preview-wrap:first-child .section-header:after {
+        content: "Expand";
+        font-family: Roboto,-apple-system,BlinkMacSystemFont,Segoe UI,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+        font-size: 13px;
+        color: rgba(var(--color-text),.4);
+        position: relative;
+        right: 30px;
+        top: -1px;
+    }
+}
 
 .home .review-card .summary { width: 96% !important; }
 
@@ -56,7 +76,7 @@
 
 .site-theme-dark .home .review-card.no-banner:hover:before { background: rgba(255,255,255,.1) !important; }
 
-@media screen and (min-width: 1040px) {
+@media (min-width: 1041px) {
     .home > div:not(.activity-feed-wrap) > div:not(.list-previews):not(.recent-threads):not(.recent-reviews) > div > 
     .media-preview {
         grid-gap: 20px 0px !important;
@@ -81,7 +101,7 @@
     }
 }
 
-@media screen and (max-width: 1540px) {
+@media (max-width: 1540px) {
     .home > div:not(.activity-feed-wrap) > div:not(.list-previews):not(.recent-threads):not(.recent-reviews) > div >
     .media-preview .media-preview-card
     { margin-left: 0 !important; }

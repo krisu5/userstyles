@@ -7,6 +7,8 @@
 
 *Mostly simple tweaks for removing most of the social features (like the feed on front page).* 🎎
 
+If you want to hide forums and reviews too, check out [extras](https://gist.github.com/krisu5/7bd54d2e0a07a00630370c14d62563b2#gistcomment-3630296)!
+
 ![Userstyle screenshot](screenshots/1_homepage_top.jpg)
 
 **Other screenshots:**
@@ -14,6 +16,7 @@
 
 ## Changelog
 
+- *2021-02-14:* "Compress" / "Expand" text next to "Anime / Manga in Progress" size toggle (UX tweak), added info about extra blocks
 - *2021-01-05:* Typo on non-bannered review boxes, user follow button blocked, dropdown menu UX tweaks
 - *2020-04-19:* Minor fixes
 - *2020-04-10:* Homepage's review boxes with no banners now has more consistent look
