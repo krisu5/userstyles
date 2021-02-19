@@ -35,6 +35,7 @@ This userstyle and filterlist works **ONLY** with default english language (I'm 
 
 ## Changelog
 
+- *2021-02-19:* Block "newsletters" dropdown link (promo for Revue) and redundant empty spaces on timelines, "Following" text in search suggestions to normal weight
 - *2020-12-01:* Lots of misc fixes / tweaks for CSS and filterlist
 - *2020-11-30:* Fixed sidebar blocks for different font sizes, fixed scrollbar CSS in the search suggestions for webkit
 - *2020-10-24:* Fixed sidebar blocks & search suggestion, smaller icon & normal weight text to "X Retweeted / Liked" section
