@@ -5,12 +5,14 @@
 @namespace    github.com/krisu5/userstyles
 @homepageURL  https://github.com/krisu5/userstyles/tree/master/Twitter%20-%20Clean%202019%20Design%20(Now%20With%20Light%20Blue)
 @supportURL   https://github.com/krisu5/userstyles/issues
-@version      1.3.6
+@version      1.3.7
 @license      unlicense
 @preprocessor uso
 ==/UserStyle== */
 
 @-moz-document domain("twitter.com") {
+/* --------- Main Stylings, Tweaks, Blocks ---------- */
+
 /* ==================================================
    ====== Colors (only enabled in white theme) ======
    ================================================== */
@@ -151,9 +153,11 @@ svg.r-yucp9h { /* <--- Retweet / like / follower icons [NOTIFICATIONS] */
 }
 
 @-moz-document regexp(".*\\://twitter.com/settings/.*") {
+/* ======================================
+   ====== Toaster alert [SETTINGS] ======
+   ====================================== */
+
 @media (min-width: 1282px) {
-    
-/* v--- Toaster alert [SETTINGS] ---v */
     div[data-testid="toast"] {
         width: 990px;
         margin: 0 0 0 272px;
@@ -198,7 +202,18 @@ div.css-1dbjc4n.r-1adg3ll > a[href^="/i/related_users/"]
 
 div > .css-1dbjc4n.r-1ny4l3l > .r-k5y9r7.r-5kkj8d:empty,
 
-div > .css-1dbjc4n.r-qklmqi.r-1adg3ll > .css-1dbjc4n.r-1wtj0ep {
+div > .css-1dbjc4n.r-qklmqi.r-1adg3ll > .css-1dbjc4n.r-1wtj0ep
+{
+    display: flex !important;
+}
+}
+
+@-moz-document regexp(".*\\://twitter.com/i/events.*") {
+/* ==========================
+   ====== Whitelist #4 ======
+   ========================== */
+
+div[aria-label^="Timeline:"]:not([aria-label$="Explore"]):not([aria-label$="Your Lists"]) .r-1or9b2r {
     display: flex !important;
 }
 }
