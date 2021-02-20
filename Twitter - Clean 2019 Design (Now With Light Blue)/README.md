@@ -27,7 +27,7 @@ So I also made uBlock filterlist that removes even more elements, that are harde
 **[Click here to see the filterlist](https://raw.githubusercontent.com/krisu5/userstyles/master/Twitter%20-%20Clean%202019%20Design%20(Now%20With%20Light%20Blue)/filterlist.txt)**
 
 - First, if you haven't already, install **uBlock Origin:** [Chrome extension](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm) or [Firefox extension](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
-  - **Uninstall Adblock Plus and other similar adblockers! Only one adblocker is necessary!** [More info here](https://twitter.com/gorhill/status/1195016403486683136)
+  - **Uninstall Adblock Plus and other similar adblockers! Only one adblocker is necessary!** Seriously, [more info here](https://twitter.com/gorhill/status/1033706103782170625)
 - Then: [How to import manually a filterlist](https://github.com/gorhill/uBlock/wiki/Filter-lists-from-around-the-web)
 - Also: You can copy the filter rules and add manually to uBlock Origin if you want, but you miss updates.
 
