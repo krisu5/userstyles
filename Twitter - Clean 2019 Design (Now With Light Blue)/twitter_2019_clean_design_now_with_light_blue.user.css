@@ -79,8 +79,11 @@ div.css-1dbjc4n.r-1adg3ll > a[href^="/i/related_users/"]
 
 div[data-testid="sidebarColumn"] form[role="search"] {
     padding-top: 15px;
-    padding-bottom: 3px;
     margin-top: -7px;
+}
+
+div[data-testid="sidebarColumn"] div + .css-1dbjc4n.r-1h3ijdo { /* <--- "Element spacer" between search box and another element [SIDEBAR]  */
+    margin-bottom: 3px;
 }
 
 form[role="search"] .r-z2wwpe { /* <--- Search suggestions box */
