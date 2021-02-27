@@ -18,7 +18,7 @@ twitter.com##div[aria-label^="Timeline:"]:not([aria-label$="Lists"]):not([aria-l
 twitter.com##div[aria-label="Timeline: Your Lists"] div[style^="position: absolute;"]:has(a[href^="/i/lists/"]:has(div[role="button"]:has-text(/^Follow|Unfollow/i)))
 twitter.com##div[aria-label="Timeline: Your Lists"] div[style^="position: absolute;"]:has(h2:has(span:has-text(/^Discover new Lists/i)))
 twitter.com##div[aria-label="Timeline: Your Lists"] div[style^="position: absolute;"]:has(a[href="/i/lists/suggested"])
-twitter.com##div[aria-label="Timeline: Your Lists"] div[style^="position: relative;"] div:nth-child(4):has(div:matches-css(height: 10px))
+twitter.com##div[aria-label="Timeline: Your Lists"] div[style^="position: relative;"] div:nth-child(4):has(div:matches-css(height: 12px))
 twitter.com##div[aria-label="Timeline: Explore"] div[data-testid="UserCell"]:upward(2)
 twitter.com##.r-1adg3ll:has(article[role="article"]:has-text(Promoted))
 twitter.com##.r-1adg3ll:has(a[href="/i/timeline"]):has(div:matches-css(min-width: 70px))
