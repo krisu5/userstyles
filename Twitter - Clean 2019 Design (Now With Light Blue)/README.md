@@ -33,8 +33,18 @@ So I also made uBlock filterlist that removes even more elements, that are harde
 
 This userstyle and filterlist works **ONLY** with default english language (I'm not adding support for other languages). Works best with white theme, but other themes are partially supported for element blocks.
 
+## Recommended userscripts
+
+Totally optional, but makes Twitter so much better again.
+
+- [I like latest tweets !](https://greasyfork.org/en/scripts/400695-i-like-latest-tweets) - Always changes to "latest tweets" in the home timeline
+  - [Latest Tweets](https://greasyfork.org/en/scripts/393400-latest-tweets) - Same idea, but doesn't work as well (technically script made by me)
+- [Twitter Direct](https://greasyfork.org/en/scripts/404632-twitter-direct) - Removes t.co URL tracking
+- [MoreTweetsBuster](https://greasyfork.org/en/scripts/397988-moretweetsbuster) - Redirects to actual twitter thread from "more tweets" layout when clicking Twitter link outside of Twitter (works 90% of the time)
+
 ## Changelog
 
+- *2021-03-02:* Another batch of small fixes, like "icon next to 'X Retweeted / Liked' text" fix, added "Recommended userscripts" section to README
 - *2021-02-27:* Small fixes
 - *2021-02-20:* Added new whitelist section, updated CSS comments for Stylus's new "sections" feature
 - *2021-02-19:* Blocked "newsletters" dropdown link (promo for Revue) and redundant empty spaces on timelines, "Following" text in search suggestions to normal weight
