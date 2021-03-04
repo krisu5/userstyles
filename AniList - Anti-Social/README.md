@@ -9,10 +9,10 @@
 
 If you want to hide forums and reviews too, check out [extras](https://gist.github.com/krisu5/7bd54d2e0a07a00630370c14d62563b2#gistcomment-3630296)!
 
-![Userstyle screenshot](screenshots/1_homepage_top.jpg)
+![Userstyle screenshot](screenshots/1_homepage_bottom.jpg)
 
 **Other screenshots:**
-- [Bottom of the homepage](screenshots/2_homepage_bottom.jpg) (no footer in the screenshot)
+- [Top of the homepage](screenshots/2_homepage_top.jpg)
 
 ## Changelog
 
