@@ -44,6 +44,7 @@ Totally optional, but makes Twitter so much better again.
 
 ## Changelog
 
+- *2021-03-24:* Line-height fix for links in the tweets
 - *2021-03-02:* Another batch of small fixes, like "icon next to 'X Retweeted / Liked' text" fix, added "Recommended userscripts" section to README
 - *2021-02-27:* Small fixes
 - *2021-02-20:* Added new whitelist section, updated CSS comments for Stylus's new "sections" feature
