@@ -5,7 +5,7 @@
 @namespace    github.com/krisu5/userstyles
 @homepageURL  https://github.com/krisu5/userstyles/tree/master/Twitter%20-%20Clean%202019%20Design%20(Now%20With%20Light%20Blue)
 @supportURL   https://github.com/krisu5/userstyles/issues
-@version      1.4.0
+@version      1.4.1
 @license      unlicense
 @preprocessor uso
 ==/UserStyle== */
@@ -111,12 +111,12 @@ div[data-testid="card.wrapper"] { /* <--- Link with thumbnail left or top [TWEET
     margin-bottom: 1px;
 }
 
-div[data-testid="tweet"] div[dir="auto"] a[target="_blank"] { /* <--- Line-height fix for links [TWEETS] */
-    line-height: 0;
-}
-
 div[data-testid="tweet"] .css-1dbjc4n.r-18u37iz.r-1wtj0ep { /* <--- Div with name, username, time and "more" menu [TWEETS] */
     margin-bottom: 1px;
+}
+
+div[data-testid="tweet"] div[dir="auto"] a[target="_blank"] { /* <--- Line-height fix for links [TWEETS] */
+    line-height: 0;
 }
 
 div[data-testid="previewInterstitial"] * { /* <--- For videos / GIFs, prevents accidental selecting [TWEETS] */
@@ -127,9 +127,15 @@ div[data-testid="previewInterstitial"] * { /* <--- For videos / GIFs, prevents a
 
 div[aria-label^="Timeline:"]:not([aria-label$="Notifications"]) article div.r-1hwvwag > svg { /* <--- Icon next to "X Retweeted / Liked" text [TWEETS] */
     width: 16px !important;
+    margin-top: -1px !important;
 }
 
-[data-testid="socialContext"], /* <--- "X Retweeted / Liked" text [TWEETS] */
+div[aria-label^="Timeline"] article .css-1dbjc4n.r-18u37iz > .r-ttdzmv.r-1iusvr4.r-16y2uox > .r-15zivkp { /* <--- Outer layer divs of "X Retweeted / Liked" etc. text [TWEETS] */
+    margin-top: -2px !important;
+    margin-bottom: 0px !important;
+}
+
+[data-testid="socialContext"], /* <--- "X Retweeted / Liked" etc. text [TWEETS] */
 li[data-testid="TypeaheadUser"] div[style="-webkit-line-clamp: 2;"] span /* <--- "Following" text [SEARCH SUGGESTIONS] */
 {
     font-weight: normal !important;
