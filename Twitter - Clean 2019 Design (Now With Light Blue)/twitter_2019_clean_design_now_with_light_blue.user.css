@@ -5,7 +5,7 @@
 @namespace    github.com/krisu5/userstyles
 @homepageURL  https://github.com/krisu5/userstyles/tree/master/Twitter%20-%20Clean%202019%20Design%20(Now%20With%20Light%20Blue)
 @supportURL   https://github.com/krisu5/userstyles/issues
-@version      1.4.1
+@version      1.4.2
 @license      unlicense
 @preprocessor uso
 ==/UserStyle== */
@@ -115,7 +115,12 @@ div[data-testid="tweet"] .css-1dbjc4n.r-18u37iz.r-1wtj0ep { /* <--- Div with nam
     margin-bottom: 1px;
 }
 
-div[data-testid="tweet"] div[dir="auto"] a[target="_blank"] { /* <--- Line-height fix for links [TWEETS] */
+/* v--- Line-height fixes for links ---v */
+div[data-testid="tweet"] div[dir="auto"] a[target="_blank"], /* <--- Normal tweet [TWEETS] */
+div[data-testid="tweet"] div[role="link"] div[dir="auto"] span[aria-hidden="true"], /* <--- Quote retweet [TWEETS] */
+div[data-testid="sidebarColumn"] div[data-testid="UserCell"] a[target="_blank"], /* <--- "Relevant people" sidebar [TWEET CONVERSATION] */
+div[aria-label="Timeline: Conversation"] div[data-testid="tweet"] + div div[role="link"] div[dir="auto"] span[dir="ltr"] /* <--- Quote retweet of main tweet [TWEET CONVERSATION] */
+{
     line-height: 0;
 }
 

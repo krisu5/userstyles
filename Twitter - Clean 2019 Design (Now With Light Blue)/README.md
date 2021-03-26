@@ -44,6 +44,7 @@ Totally optional, but makes Twitter so much better again.
 
 ## Changelog
 
+- *2021-03-26:* More line-height fixes for links
 - *2021-03-25:* Small spacing tweaks for "X Retweeted / Liked" etc. text
 - *2021-03-24:* Line-height fix for links in the tweets
 - *2021-03-02:* Another batch of small fixes, like "icon next to 'X Retweeted / Liked' text" fix, added "Recommended userscripts" section to README
