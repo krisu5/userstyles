@@ -5,7 +5,7 @@
 @namespace    github.com/krisu5/userstyles
 @homepageURL  https://github.com/krisu5/userstyles/tree/master/Twitter%20-%20Clean%202019%20Design%20(Now%20With%20Light%20Blue)
 @supportURL   https://github.com/krisu5/userstyles/issues
-@version      1.4.2
+@version      1.4.3
 @license      unlicense
 @preprocessor uso
 ==/UserStyle== */
@@ -44,6 +44,8 @@ section[aria-labelledby^="accessible-list"] a[href^="/search?q="][href*="&f=user
 div[role="menu"] a[href^="https://ads.twitter.com/"], /* <--- "Promote Mode" & "Twitter Ads" menu links [MORE MENU] */
 
 div[role="menu"] a[href^="/i/newsletters"], /* <--- "Newsletters" menu link (promo for Revue) [MORE MENU] */
+
+div[aria-modal="true"] div[style="background-color: rgb(210, 241, 255);"], /* <--- Another Revue promo (after pressing "+" button) [TWEET COMPOSE MODAL] */
 
 div[aria-label^="Timeline"] .r-1adg3ll .r-k5y9r7, /* <--- Empty space [TIMELINE] */
 
@@ -136,8 +138,8 @@ div[aria-label^="Timeline:"]:not([aria-label$="Notifications"]) article div.r-1h
 }
 
 div[aria-label^="Timeline"] article .css-1dbjc4n.r-18u37iz > .r-ttdzmv.r-1iusvr4.r-16y2uox > .r-15zivkp { /* <--- Outer layer divs of "X Retweeted / Liked" etc. text [TWEETS] */
-    margin-top: -2px !important;
-    margin-bottom: 0px !important;
+    margin-top: -1px !important;
+    margin-bottom: 4px !important;
 }
 
 [data-testid="socialContext"], /* <--- "X Retweeted / Liked" etc. text [TWEETS] */
