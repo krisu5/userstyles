@@ -20,7 +20,7 @@
   
 ## Misc. Userstyles
 
-I won't guarantee any support for any these styles below. What is there is there. Only hosted here at Github.
+I won't guarantee any support for any of these styles below. What is there is there. Only hosted here at Github.
 
 Think of these as nice extras with no guarantee to work in the future. Recommended to edit for own use.
 
