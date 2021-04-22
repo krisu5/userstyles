@@ -1,0 +1,16 @@
+/* ==UserStyle==
+@name         NHK World - Bigger Live TV Video
+@author       krisu (https://github.com/krisu5)
+@namespace    github.com/krisu5/userstyles
+@homepageURL  https://github.com/krisu5/userstyles/tree/master/_Misc
+@version      0.0.1
+@license      unlicense
+==/UserStyle== */
+
+@-moz-document url-prefix("https://www3.nhk.or.jp/nhkworld/en/live/") {
+
+.l-header__liveAndPrograms.-is-fixed { position: relative !important; }
+
+.c-tv-live-streaming-area .c-tv-live-streaming-info__frame { max-width: 75vw !important; }
+
+}

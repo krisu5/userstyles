@@ -1,0 +1,19 @@
+/* ==UserStyle==
+@name         Github - Notification page slimmer
+@author       krisu (https://github.com/krisu5)
+@namespace    github.com/krisu5/userstyles
+@homepageURL  https://github.com/krisu5/userstyles/tree/master/_Misc
+@version      0.0.1
+@license      unlicense
+==/UserStyle== */
+
+@-moz-document url-prefix("https://github.com/notifications") {
+
+@media only screen and (min-width: 1600px) {
+    .height-full.width-full.js-notifications-container {
+        width: 70% !important;
+        margin: 0 auto !important;
+    }
+}
+
+}

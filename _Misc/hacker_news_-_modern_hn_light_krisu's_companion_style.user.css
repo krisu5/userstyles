@@ -1,0 +1,125 @@
+/* ==UserStyle==
+@name         Hacker News - Modern HN Light, krisu's companion style
+@description  You need to install "Modern HN Light" userstyle, link at the CSS
+@author       krisu (https://github.com/krisu5)
+@namespace    github.com/krisu5/userstyles
+@homepageURL  https://github.com/krisu5/userstyles/tree/master/_Misc
+@version      0.0.1
+@license      unlicense
+==/UserStyle== */
+
+/*
+    --------------------------------------------------------------------------
+    
+    INSTALL MODERN HN LIGHT:
+    https://raw.githubusercontent.com/losuler/hacker-news-userstyle/master/modern-hacker-news-light.user.css
+    
+    (not compatible with dark theme)
+    
+    I don't recommend my userstyle to registered users, this is made for me specifically (who's just casual reader with no account).
+    
+    --------------------------------------------------------------------------
+*/
+
+@-moz-document domain("news.ycombinator.com") {
+
+/* Companion style for "Modern Hacker News Light" userstyle */
+
+form[action="comment"], .reply, tr.morespace + tr:not(.athing) tbody > tr > td:not(.title)
+{ display: none !important; }
+
+.itemlist .votelinks, .fatitem .votelinks { visibility: hidden !important; }
+
+* { font-size: 18px !important; }
+
+.comment-tree tr.athing.comtr > td > table,
+.itemlist tr:last-child .title a, .storylink,
+.comment-tree .morelink, .comment-tree tr.athing.comtr .commtext,
+.comment-tree tr.athing.comtr > td > table .commtext a
+{ transition: .3s !important; }
+
+/* ----------- */
+
+.athing .title .rank {
+    background: transparent !important;
+    border: 0 !important;
+}
+
+.itemlist .subtext a[href^="hide?id="] + a[href^="item?id"],
+.comment-tree .hnuser, .subtext span[id^="score"]
+{ font-weight: 501 !important; }
+
+.subtext span[id^="score"] { color: #D55526 !important; }
+
+.storylink {
+    font-size: 26px !important;
+    font-weight: lighter !important;
+    text-underline-offset: 3px !important;
+    text-decoration: underline #f06d3c !important;
+    text-decoration-thickness: 2px !important;
+}
+
+.storylink:hover { text-decoration: underline rgb(130, 130, 130, .7) !important; }
+
+.itemlist tr:last-child .title a {
+    padding: 10px 25px !important;
+    font-size: 24px !important;
+}
+
+.itemlist tr:last-child .title a:hover {
+    background: #f06d3c !important;
+    color: #fff !important;
+}
+
+/* ----------- */
+
+.comment-tree { margin-top: -55px !important; }
+
+.comment-tree .comment {
+    line-height: 1.6em !important;
+    padding-bottom: 1px !important;
+}
+
+.comment-tree .athing td { padding: 12px 0 4px !important; }
+
+.comment-tree td.ind { rgba(236, 236, 236, 1) !important; }
+
+.comment-tree tr.athing.comtr > td > table {
+    padding: 0 10px 10px 20px !important;
+}
+
+.comment-tree tr.athing.comtr > td > table:hover {
+    border-radius: 10px !important;
+    background: rgba(236, 236, 236, 0.5) !important;
+}
+
+.comment-tree tr.athing.comtr > td > table:hover .commtext,
+.comment-tree tr.athing.comtr > td > table .commtext a:not(:visited)
+{ color: #000 !important; }
+
+.votearrow:after {
+    line-height: 11px !important;
+    font-size: 11px !important;
+    padding: 2px !important;
+}
+
+.default p { margin-top: 18px !important; }
+
+.comment a { text-decoration: underline #f06d3c !important; }
+
+.comment a:hover { text-decoration: underline #000 !important; }
+
+.comment a:visited:hover { color: #000 !important; }
+
+.comment-tree .morelink {
+    display: block;
+    text-align: center;
+    background: #f06d3c;
+    color: #fff;
+    padding: 10px 0;
+    border-radius: 10px;
+}
+
+.comment-tree .morelink:hover { background: rgb(130, 130, 130, .7); }
+
+}

@@ -1,0 +1,93 @@
+/* ==UserStyle==
+@name         Reddit - Old.Reddit misc tweaks
+@author       krisu (https://github.com/krisu5)
+@namespace    github.com/krisu5/userstyles
+@homepageURL  https://github.com/krisu5/userstyles/tree/master/_Misc
+@version      0.0.1
+@license      unlicense
+==/UserStyle== */
+
+@-moz-document domain("reddit.com") {
+
+li.share, .link.promotedlink.promoted, #siteTable_organic, .next-suggestions, .sidecontentbox .linkflairlabel, #eu-cookie-policy,
+.profilebetabar, .recommended-link, .give-gold-button, .redesign-beta-optin, .ad-container, .happening-now-wrap, .presence_circle.offline
+{ display: none !important; }
+
+/* #header-bottom-right .user a[href^="https://old.reddit.com/user/"] { margin-right: -4px !important; } */
+  
+.trending-subreddits .comments        { opacity: 0 !important; }
+.trending-subreddits .comments:hover  { opacity: 1 !important; }
+
+a.subreddit {
+color: green !important;
+font-weight: bold !important;
+}
+
+.link.last-clicked { border: 0 !important; }
+
+.titlebox form.toggle { background: transparent !important; }
+
+.comment span.score, .comment span[title^="this subreddit hides comment scores for"] {
+color: #565656 !important;
+font-weight: bold !important;
+padding: 0 5px !important;
+}
+
+.comment.controversial > .entry .score:after { color: red !important; }
+
+.wiki .toc ul { max-width: 275px !important; }
+
+.pirate-bar {
+opacity: 0.2 !important;
+top: 19px !important;
+}
+
+.pirate-bar:hover { opacity: 1 !important; }
+
+.nav-buttons {
+	font-size: 24px !important;
+	margin: 30px 0 0 45px;
+}
+
+.nav-buttons a { font-weight: normal !important; }
+}
+
+@-moz-document regexp(".*\\://.*\\.reddit.com/r/.*\\/comments/.*") {
+
+/* --- Video Player fix --- */
+
+.playback-controls.right.bottom.left.hide-when-pinned.reddit-video-controller-root {
+    position: absolute !important;
+    width: calc(100% + 11px) !important;
+}
+
+.reddit-video-controller-root.interstitial-controls { background: transparent !important; }
+
+.reddit-video-controller-root.interstitial-controls button svg {
+    left: 2px !important;
+    top: -2px !important;
+}
+
+}
+
+@-moz-document regexp(".*\\://.*\\.reddit.com/?count="), regexp(".*\\://.*\\.reddit.com/(hot|new|rising|controversial|top|explore|user)/.*") {
+
+body.profile-page .comment .parent { padding-bottom: 4px !important; }
+
+.link .flat-list { padding: 3px 0 !important; }
+
+}
+
+@-moz-document regexp(".*\\://.*\\.reddit.com/user/.*") {
+
+.pagename, .titlebox h1	{ -moz-user-select: all !important; }
+#header-img				{ -moz-user-select: none !important; }
+.tabmenu				{ -moz-user-select: none !important; }
+
+}
+
+@-moz-document regexp(".*\\://.*\\.reddit.com/r/friends/") {
+
+body > .content .link .midcol, .midcol-spacer { width: 4ex !important; }
+
+}

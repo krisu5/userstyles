@@ -1,0 +1,16 @@
+/* ==UserStyle==
+@name         Twitter - Custom font
+@description  Font has to be installed on PC
+@author       krisu (https://github.com/krisu5)
+@namespace    github.com/krisu5/userstyles
+@homepageURL  https://github.com/krisu5/userstyles/tree/master/_Misc
+@version      0.0.1
+@license      unlicense
+@var text     customFont  "Custom font"  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif
+==/UserStyle== */
+
+@-moz-document domain("twitter.com") {
+
+* { font-family: var(--customFont) !important; } 
+
+}

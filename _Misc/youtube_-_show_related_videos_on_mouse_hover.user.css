@@ -1,0 +1,35 @@
+/* ==UserStyle==
+@name         YouTube - Show related videos on mouse hover
+@description  Less clickbait in the screen. Bonus benefit: no thumbnail loading when loading the page, only loads when hovering.
+@author       krisu (https://github.com/krisu5)
+@namespace    github.com/krisu5/userstyles
+@homepageURL  https://github.com/krisu5/userstyles/tree/master/_Misc
+@version      0.0.1
+@license      unlicense
+==/UserStyle== */
+
+@-moz-document domain("youtube.com") {
+
+#related #items, #related yt-related-chip-cloud-renderer
+{ display: none !important; }
+
+#related:hover #items
+{ display: inherit !important; }
+
+#related:first-child:before {
+	content: "Hover here to see other related videos";
+	background: #eee;
+    color: #484848 !important;
+	font-size: 15px;
+    margin: 0px 0 16px;
+	padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+ytd-comments {
+	border-right: 1px solid #e0e0e0;
+	padding-right: 30px;
+}
+
+}

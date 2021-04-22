@@ -1,0 +1,34 @@
+/* ==UserStyle==
+@name         Fritz.box - Hide telephone stuff
+@description  Possibly doesn't work always 100%
+@author       krisu (https://github.com/krisu5)
+@namespace    github.com/krisu5/userstyles
+@homepageURL  https://github.com/krisu5/userstyles/tree/master/_Misc
+@version      0.0.1
+@license      unlicense
+==/UserStyle== */
+
+@-moz-document domain("fritz.box") {
+
+/* Navigation: "Telephony" items */
+#navigationMenu #tel,
+#navigationMenu #telsub,
+
+/* Overview, "Connection" section: "Telephony" row */
+body[class="cache"] main#contentBox #content .connection .item:nth-child(2),
+body[class^="sticky"] main#contentBox #content .connection .item:nth-child(2),
+body[class=""] main#contentBox #content .connection .item:nth-child(2),
+
+/* Overview: "Calls" & "Answering Machine" section */
+body[class="cache"] main#contentBox #content > .row:nth-child(3),
+body[class^="sticky"] main#contentBox #content > .row:nth-child(3),
+body[class=""] main#contentBox #content > .row:nth-child(3),
+
+/* Overview, "Convenience Features" section: "Telephone book" row */
+body[class="cache"] main#contentBox #content .comfort .row:nth-child(1),
+body[class^="sticky"] main#contentBox #content .comfort .row:nth-child(1),
+body[class=""] main#contentBox #content .comfort .row:nth-child(1)
+
+{ display:none !important; }
+
+}

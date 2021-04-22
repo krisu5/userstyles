@@ -1,0 +1,37 @@
+/* ==UserStyle==
+@name         YouTube - Expand video description automatically
+@description  And opposite with button press
+@author       krisu (https://github.com/krisu5)
+@namespace    github.com/krisu5/userstyles
+@homepageURL  https://github.com/krisu5/userstyles/tree/master/_Misc
+@version      0.0.1
+@license      unlicense
+==/UserStyle== */
+
+@-moz-document domain("youtube.com") {
+    
+*:not([should-stamp-chat]) #meta-contents ytd-expander[collapsed] > #content.ytd-expander {
+    overflow: auto;
+    max-height: inherit;
+}
+
+*:not([should-stamp-chat]) #meta-contents ytd-expander:not([collapsed]) > #content.ytd-expander {
+    overflow: hidden;
+    max-height: 60px;
+}
+
+.more-button.ytd-video-secondary-info-renderer::after {
+    content: "show less";
+    font-size: 1.3rem !important;
+}
+
+.less-button.ytd-video-secondary-info-renderer::after {
+    content: "show more";
+    font-size: 1.3rem !important;
+}
+
+.more-button.ytd-video-secondary-info-renderer,
+.less-button.ytd-video-secondary-info-renderer
+{ font-size: 0 !important; }
+
+}

@@ -1,0 +1,16 @@
+/* ==UserStyle==
+@name         YouTube - Live chat, pinned comment tweaks
+@author       krisu (https://github.com/krisu5)
+@namespace    github.com/krisu5/userstyles
+@homepageURL  https://github.com/krisu5/userstyles/tree/master/_Misc
+@version      0.0.1
+@license      unlicense
+==/UserStyle== */
+
+@-moz-document domain("youtube.com") {
+    
+yt-live-chat-banner-renderer[collapsed=""] { opacity: 0.05 !important; }
+yt-live-chat-banner-renderer[collapsed=""]:hover { opacity: 0.5 !important; }
+yt-live-chat-banner-renderer:not([collapsed=""]) { opacity: 1 !important; }
+
+}

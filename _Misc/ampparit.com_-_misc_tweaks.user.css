@@ -1,0 +1,22 @@
+/* ==UserStyle==
+@name         Ampparit.com - Misc Tweaks
+@author       krisu (https://github.com/krisu5)
+@namespace    github.com/krisu5/userstyles
+@homepageURL  https://github.com/krisu5/userstyles/tree/master/_Misc
+@version      0.0.1
+@license      unlicense
+==/UserStyle== */
+
+@-moz-document domain("ampparit.com") {
+
+#top-ad, .scrollup-button, div[class^="ad"] { display: none !important; }
+
+}
+
+@-moz-document url-prefix("https://www.ampparit.com/tv"), url-prefix("https://ampparit.com/tv") {
+
+.sidebar-container, .ad-container, .television-top { display: none !important; }
+.programming .channel { flex: 0 0 20% !important; }
+.program { font-size: 14px !important; }
+
+}
