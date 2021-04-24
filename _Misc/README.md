@@ -5,7 +5,7 @@ I won't guarantee any support for any of these styles below. What is there is th
 Think of these as nice extras with no guarantee to work in the future. Recommended to edit for own use.
 
 - [Ampparit.com - **Misc tweaks**](https://github.com/krisu5/userstyles/raw/master/_Misc/ampparit.com_-_misc_tweaks.user.css)
-- [BugMeNot - **Fix Selection on Firefox**](https://github.com/krisu5/userstyles/raw/master/_Misc/bugmenot_-_fix_selection_on_firefox.user.css)
+- [BugMeNot - **Fix selection on Firefox**](https://github.com/krisu5/userstyles/raw/master/_Misc/bugmenot_-_fix_selection_on_firefox.user.css)
 - [Fritz.box - **Hide telephone stuff**](https://github.com/krisu5/userstyles/raw/master/_Misc/fritz.box_-_hide_telephone_stuff.user.css)
 - [Github - **Emoji tweaks for Windows**](https://github.com/krisu5/userstyles/raw/master/_Misc/github_-_emoji_tweaks_for_windows.user.css)
 - [Github - **Slimmer notification page**](https://github.com/krisu5/userstyles/raw/master/_Misc/github_-_slimmer_notification_page.user.css)
