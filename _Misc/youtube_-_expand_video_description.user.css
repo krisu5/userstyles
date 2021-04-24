@@ -4,18 +4,23 @@
 @author       krisu (https://github.com/krisu5)
 @namespace    github.com/krisu5/userstyles
 @homepageURL  https://github.com/krisu5/userstyles/tree/master/_Misc
-@version      0.0.1
+@version      0.0.2
 @license      unlicense
 ==/UserStyle== */
 
+/* 
+    KNOWN ISSUES (unfixable rn):
+    - Works opposite on videos that are or has been livestreamed.
+*/
+
 @-moz-document domain("youtube.com") {
     
-*:not([should-stamp-chat]) #meta-contents ytd-expander[collapsed] > #content.ytd-expander {
+#meta-contents ytd-expander[collapsed] > #content.ytd-expander {
     overflow: auto;
     max-height: inherit;
 }
 
-*:not([should-stamp-chat]) #meta-contents ytd-expander:not([collapsed]) > #content.ytd-expander {
+#meta-contents ytd-expander:not([collapsed]) > #content.ytd-expander {
     overflow: hidden;
     max-height: 60px;
 }
