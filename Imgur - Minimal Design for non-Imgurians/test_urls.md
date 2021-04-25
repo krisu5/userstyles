@@ -1,0 +1,16 @@
+- https://imgur.com
+  - Frontpage, obviously.
+- https://imgur.com/gallery/RREDweZ 
+  - Multiple pictures.
+- https://imgur.com/gallery/ku9zlNu 
+  - Multiple pictures & gallery descriptions.
+- https://imgur.com/gallery/p7kQW0r 
+  - Single video.
+- https://imgur.com/gallery/rc68JPt
+  - Single video with description.
+- https://imgur.com/TyP0aJ3
+  - Single picture.
+- https://imgur.com/vIJVyip
+  - NSFW image that shows 18+ warning. [Random Imgur URL from top of /r/normalnudes search](https://old.reddit.com/r/normalnudes/search?q=url:imgur.com&restrict_sr=on&include_over_18=on) (ofc also NSFW).
+- https://imgur.com/987asd5
+  - 404 error page.
