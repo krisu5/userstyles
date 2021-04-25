@@ -20,6 +20,7 @@ Works with old and new gallery design!
 
 ## Changelog
 
+- *2021-04-25:* Small fix for 404 page (added `overflow: auto;` to body)
 - *2021-04-24:* Frontpage fixed, added tweaks for 404 error page
 - *2021-01-12:* Small fix for "Support Imgur" button, image modals 0.5 viewport units bigger
 - *2020-12-07:* Snowflakes background on the frontpage blocked

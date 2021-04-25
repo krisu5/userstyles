@@ -5,7 +5,7 @@
 @namespace    github.com/krisu5/userstyles
 @homepageURL  https://github.com/krisu5/userstyles/tree/master/Imgur%20-%20Minimal%20and%20Anti-Social%20for%20non-Imgurians
 @supportURL   https://github.com/krisu5/userstyles/issues
-@version      1.2.1
+@version      1.2.2
 @license      unlicense
 @preprocessor default
 ==/UserStyle== */
@@ -73,7 +73,10 @@ body, html { overflow-y: hidden !important; }
 .BottomRecirc, .btn-wall--no, .BannerTop3, .UploadSpinner-contentWrapper, .Page404-contentWrapper
 { display: none !important; }
 
-body:not([class=""]) { background-color: #27292d; }
+body:not([class=""]) {
+    background-color: #27292d;
+    overflow: auto;
+}
 
 .Button.upload { font-size: 0; }
 
