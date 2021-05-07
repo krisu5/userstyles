@@ -1,0 +1,59 @@
+/* ==UserStyle==
+@name         Tapas - Minimal-ish
+@description  Less wasted screen space when reading comics, see the CSS comment
+@author       krisu (https://github.com/krisu5)
+@namespace    github.com/krisu5/userstyles
+@homepageURL  https://github.com/krisu5/userstyles/tree/master/_Misc
+@version      0.0.1
+@license      unlicense
+==/UserStyle== */
+
+/*
+    MADE TO WORK IN 1920 x 1080 px RESOLUTION (OR WHATEVER IS MY VIEWPORT OF THAT).
+
+    TRY CHANGING .js-episodes & .js-comments MAX-HEIGHT TO MAKE IT WORK IN YOUR RESOLUTION.
+*/
+
+@-moz-document url-prefix("https://tapas.io/episode/") {
+
+.info-header, .js-series-description, .info-body__bottom
+{ display: none !important; }
+
+.top-nav-wrap, .toolbar {
+    transition: .3s !important;
+    opacity: .05 !important;
+    z-index: 999 !important;
+}
+
+.top-nav-wrap {
+    top: -62px !important;
+    height: 0px !important;
+}
+
+.top-nav-wrap:hover, .top-nav-wrap:focus-within {
+    opacity: 1 !important;
+    top: 0px !important;
+}
+
+.toolbar {
+    bottom: -47px !important;
+}
+
+.toolbar:hover, .toolbar:focus-within {
+    opacity: 1 !important;
+    bottom: 0 !important;
+}
+
+.side-section { top: 18px !important; }
+
+.js-series-info { margin-top: 30px !important; }
+
+.vw-root .side-section--series .episode-list { margin-top: -2px !important; }
+
+.js-episodes { max-height: 77.6vh !important; }
+
+.js-comments { max-height: calc(73vh + 5px) !important; }
+
+.side-section--comment .section-footer { bottom: 21px !important; }
+
+}

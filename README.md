@@ -32,6 +32,7 @@ Think of these as nice extras with no guarantee to work in the future. Recommend
 - [Hacker News - **Modern HN Light, krisu's companion style**](https://github.com/krisu5/userstyles/raw/master/_Misc/hacker_news_-_modern_hn_light_krisu's_companion_style.user.css)
 - [NHK World - **Bigger live TV video**](https://github.com/krisu5/userstyles/raw/master/_Misc/nhk_world_-_bigger_live_tv_video.user.css)
 - [Reddit - **Old.Reddit misc tweaks**](https://github.com/krisu5/userstyles/raw/master/_Misc/reddit_-_old.reddit_misc_tweaks.user.css)
+- [Tapas - **Minimal-ish**](https://github.com/krisu5/userstyles/raw/master/_Misc/tapas_-_minimal-ish.user.css)
 - [Twitter - **Custom font**](https://github.com/krisu5/userstyles/raw/master/_Misc/twitter_-_custom_font.user.css)
 - [Twitter - **Hide FB-styled DM drawer**](https://github.com/krisu5/userstyles/raw/master/_Misc/twitter_-_hide_fb-styled_dm_drawer.user.css)
 - [Wikia / Fandom - **No sticky elements and less crap**](https://github.com/krisu5/userstyles/raw/master/_Misc/wikia_fandom_-_no_sticky_elements_and_less_crap.user.css)
