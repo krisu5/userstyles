@@ -4,7 +4,7 @@
 @author       krisu (https://github.com/krisu5)
 @namespace    github.com/krisu5/userstyles
 @homepageURL  https://github.com/krisu5/userstyles/tree/master/_Misc
-@version      0.0.1
+@version      0.0.2
 @license      unlicense
 ==/UserStyle== */
 
@@ -16,7 +16,7 @@
 
 @-moz-document url-prefix("https://tapas.io/episode/") {
 
-.info-header, .js-series-description, .info-body__bottom
+.info-header, .js-series-description, .info-body__bottom, .desktop .thumb-overlay, .series-info .announcement
 { display: none !important; }
 
 .top-nav-wrap, .toolbar {
@@ -35,9 +35,7 @@
     top: 0px !important;
 }
 
-.toolbar {
-    bottom: -47px !important;
-}
+.toolbar { bottom: -47px !important; }
 
 .toolbar:hover, .toolbar:focus-within {
     opacity: 1 !important;
@@ -47,13 +45,39 @@
 .side-section { top: 18px !important; }
 
 .js-series-info { margin-top: 30px !important; }
+    
+.series-info .info-body__top .thumb img { max-height: 77px !important; }
+    
+.side-section--series .thumb-wrapper--mg25 { margin-top: 0px; }
+    
+.side-section--series .thumb-wrapper--mg25 + .title-wrapper {
+    margin-top: -7px !important;
+    margin-left: -15px !important;
+}
+    
+.series-info .thumb-wrapper--mg15 {
+    margin-top: -25px !important;
+    margin-bottom: 13px !important;
+}
+    
+.series-info .thumb-wrapper--mg15 + .title-wrapper { margin-top: -6px !important; }
 
-.vw-root .side-section--series .episode-list { margin-top: -2px !important; }
+.side-section--series .episode-list { margin-top: -2px !important; }
+    
+.side-section--comment .section-footer { bottom: 21px !important; }
 
-.js-episodes { max-height: 77.6vh !important; }
+/* vvv-- CHANGE max-height VALUE FOR YOUR VIEWPORT (CHANGES IN SEPARATE USERSTYLE RECOMMENDED) --vvv */
+.js-episodes { max-height: calc(80vh + 12px) !important; }
 
+/* vvv-- CHANGE max-height VALUE FOR YOUR VIEWPORT (CHANGES IN SEPARATE USERSTYLE RECOMMENDED) --vvv */
 .js-comments { max-height: calc(73vh + 5px) !important; }
 
-.side-section--comment .section-footer { bottom: 21px !important; }
+}
+
+@-moz-document regexp("https://tapas.io/series/.*\\/info") {
+
+html.overlay { overflow: hidden !important; }
+    
+.modal-backdrop { background-color: rgba(0,0,0,.9) !important; }
 
 }
