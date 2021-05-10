@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name          Tapas - Minimal-ish
-@description   Less wasted screen space when reading comics
+@description   Less wasted screen space when reading comics, see the CSS comment
 @author        krisu (https://github.com/krisu5)
 @namespace     github.com/krisu5/userstyles
 @homepageURL   https://github.com/krisu5/userstyles/tree/master/_Misc
@@ -87,6 +87,7 @@ if hideRecommendations {
 }
 
 }
+
 @-moz-document regexp("https://tapas.io/series/.*\\/info") {
     
 .section--ad { display: none !important; }
