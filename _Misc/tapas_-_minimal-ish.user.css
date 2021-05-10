@@ -1,18 +1,15 @@
 /* ==UserStyle==
-@name         Tapas - Minimal-ish
-@description  Less wasted screen space when reading comics, see the CSS comment
-@author       krisu (https://github.com/krisu5)
-@namespace    github.com/krisu5/userstyles
-@homepageURL  https://github.com/krisu5/userstyles/tree/master/_Misc
-@version      0.0.2
-@license      unlicense
+@name          Tapas - Minimal-ish
+@description   Less wasted screen space when reading comics
+@author        krisu (https://github.com/krisu5)
+@namespace     github.com/krisu5/userstyles
+@homepageURL   https://github.com/krisu5/userstyles/tree/master/_Misc
+@version       0.0.3
+@license       unlicense
+@preprocessor  stylus
+@var checkbox  hideComments         "Hide comments"         0
+@var checkbox  hideRecommendations  "Hide recommendations"  0
 ==/UserStyle== */
-
-/*
-    MADE TO WORK IN 1920 x 1080 px RESOLUTION (OR WHATEVER IS MY VIEWPORT OF THAT).
-
-    TRY CHANGING .js-episodes & .js-comments MAX-HEIGHT TO MAKE IT WORK IN YOUR RESOLUTION.
-*/
 
 @-moz-document url-prefix("https://tapas.io/episode/") {
 
@@ -42,13 +39,16 @@
     bottom: 0 !important;
 }
 
-.side-section { top: 18px !important; }
+.side-section {
+    height: auto !important;
+    top: 18px !important;
+}
 
 .js-series-info { margin-top: 30px !important; }
     
 .series-info .info-body__top .thumb img { max-height: 77px !important; }
     
-.side-section--series .thumb-wrapper--mg25 { margin-top: 0px; }
+.side-section--series .thumb-wrapper--mg25 { margin-top: -25px !important; }
     
 .side-section--series .thumb-wrapper--mg25 + .title-wrapper {
     margin-top: -7px !important;
@@ -66,15 +66,30 @@
     
 .side-section--comment .section-footer { bottom: 21px !important; }
 
-/* vvv-- CHANGE max-height VALUE FOR YOUR VIEWPORT (CHANGES IN SEPARATE USERSTYLE RECOMMENDED) --vvv */
-.js-episodes { max-height: calc(80vh + 12px) !important; }
+.js-episodes { max-height: calc(100vh - 175px) !important; }
 
-/* vvv-- CHANGE max-height VALUE FOR YOUR VIEWPORT (CHANGES IN SEPARATE USERSTYLE RECOMMENDED) --vvv */
-.js-comments { max-height: calc(73vh + 5px) !important; }
+.js-comments { max-height: calc(100vh - 245px) !important; }
+    
+.vw-root .side-section--closed { display: none !important; }
 
+/* ------ @VARs ------ */
+    
+if hideComments {
+    .viewer-section--comment { display: none !important; }
+    
+    if not hideRecommendations {
+        .viewer-section--recommend { margin-top: 50px !important; }
+    }
 }
 
+if hideRecommendations {
+    .viewer-section--recommend { display: none !important; }
+}
+
+}
 @-moz-document regexp("https://tapas.io/series/.*\\/info") {
+    
+.section--ad { display: none !important; }
 
 html.overlay { overflow: hidden !important; }
     
