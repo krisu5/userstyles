@@ -4,13 +4,26 @@
 @author       krisu (https://github.com/krisu5)
 @namespace    github.com/krisu5/userstyles
 @homepageURL  https://github.com/krisu5/userstyles/tree/master/_Misc
-@version      0.0.2
+@version      0.0.3
 @license      unlicense
 ==/UserStyle== */
 
 /* 
-    KNOWN ISSUES (unfixable rn):
-    - Works opposite on videos that are or has been livestreamed.
+    KNOWN ISSUES:
+    - Works opposite on currently livestreamed videos.
+    - IDK how well this works with premieres (never watched those).
+    
+    POSSIBLE FIX FOR LIVESTREAMS WITH UBLOCK ORIGIN:
+    - Add these filters to "My filters":
+    
+        youtube.com##body:has(.short-view-count:empty) #meta-contents ytd-expander:not([collapsed]) > #content.ytd-expander:style(overflow: auto !important; max-height: inherit !important;)
+        youtube.com##body:has(.short-view-count:empty) ytd-video-secondary-info-renderer:style(padding-bottom: 0 !important;)
+        youtube.com##body:has(.short-view-count:empty) .more-button.ytd-video-secondary-info-renderer
+        youtube.com##body:has(.short-view-count:empty) .less-button.ytd-video-secondary-info-renderer
+    
+    ------------------
+    
+    "::after" pseudo selectors can't be styled when using ":has" selector in the filter, so I just block the "show more" & "show less" buttons completely instead.
 */
 
 @-moz-document domain("youtube.com") {
@@ -27,16 +40,19 @@
 
 .more-button.ytd-video-secondary-info-renderer::after {
     content: "show less";
-    font-size: 1.3rem !important;
+    font-size: 1.3rem;
 }
 
 .less-button.ytd-video-secondary-info-renderer::after {
     content: "show more";
-    font-size: 1.3rem !important;
+    font-size: 1.3rem;
 }
 
 .more-button.ytd-video-secondary-info-renderer,
 .less-button.ytd-video-secondary-info-renderer
-{ font-size: 0 !important; }
+{ font-size: 0; }
+
+#meta-contents ytd-metadata-row-container-renderer #collapsible
+{ display: none !important; }
 
 }
