@@ -4,7 +4,7 @@
 @author       krisu (https://github.com/krisu5)
 @namespace    github.com/krisu5/userstyles
 @homepageURL  https://github.com/krisu5/userstyles/tree/master/_Misc
-@version      0.0.4
+@version      0.0.5
 @license      unlicense
 ==/UserStyle== */
 
@@ -16,12 +16,12 @@
     POSSIBLE FIXES FOR LIVESTREAMS WITH UBLOCK ORIGIN:
     - Add these filters to "My filters":
     
-        youtube.com##body:has(.short-view-count:empty) #meta-contents ytd-expander:not([collapsed]) > #content.ytd-expander:style(overflow: auto !important; max-height: inherit !important;)
-        youtube.com##body:has(.short-view-count:empty) #meta-contents ytd-expander:not([collapsed]) #always-shown:not(:empty):style(visibility: inherit !important; height: auto !important;)
-        youtube.com##body:has(.short-view-count:empty) #meta-contents ytd-video-secondary-info-renderer:style(padding-bottom: 0 !important;)
-        youtube.com##body:has(.short-view-count:empty) #meta-contents ytd-metadata-row-container-renderer #always-shown:empty:style(padding-bottom: 25px !important;)
-        youtube.com##body:has(.short-view-count:empty) tp-yt-paper-button#more
-        youtube.com##body:has(.short-view-count:empty) tp-yt-paper-button#less
+    youtube.com##body:has(.short-view-count:empty) #meta-contents ytd-expander > #content.ytd-expander:style(overflow: auto !important; max-height: inherit !important;)
+    youtube.com##body:has(.short-view-count:empty) #meta-contents ytd-expander #always-shown:not(:empty):style(visibility: inherit !important; height: auto !important; margin-bottom: 10px !important;)
+    youtube.com##body:has(.short-view-count:empty) #meta-contents ytd-video-secondary-info-renderer:style(padding-bottom: 0 !important;)
+    youtube.com##body:has(.short-view-count:empty) #meta-contents ytd-metadata-row-container-renderer #always-shown:empty:style(padding-bottom: 25px !important;)
+    youtube.com##body:has(.short-view-count:empty) tp-yt-paper-button#more
+    youtube.com##body:has(.short-view-count:empty) tp-yt-paper-button#less
     
     ------------------
     
