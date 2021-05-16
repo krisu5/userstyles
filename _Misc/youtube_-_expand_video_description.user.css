@@ -4,7 +4,7 @@
 @author       krisu (https://github.com/krisu5)
 @namespace    github.com/krisu5/userstyles
 @homepageURL  https://github.com/krisu5/userstyles/tree/master/_Misc
-@version      0.0.3
+@version      0.0.4
 @license      unlicense
 ==/UserStyle== */
 
@@ -13,13 +13,15 @@
     - Works opposite on currently livestreamed videos.
     - IDK how well this works with premieres (never watched those).
     
-    POSSIBLE FIX FOR LIVESTREAMS WITH UBLOCK ORIGIN:
+    POSSIBLE FIXES FOR LIVESTREAMS WITH UBLOCK ORIGIN:
     - Add these filters to "My filters":
     
         youtube.com##body:has(.short-view-count:empty) #meta-contents ytd-expander:not([collapsed]) > #content.ytd-expander:style(overflow: auto !important; max-height: inherit !important;)
-        youtube.com##body:has(.short-view-count:empty) ytd-video-secondary-info-renderer:style(padding-bottom: 0 !important;)
-        youtube.com##body:has(.short-view-count:empty) .more-button.ytd-video-secondary-info-renderer
-        youtube.com##body:has(.short-view-count:empty) .less-button.ytd-video-secondary-info-renderer
+        youtube.com##body:has(.short-view-count:empty) #meta-contents ytd-expander:not([collapsed]) #always-shown:not(:empty):style(visibility: inherit !important; height: auto !important;)
+        youtube.com##body:has(.short-view-count:empty) #meta-contents ytd-video-secondary-info-renderer:style(padding-bottom: 0 !important;)
+        youtube.com##body:has(.short-view-count:empty) #meta-contents ytd-metadata-row-container-renderer #always-shown:empty:style(padding-bottom: 25px !important;)
+        youtube.com##body:has(.short-view-count:empty) tp-yt-paper-button#more
+        youtube.com##body:has(.short-view-count:empty) tp-yt-paper-button#less
     
     ------------------
     
@@ -48,11 +50,19 @@
     font-size: 1.3rem;
 }
 
+#meta-contents ytd-expander:not([collapsed]) #always-shown:not(:empty) {
+    visibility: hidden;
+    height: 5px;
+}
+
 .more-button.ytd-video-secondary-info-renderer,
 .less-button.ytd-video-secondary-info-renderer
 { font-size: 0; }
 
+#meta-contents ytd-metadata-row-container-renderer #always-shown:empty
+{ padding-bottom: 10px; }
+
 #meta-contents ytd-metadata-row-container-renderer #collapsible
-{ display: none !important; }
+{ display: none; }
 
 }
