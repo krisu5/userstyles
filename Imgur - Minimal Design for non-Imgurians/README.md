@@ -2,8 +2,8 @@
 
 ### 📦 [Click to install](https://github.com/krisu5/userstyles/raw/master/Imgur%20-%20Minimal%20Design%20for%20non-Imgurians/imgur_-_minimal_design_for_non-imgurians.user.css)
 
-> Also available at [Greasy Fork](https://greasyfork.org/en/scripts/398960-imgur-minimal-design-for-non-imgurians) and ~~[Userstyles.org](https://33kk.github.io/uso-archive/?author=krisu&style=181729)~~<br>
-<sup>(2020-07-17: Userstyles.org support ended)</sup>
+> Also available at [Greasy Fork](https://greasyfork.org/en/scripts/398960-imgur-minimal-design-for-non-imgurians), [UserStyles.world](https://userstyles.world/style/128/imgur-minimal-design-for-non-imgurians) & ~~[Userstyles.org](https://33kk.github.io/uso-archive/?author=krisu&style=181729)~~<br>
+<sup>(2020-07-17: **Userstyles.org** support ended)</sup>
 
 *Removes all the unnecessary stuff, for people that's not interested about Imgur culture.* 📷
 
