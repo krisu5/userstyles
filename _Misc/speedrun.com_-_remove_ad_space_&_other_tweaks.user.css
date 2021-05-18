@@ -3,10 +3,10 @@
 @author         krisu (https://github.com/krisu5)
 @namespace      github.com/krisu5/userstyles
 @homepageURL    https://github.com/krisu5/userstyles/tree/master/_Misc
-@version        0.0.1
+@version        0.0.2
 @license        unlicense
 @preprocessor   stylus
-@var checkbox   hideSidebar  "Hide sidebar everywhere"  0
+@var checkbox   hideSidebar  "Hide sidebar from frontpage"  0
 ==/UserStyle== */
 
 /*
@@ -15,9 +15,9 @@
 
 @-moz-document domain("speedrun.com") {
     
-/* ========================================
-   === [TOGGLE] Hide sidebar everywhere ===
-   ======================================== */
+/* ============================================
+   === [TOGGLE] Hide sidebar from frontpage ===
+   ============================================ */
    
 if hideSidebar {
     #widget { display: none !important; }
@@ -30,7 +30,7 @@ if hideSidebar {
     #leaderboard-wrapper { padding-bottom: 20px !important; }
 }
     
-/* ======================================== */
+/* ============================================ */
 
 #extrabar, [data-type="elo-placement"] { display: none !important; }
 
@@ -53,9 +53,9 @@ div[id^="leaderboarddiv"] p:only-child { padding-bottom: 20px !important; }
 
 @-moz-document regexp(".*\\://.*.speedrun.com/user/.*"), regexp(".*\\://.*.speedrun.com/edittheme/user/.*"), regexp(".*\\://.*.speedrun.com/.*/(allposts|pendingactions|settings)"), regexp(".*\\://.*.speedrun.com/(editprofile|pendingactions).*") {
     
-/* ------------------------------------------------
-   REMOVE POINTLESS SIDEBAR ALWAYS FROM THESE PAGES
-   ------------------------------------------------ */
+/* ========================================================
+   === REMOVE POINTLESS SIDEBAR ALWAYS FROM THESE PAGES ===
+   ======================================================== */
     
 #centerwidget { width: 100% !important; }
 
@@ -71,7 +71,7 @@ div[id^="leaderboarddiv"] p:only-child { padding-bottom: 20px !important; }
 
 @-moz-document regexp(".*\\://.*.speedrun.com/.*/auditlog.*") {
     
-form#listingOptions .row { margin: 10px auto; }
+form#listingOptions .row { margin: 10px auto !important; }
 
 #resultListing .mt-4 {
     margin-left: 25px !important;
