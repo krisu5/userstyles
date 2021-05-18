@@ -19,11 +19,13 @@
   - *It's same new Twitter, except much cleaner and little bit better.*
   - Please **read the notes** at the bottom for recommended uBlock filterlist.
   
-## Misc. Userstyles
+## Misc. Userstyles / WIPs
 
 I won't give any support for any of these styles below. What is there is there. Only hosted here at Github.
 
 Think of these as nice extras with no guarantee to work in the future. Recommended to edit for own use.
+
+Some styles might be WIP and might be published on other sites and supported fully in the future.
 
 - [Ampparit.com - **Misc tweaks**](https://github.com/krisu5/userstyles/raw/master/_Misc/ampparit.com_-_misc_tweaks.user.css)
 - [BugMeNot - **Fix selection on Firefox**](https://github.com/krisu5/userstyles/raw/master/_Misc/bugmenot_-_fix_selection_on_firefox.user.css)
@@ -33,6 +35,7 @@ Think of these as nice extras with no guarantee to work in the future. Recommend
 - [Hacker News - **Modern HN Light, krisu's companion style**](https://github.com/krisu5/userstyles/raw/master/_Misc/hacker_news_-_modern_hn_light_krisu's_companion_style.user.css)
 - [NHK World - **Bigger live TV video**](https://github.com/krisu5/userstyles/raw/master/_Misc/nhk_world_-_bigger_live_tv_video.user.css)
 - [Reddit - **Old.Reddit misc tweaks**](https://github.com/krisu5/userstyles/raw/master/_Misc/reddit_-_old.reddit_misc_tweaks.user.css)
+- [Speedrun.com - **Remove ad space & other tweaks**](https://github.com/krisu5/userstyles/raw/master/_Misc/speedrun.com_-_remove_ad_space_&_other_tweaks.user.css)
 - [Tapas - **Minimal-ish**](https://github.com/krisu5/userstyles/raw/master/_Misc/tapas_-_minimal-ish.user.css)
 - [Twitter - **Custom font**](https://github.com/krisu5/userstyles/raw/master/_Misc/twitter_-_custom_font.user.css)
 - [Twitter - **Hide FB-like DM drawer**](https://github.com/krisu5/userstyles/raw/master/_Misc/twitter_-_hide_fb-like_dm_drawer.user.css)

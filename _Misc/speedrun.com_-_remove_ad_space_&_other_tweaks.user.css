@@ -1,0 +1,83 @@
+/* ==UserStyle==
+@name           Speedrun.com - Remove ad space & other tweaks
+@author         krisu (https://github.com/krisu5)
+@namespace      github.com/krisu5/userstyles
+@homepageURL    https://github.com/krisu5/userstyles/tree/master/_Misc
+@version        0.0.1
+@license        unlicense
+@preprocessor   stylus
+@var checkbox   hideSidebar  "Hide sidebar everywhere"  0
+==/UserStyle== */
+
+/*
+    USE ADBLOCKER TOO, THIS USERSTYLE DOESN'T REPLACE ADBLOCKER'S BLOCKING ON SPEEDRUN.COM
+*/
+
+@-moz-document domain("speedrun.com") {
+    
+/* ========================================
+   === [TOGGLE] Hide sidebar everywhere ===
+   ======================================== */
+   
+if hideSidebar {
+    #widget { display: none !important; }
+    
+    #centerwidget, .old-leaderboard {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+        
+    #leaderboard-wrapper { padding-bottom: 20px !important; }
+}
+    
+/* ======================================== */
+
+#extrabar, [data-type="elo-placement"] { display: none !important; }
+
+@media (min-width: 1432px) {
+    #centerbar.widened { width: calc(100% - 275px) !important; }
+}
+
+@media (max-width: 992px) {
+    #centerbar, #centerbar.widened { width: 100% !important; }
+}
+    
+#centerbar.double {
+    margin: 0 auto !important;
+    width: 100% !important;
+}
+    
+div[id^="leaderboarddiv"] p:only-child { padding-bottom: 20px !important; }
+
+}
+
+@-moz-document regexp(".*\\://.*.speedrun.com/user/.*"), regexp(".*\\://.*.speedrun.com/edittheme/user/.*"), regexp(".*\\://.*.speedrun.com/.*/(allposts|pendingactions|settings)"), regexp(".*\\://.*.speedrun.com/(editprofile|pendingactions).*") {
+    
+/* ------------------------------------------------
+   REMOVE POINTLESS SIDEBAR ALWAYS FROM THESE PAGES
+   ------------------------------------------------ */
+    
+#centerwidget { width: 100% !important; }
+
+#widget { display: none !important; }
+    
+}
+
+@-moz-document regexp(".*\\://.*.speedrun.com/.*\\/run/.*[a-z0-9]") {
+
+.navbar-background.fixed-top { position: absolute !important; }
+
+}
+
+@-moz-document regexp(".*\\://.*.speedrun.com/.*/auditlog.*") {
+    
+form#listingOptions .row { margin: 10px auto; }
+
+#resultListing .mt-4 {
+    margin-left: 25px !important;
+    margin-right: 25px !important;
+}
+
+#resultListing .mt-4, #resultListing pre { width: 17vw !important; }
+    
+}
