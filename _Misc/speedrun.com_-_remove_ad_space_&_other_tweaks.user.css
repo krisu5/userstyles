@@ -3,7 +3,7 @@
 @author         krisu (https://github.com/krisu5)
 @namespace      github.com/krisu5/userstyles
 @homepageURL    https://github.com/krisu5/userstyles/tree/master/_Misc
-@version        0.0.2
+@version        0.0.3
 @license        unlicense
 @preprocessor   stylus
 @var checkbox   hideSidebar  "Hide sidebar from frontpage"  0
@@ -46,8 +46,6 @@ if hideSidebar {
     margin: 0 auto !important;
     width: 100% !important;
 }
-    
-div[id^="leaderboarddiv"] p:only-child { padding-bottom: 20px !important; }
 
 }
 
