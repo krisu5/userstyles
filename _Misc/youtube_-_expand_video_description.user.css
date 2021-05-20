@@ -4,14 +4,13 @@
 @author       krisu (https://github.com/krisu5)
 @namespace    github.com/krisu5/userstyles
 @homepageURL  https://github.com/krisu5/userstyles/tree/master/_Misc
-@version      0.0.5
+@version      0.0.6
 @license      unlicense
 ==/UserStyle== */
 
 /* 
-    KNOWN ISSUES:
+    KNOWN ISSUES (not fixable with regular CSS):
     - Works opposite on currently livestreamed videos.
-    - IDK how well this works with premieres (never watched those).
     
     POSSIBLE FIXES FOR LIVESTREAMS WITH UBLOCK ORIGIN:
     - Add these filters to "My filters":
@@ -20,8 +19,8 @@
     youtube.com##body:has(.short-view-count:empty) #meta-contents ytd-expander #always-shown:not(:empty):style(visibility: inherit !important; height: auto !important; margin-bottom: 10px !important;)
     youtube.com##body:has(.short-view-count:empty) #meta-contents ytd-video-secondary-info-renderer:style(padding-bottom: 0 !important;)
     youtube.com##body:has(.short-view-count:empty) #meta-contents ytd-metadata-row-container-renderer #always-shown:empty:style(padding-bottom: 25px !important;)
-    youtube.com##body:has(.short-view-count:empty) tp-yt-paper-button#more
-    youtube.com##body:has(.short-view-count:empty) tp-yt-paper-button#less
+    youtube.com##body:has(.short-view-count:empty):not(:has(.ytd-video-primary-info-renderer:has-text(Premiere))) tp-yt-paper-button#more
+    youtube.com##body:has(.short-view-count:empty):not(:has(.ytd-video-primary-info-renderer:has-text(Premiere))) tp-yt-paper-button#less
     
     ------------------
     
