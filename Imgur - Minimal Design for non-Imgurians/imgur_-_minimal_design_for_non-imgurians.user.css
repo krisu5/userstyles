@@ -5,7 +5,7 @@
 @namespace    github.com/krisu5/userstyles
 @homepageURL  https://github.com/krisu5/userstyles/tree/master/Imgur%20-%20Minimal%20and%20Anti-Social%20for%20non-Imgurians
 @supportURL   https://github.com/krisu5/userstyles/issues
-@version      1.2.2
+@version      1.2.3
 @license      unlicense
 @preprocessor default
 ==/UserStyle== */
@@ -176,18 +176,6 @@ body:not([class=""]) {
    ------------------------- */
 
 /* ------- NOT MODAL ------- */
-
-img.image-placeholder {
-    max-height: 100% !important;
-    height: 100% !important;
-    opacity: 1 !important;
-    position: inherit !important;
-}
-
-.imageContainer img[loading="lazy"] {
-    visibility: hidden !important;
-    height: 0;
-}
 
 .Gallery-ContentWrapper .Gallery-Content--media video:not(.fullscreen) { max-height: 70vh !important; }
 

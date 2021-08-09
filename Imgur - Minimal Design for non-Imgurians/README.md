@@ -20,6 +20,7 @@ Works with old and new gallery design!
 
 ## Changelog
 
+- *2021-08-09:* [Fix](https://github.com/krisu5/userstyles/blob/master/Imgur%20-%20Minimal%20Design%20for%20non-Imgurians/image_loading.md) removed because of Imgur's changes that breaks it
 - *2021-04-25:* Small fix for 404 page (added `overflow: auto;` to body)
 - *2021-04-24:* Frontpage fixed, added tweaks for 404 error page
 - *2021-01-12:* Small fix for "Support Imgur" button, image modals 0.5 viewport units bigger
