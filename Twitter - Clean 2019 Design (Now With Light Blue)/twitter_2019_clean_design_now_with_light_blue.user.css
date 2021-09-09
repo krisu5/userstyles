@@ -5,7 +5,7 @@
 @namespace    github.com/krisu5/userstyles
 @homepageURL  https://github.com/krisu5/userstyles/tree/master/Twitter%20-%20Clean%202019%20Design%20(Now%20With%20Light%20Blue)
 @supportURL   https://github.com/krisu5/userstyles/issues
-@version      1.4.3
+@version      1.4.4
 @license      unlicense
 @preprocessor uso
 ==/UserStyle== */
@@ -45,7 +45,7 @@ div[role="menu"] a[href^="https://ads.twitter.com/"], /* <--- "Promote Mode" & "
 
 div[role="menu"] a[href^="/i/newsletters"], /* <--- "Newsletters" menu link (promo for Revue) [MORE MENU] */
 
-div[aria-modal="true"] div[style="background-color: rgb(210, 241, 255);"], /* <--- Another Revue promo (after pressing "+" button) [TWEET COMPOSE MODAL] */
+div[aria-labelledby="modal-header"] .r-19n28yv, /* <--- Another Revue promo (after pressing "+" button) [TWEET COMPOSE MODAL] */
 
 div[aria-label^="Timeline"] .r-1adg3ll .r-k5y9r7, /* <--- Empty space [TIMELINE] */
 
@@ -53,7 +53,7 @@ div > .css-1dbjc4n.r-1ny4l3l > .r-k5y9r7.r-5kkj8d:empty, /* <--- Empty space [TI
 
 div[aria-label^="Timeline:"]:not([aria-label$="Explore"]):not([aria-label$="Your Lists"]):not([aria-label$="Tweet"]) .r-1or9b2r, /* <--- Empty space [TIMELINE] */
 
-div[aria-label^="Timeline:"]:not([aria-label$="Explore"]):not([aria-label$="Your Lists"]):not([aria-label$="Tweet"]) .r-tbmifm, /* <--- Empty space [TIMELINE] */
+/*div[aria-label^="Timeline:"]:not([aria-label$="Explore"]):not([aria-label$="Your Lists"]):not([aria-label$="Tweet"]):not([aria-label$="Topics"]) .r-tbmifm,*/ /* <--- Empty space [TIMELINE] */
 
 div[aria-label^="Timeline:"][aria-label$="’s Tweets"] .r-1adg3ll .r-k5y9r7:empty, /* <--- Empty space [PROFILE TIMELINE] */
 
@@ -68,8 +68,9 @@ div[data-testid="sidebarColumn"] [aria-label="Timeline: Trending now"], /* <--- 
 /* v--- "Who to follow" boxes [PROFILE TIMELINE] ---v */ 
 div[aria-label^="Timeline: "][aria-label$="’s Tweets"] div .r-1or9b2r:empty,
 div > .css-1dbjc4n.r-qklmqi.r-1adg3ll > .css-1dbjc4n.r-1wtj0ep,
-.css-1dbjc4n.r-qklmqi.r-1adg3ll > div[data-testid="UserCell"],
-div.css-1dbjc4n.r-1adg3ll > a[href^="/i/related_users/"]
+div[aria-label^="Timeline:"]:not([aria-label$="Explore"]) div[data-testid="UserCell"],
+div.css-1dbjc4n.r-1adg3ll > a[href^="/i/related_users/"],
+div[aria-label^="Timeline:"]:not([aria-label$="Explore"]) > div > div[style^="position: absolute;"] > * > div:empty
 {
     display: none !important;
 }
@@ -88,7 +89,7 @@ div[data-testid="sidebarColumn"] div + .css-1dbjc4n.r-1h3ijdo { /* <--- "Element
     margin-bottom: 3px;
 }
 
-form[role="search"] .r-z2wwpe { /* <--- Search suggestions box */
+form[role="search"] .r-1upvrn0 { /* <--- Search suggestions box */
     margin-top: 8px;
     border-radius: 10px;
     scrollbar-width: thin; /* Experimental CSS, Firefox only for now */
@@ -192,12 +193,12 @@ svg.r-yucp9h { /* <--- Retweet / like / follower icons [NOTIFICATIONS] */
 }
 }
 
-@-moz-document regexp(".*\\://twitter.com/settings/.*"), regexp(".*\\://twitter.com/.*\\/follow.*"), regexp(".*\\://twitter.com/.*\\/status/.*\\/(likes|retweets).*"), regexp(".*\\://twitter.com/(search|hashtag).*[?&]f=user.*") {
+@-moz-document regexp(".*\\://twitter.com/settings/.*"), regexp(".*\\://twitter.com/.*\\/follow.*"), regexp(".*\\://twitter.com/.*\\/status/.*\\/(likes|retweets).*"), regexp(".*\\://twitter.com/(search|hashtag).*[?&]f=user.*"), regexp(".*\\://twitter.com/.*\\/lists/.*\\/members") {
 /* ==========================
    ====== Whitelist #1 ======
    ========================== */
 
-.css-1dbjc4n.r-qklmqi.r-1adg3ll > div[data-testid="UserCell"] {
+div[aria-label^="Timeline:"]:not([aria-label$="Explore"]) div[data-testid="UserCell"] {
     display: flex !important;
 }
 }
@@ -236,7 +237,7 @@ div > .css-1dbjc4n.r-qklmqi.r-1adg3ll > .css-1dbjc4n.r-1wtj0ep
    ========================== */
 
 div[aria-label^="Timeline:"]:not([aria-label$="Explore"]):not([aria-label$="Your Lists"]):not([aria-label$="Tweet"]) .r-1or9b2r,
-div[aria-label^="Timeline:"]:not([aria-label$="Explore"]):not([aria-label$="Your Lists"]):not([aria-label$="Tweet"]) .r-tbmifm
+div[aria-label^="Timeline:"]:not([aria-label$="Explore"]):not([aria-label$="Your Lists"]):not([aria-label$="Tweet"]):not([aria-label$="Topics"]) .r-tbmifm
 {
     display: flex !important;
 }
