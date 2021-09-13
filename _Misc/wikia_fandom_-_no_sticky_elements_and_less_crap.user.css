@@ -3,19 +3,23 @@
 @author       krisu (https://github.com/krisu5)
 @namespace    github.com/krisu5/userstyles
 @homepageURL  https://github.com/krisu5/userstyles/tree/master/_Misc
-@version      0.0.1
+@version      0.0.2
 @license      unlicense
 ==/UserStyle== */
 
 @-moz-document domain("wikia.org"), domain("fandom.com") {
 
-#WikiaBarWrapper, .WikiaNotifications, #RelatedForumDiscussion, #WikiaArticleComments, #WikiaHeader, .ChatModule, .wikia-button.upphotos, .wikia-button.comments.secondary,
-.wds-global-navigation__links, .wds-global-navigation__start-a-wiki, #mixed-content-footer, .wds-global-footer__main, #articleComments, footer, .discord-module, #article-comments-button,
-#ShareEntryPoint
+.global-navigation, #mixed-content-footer, .wds-global-footer, .fandom-sticky-header
 { display: none !important; }
+    
+.main-container {
+    margin-left: 0 !important;
+    min-width: inherit !important;
+    width: 100% !important;
+}
+    
+.page-side-tools { position: unset !important; }
 
-.wds-global-navigation { position: absolute !important; }
-
-.rail-sticky-module { position: inherit !important; }
+.search-modal, .search-modal::before { left: 0 !important; }
 
 }
