@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Description: Recommended Additional Filters for "Twitter - Clean 2019 Design (Now With Light Blue™)" Userstyle
 ! Homepage: https://github.com/krisu5/userstyles/raw/master/Twitter%20-%20Clean%202019%20Design%20(Now%20With%20Light%20Blue)/
-! Last updated: 2021-09-09
+! Last updated: 2021-10-14
 
 ! How to add this filterlist: https://github.com/gorhill/uBlock/wiki/Filter-lists-from-around-the-web
 
@@ -17,7 +17,7 @@ twitter.com##div[aria-label^="Timeline:"]:not([aria-label$="Topics"]):not([aria-
 twitter.com##div[aria-label^="Timeline:"]:not([aria-label$="Topics"]):not([aria-label$="Explore"]):not([aria-label$="List"]) .r-1adg3ll:has(a[href^="/i/"]:has-text(/^More Topics|Show more/i):not(:has-text(replies)))
 twitter.com##div[aria-label^="Timeline:"]:not([aria-label$="Topics"]):not([aria-label$="Your Lists"]) .r-1adg3ll:has(div[aria-label="Timeline: Carousel"])
 twitter.com##div[aria-label^="Timeline:"]:not([aria-label$="Lists"]):not([aria-label$="List"]) div[style^="position: absolute;"]:not(:has(article)):has(a[href^="/i/lists/"])
-twitter.com##div[aria-label^="Timeline:"] div[style^="position: absolute;"]:has(h2:has(span:has-text(/^Discover new Lists/i)))
+twitter.com##div[aria-label^="Timeline:"] div[style*="position: absolute;"]:has(h2:has(span:has-text(/^Discover new Lists|Expand your timeline|Topics to follow/i)))
 twitter.com##div[aria-label="Timeline: Your Home Timeline"] div[style^="position: absolute;"]:has([aria-describedby="tweet-education-header"]:has-text(/^Follow Topic/i))
 twitter.com##div[aria-label="Timeline: Your Lists"] div[style^="position: absolute;"]:has(a[href^="/i/lists/"]:has(div[role="button"]:has-text(/^Follow|Unfollow/i)))
 twitter.com##div[aria-label="Timeline: Your Lists"] div[style^="position: absolute;"]:has(a[href="/i/lists/suggested"])
