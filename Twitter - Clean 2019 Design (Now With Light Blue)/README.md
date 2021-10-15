@@ -44,6 +44,7 @@ Totally optional, but makes Twitter so much better again.
 
 ## Changelog
 
+- *2021-10-16:* Minor fixes and cleanup
 - *2021-09-09:* Fixed those blocks / tweaks that Twitter UI design update broke
 - *2021-03-31:* Revue promo blocked at tweet compose modal, margin fixes for "X Retweeted / Liked" etc. text
 - *2021-03-26:* More line-height fixes for links

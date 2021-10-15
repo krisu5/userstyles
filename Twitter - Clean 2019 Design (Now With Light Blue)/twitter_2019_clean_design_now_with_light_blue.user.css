@@ -5,7 +5,7 @@
 @namespace    github.com/krisu5/userstyles
 @homepageURL  https://github.com/krisu5/userstyles/tree/master/Twitter%20-%20Clean%202019%20Design%20(Now%20With%20Light%20Blue)
 @supportURL   https://github.com/krisu5/userstyles/issues
-@version      1.4.4
+@version      1.4.5
 @license      unlicense
 @preprocessor uso
 ==/UserStyle== */
@@ -45,19 +45,9 @@ div[role="menu"] a[href^="https://ads.twitter.com/"], /* <--- "Promote Mode" & "
 
 div[role="menu"] a[href^="/i/newsletters"], /* <--- "Newsletters" menu link (promo for Revue) [MORE MENU] */
 
-div[aria-labelledby="modal-header"] .r-19n28yv, /* <--- Another Revue promo (after pressing "+" button) [TWEET COMPOSE MODAL] */
+div[aria-labelledby="modal-header"][aria-modal="true"] > div:nth-child(2), /* <--- Another Revue promo (after pressing "+" button) [TWEET COMPOSE MODAL] */
 
-div[aria-label^="Timeline"] .r-1adg3ll .r-k5y9r7, /* <--- Empty space [TIMELINE] */
-
-div > .css-1dbjc4n.r-1ny4l3l > .r-k5y9r7.r-5kkj8d:empty, /* <--- Empty space [TIMELINE] */
-
-div[aria-label^="Timeline:"]:not([aria-label$="Explore"]):not([aria-label$="Your Lists"]):not([aria-label$="Tweet"]) .r-1or9b2r, /* <--- Empty space [TIMELINE] */
-
-/*div[aria-label^="Timeline:"]:not([aria-label$="Explore"]):not([aria-label$="Your Lists"]):not([aria-label$="Tweet"]):not([aria-label$="Topics"]) .r-tbmifm,*/ /* <--- Empty space [TIMELINE] */
-
-div[aria-label^="Timeline:"][aria-label$="’s Tweets"] .r-1adg3ll .r-k5y9r7:empty, /* <--- Empty space [PROFILE TIMELINE] */
-
-div[aria-label="Timeline: Conversation"] div > .css-1dbjc4n.r-1adg3ll > .css-1dbjc4n.r-1or9b2r:empty, /* <--- Empty space [TWEET CONVERSATION] */
+div[aria-label^="Timeline:"]:not([aria-label$="Explore"]) div[style*="position: absolute;"] .r-109y4c4.r-1p6iasa:empty, /* <--- Empty space [TIMELINES] */
 
 div[aria-label="Timeline: Explore"] a[href^="/i/connect_people"], /* <--- "Show more" link [EXPLORE PAGE] */
 
@@ -198,7 +188,7 @@ svg.r-yucp9h { /* <--- Retweet / like / follower icons [NOTIFICATIONS] */
    ====== Whitelist #1 ======
    ========================== */
 
-div[aria-label^="Timeline:"]:not([aria-label$="Explore"]) div[data-testid="UserCell"] {
+div[aria-label^="Timeline:"]:not([aria-label$="Explore"]) div[data-testid="UserCell"] /* <--- WHITELISTED: "Who to follow" boxes [PROFILE TIMELINE] ---v */ {
     display: flex !important;
 }
 }
@@ -208,24 +198,9 @@ div[aria-label^="Timeline:"]:not([aria-label$="Explore"]) div[data-testid="UserC
    ====== Whitelist #2 ======
    ========================== */
 
-div > .css-1dbjc4n.r-1ny4l3l > .r-k5y9r7.r-5kkj8d:empty,
-
+/* v--- WHITELISTED: "Who to follow" boxes [PROFILE TIMELINE] ---v */ 
 div > .css-1dbjc4n.r-qklmqi.r-1adg3ll > .css-1dbjc4n.r-1wtj0ep,
-.css-1dbjc4n.r-qklmqi.r-1adg3ll > div[data-testid="UserCell"],
 div.css-1dbjc4n.r-1adg3ll > a[href^="/i/related_users/"]
-{
-    display: flex !important;
-}
-}
-
-@-moz-document regexp(".*\\://twitter.com/explore.*") {
-/* ==========================
-   ====== Whitelist #3 ======
-   ========================== */
-
-div > .css-1dbjc4n.r-1ny4l3l > .r-k5y9r7.r-5kkj8d:empty,
-
-div > .css-1dbjc4n.r-qklmqi.r-1adg3ll > .css-1dbjc4n.r-1wtj0ep
 {
     display: flex !important;
 }
@@ -233,11 +208,10 @@ div > .css-1dbjc4n.r-qklmqi.r-1adg3ll > .css-1dbjc4n.r-1wtj0ep
 
 @-moz-document regexp(".*\\://twitter.com/i/events.*") {
 /* ==========================
-   ====== Whitelist #4 ======
+   ====== Whitelist #3 ======
    ========================== */
 
-div[aria-label^="Timeline:"]:not([aria-label$="Explore"]):not([aria-label$="Your Lists"]):not([aria-label$="Tweet"]) .r-1or9b2r,
-div[aria-label^="Timeline:"]:not([aria-label$="Explore"]):not([aria-label$="Your Lists"]):not([aria-label$="Tweet"]):not([aria-label$="Topics"]) .r-tbmifm
+div[aria-label^="Timeline:"]:not([aria-label$="Explore"]) div[style*="position: absolute;"] .r-109y4c4.r-1p6iasa:empty /* <--- WHITELISTED: Empty space [TIMELINES] */
 {
     display: flex !important;
 }

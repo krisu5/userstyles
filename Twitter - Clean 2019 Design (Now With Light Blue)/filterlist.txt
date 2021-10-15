@@ -23,5 +23,6 @@ twitter.com##div[aria-label="Timeline: Your Lists"] div[style*="position: absolu
 twitter.com##div[aria-label="Timeline: Your Lists"] div[style*="position: absolute;"]:has(a[href="/i/lists/suggested"])
 twitter.com##div[aria-label="Timeline: Your Lists"] div[style*="position: relative;"] div:nth-child(4):has(div:matches-css(height: 12px))
 twitter.com##div[aria-label="Timeline: Explore"] div[data-testid="UserCell"]:upward(2)
+twitter.com##div[aria-label="Timeline: Search timeline"] div[style*="position: absolute;"]:has(h2:has(span:has-text(/^Related Topic/i)))
 twitter.com##.r-1adg3ll:has(a[href="/i/timeline"]):has(div:matches-css(min-width: 70px))
 twitter.com##div[style*="position: absolute; width: 100%;"]:has(h2:has(span:has-text(/^People|More replies/i)))
