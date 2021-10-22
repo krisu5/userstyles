@@ -9,6 +9,8 @@
 
 Works with old and new gallery design!
 
+**Use adblocker! This userstyle doesn't replace the job of the adblocker.**
+
 ![Userstyle screenshot, Imgur frontpage after](screenshots/1_frontpage_after.png)
 
 **Other screenshots:**
