@@ -16,7 +16,7 @@ Toggleable features such as:
 
 Also adds style tweaks for ["Try Google on Duck Duck Go - WF" userscript](https://greasyfork.org/en/scripts/389801-try-google-on-duck-duck-go-wf)
 
-**Important!** [Change the DDG theme to "Basic" before using this userstyle](https://duckduckgo.com/settings#theme)
+**Important!** [Change the DDG theme to "Basic" before using this userstyle](https://duckduckgo.com/settings#theme).
 
 ⚠ ***Read the notes at the bottom!***
 
