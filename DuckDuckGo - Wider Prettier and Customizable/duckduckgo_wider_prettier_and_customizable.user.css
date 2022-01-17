@@ -5,7 +5,7 @@
 @namespace      github.com/krisu5/userstyles
 @homepageURL    https://github.com/krisu5/userstyles/tree/master/DuckDuckGo%20-%20Wider%20Prettier%20and%20Customizable
 @supportURL     https://github.com/krisu5/userstyles/issues
-@version        1.0.7
+@version        1.0.8
 @license        unlicense
 @preprocessor   stylus
 @var checkbox   ibm-plex-font      "Use 'IBM Plex Sans' font (needs installation)"              0
@@ -42,16 +42,20 @@ if ibm-plex-font {
          - SemiBoldItalic
     */
     
-    body, input, textarea, .search__input--adv { font-family: "IBM Plex Sans", "DDG_ProximaNova", "DDG_ProximaNova_UI_0", "DDG_ProximaNova_UI_1", "DDG_ProximaNova_UI_2", "DDG_ProximaNova_UI_3", "DDG_ProximaNova_UI_4", "DDG_ProximaNova_UI_5", "DDG_ProximaNova_UI_6", "Proxima Nova", system, -apple-system, ".SFNSText-Regular", "San Francisco", "Segoe UI", "Roboto", "Helvetica Neue", "Lucida Grande", sans-serif; }
+    body, input, textarea, a { font-family: "IBM Plex Sans", "DDG_ProximaNova", "DDG_ProximaNova_UI_0", "DDG_ProximaNova_UI_1", "DDG_ProximaNova_UI_2", "DDG_ProximaNova_UI_3", "DDG_ProximaNova_UI_4", "DDG_ProximaNova_UI_5", "DDG_ProximaNova_UI_6", "Proxima Nova", system, -apple-system, ".SFNSText-Regular", "San Francisco", "Segoe UI", "Roboto", "Helvetica Neue", "Lucida Grande", sans-serif !important; }
 
-    #zero_click_wrapper *:not(option):not(a) { font-family: "DDG_ProximaNova", "DDG_ProximaNova_UI_0", "DDG_ProximaNova_UI_1", "DDG_ProximaNova_UI_2", "DDG_ProximaNova_UI_3", "DDG_ProximaNova_UI_4", "DDG_ProximaNova_UI_5", "DDG_ProximaNova_UI_6", "Proxima Nova", system, -apple-system, ".SFNSText-Regular", "San Francisco", "Segoe UI", "Roboto", "Helvetica Neue", "Lucida Grande", sans-serif; }
+    #zero_click_wrapper *:not(option):not(a) { font-family: "DDG_ProximaNova", "DDG_ProximaNova_UI_0", "DDG_ProximaNova_UI_1", "DDG_ProximaNova_UI_2", "DDG_ProximaNova_UI_3", "DDG_ProximaNova_UI_4", "DDG_ProximaNova_UI_5", "DDG_ProximaNova_UI_6", "Proxima Nova", system, -apple-system, ".SFNSText-Regular", "San Francisco", "Segoe UI", "Roboto", "Helvetica Neue", "Lucida Grande", sans-serif !important; }
         
-    #zero_click_wrapper option { font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Segoe UI", "Roboto", "Helvetica Neue", "Lucida Grande", sans-serif; }
+    #zero_click_wrapper option { font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Segoe UI", "Roboto", "Helvetica Neue", "Lucida Grande", sans-serif !important; }
 
-    .result__title, #links .result__title b, #links .result__title strong, .result__sitelink-row a {
-        padding-bottom: 1px !important;
+    .result__title, #links .result__title b, #links .result__title strong, a.result__sitelink-title {
+        padding-bottom: 1px;
         font-weight: 500 !important;
     }
+    
+    .about-profiles__link { font-size: 0.8em; }
+        
+    .about-profiles__item { padding-top: 13px; }
 }
 
 
@@ -62,8 +66,6 @@ if ibm-plex-font {
 if wideScreen {
     @media (min-width: 1460px) {
         .cw { max-width: 1700px; }
-
-        .has-zcm .header { width: 1063px; }
 
         .header__search-wrap { max-width: 905px; }
 
@@ -88,6 +90,15 @@ if wideScreen {
         .module--carousel__item:not(:last-child) { margin-right: 1.6%; }
             
         .module--places { max-width: inherit; }
+            
+        .sitelink {
+            width: 265px;
+            padding-left: 35px;
+        }
+            
+        .sitelink:nth-child(2n-1) { padding-right: inherit; }
+            
+        .is-link-style-exp:not(.is-mobile):not(.is-mobile-device) #links .results_links_deep { max-width: unset !important; }
     }
 }
 
@@ -100,6 +111,15 @@ if biggerFont {
     html { font-size: 99%; }
     
     #zci-color_picker { font-size: 14px; }
+        
+    .module__link--two-line { font-size: 1.6em; }
+        
+    if ibm-plex-font {
+        .result__sitelink-title {
+            font-size: 1.12em;
+            letter-spacing: 0.01em;
+        }
+    }
 }
 
 
@@ -118,7 +138,7 @@ if hideCheckmark {
 
 if sidebarAnimation {
     .results--sidebar {
-        animation: showSidebar 0.75s ease-in-out 0.75s forwards;
+        animation: showSidebar 0.65s ease-in-out 0.65s forwards;
         /* animation time = approximated load time for search results links */
         opacity: 0;
     }
