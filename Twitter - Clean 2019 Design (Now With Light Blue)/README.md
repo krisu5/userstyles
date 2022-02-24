@@ -7,7 +7,7 @@
 
 *It's same new Twitter, except much cleaner and little bit better.* 🐦
 
-- Changes white background color to light blue *(only enabled in white theme)*
+- Toggleable option to change white background color to light blue *(enabled by default, only in "default white theme")*
 - Removes annoying elements such as trends, promoted tweets, "who to follow" boxes etc.
   - And more with **recommended uBlock filterlist!**
 - Other really minor tweaks / style changes.
@@ -16,9 +16,6 @@
 
 ![Userstyle screenshot](screenshots/1_screenshot.jpg)
 
-**Other screenshots:**
-- [Increase color contrast enabled](screenshots/2_increase_color_contrast_enabled.jpg)
-
 ## Notes
 
 This userstyle can't remove everything because limitations of current CSS and complexity of layout.
@@ -26,24 +23,31 @@ So I also made uBlock filterlist that removes even more elements, that are harde
 
 **[Click here to see the filterlist](https://raw.githubusercontent.com/krisu5/userstyles/master/Twitter%20-%20Clean%202019%20Design%20(Now%20With%20Light%20Blue)/filterlist.txt)**
 
-- First, if you haven't already, install **uBlock Origin.** [Extensions for browsers listed here](https://github.com/gorhill/uBlock#ublock-origin)
-  - **Uninstall Adblock Plus and other similar adblockers! Only one adblocker is necessary!** Seriously, [more info here](https://twitter.com/gorhill/status/1033706103782170625)
-- Then: [How to import manually a filterlist](https://github.com/gorhill/uBlock/wiki/Filter-lists-from-around-the-web)
-- Also: You can copy the filter rules and add manually to uBlock Origin if you want, but you miss updates.
+- First, if you haven't already, install **uBlock Origin.** [Extensions for browsers listed here](https://github.com/gorhill/uBlock#ublock-origin).
+  - **Uninstall Adblock Plus and other similar adblockers! Only one adblocker is necessary!** Seriously, [more info here](https://twitter.com/gorhill/status/1033706103782170625).
+- Then: [How to import manually a filterlist](https://github.com/gorhill/uBlock/wiki/Filter-lists-from-around-the-web).
+- Also, you can copy the filter rules and add manually to uBlock Origin if you want, but you miss the updates.
 
-This userstyle and filterlist works **ONLY** with default english language (I'm not adding support for other languages). Works best with white theme, but other themes are partially supported for element blocks.
+This userstyle and filterlist works **ONLY with English language** (I'm not adding support for other languages).
+
+Works best with default white theme, but other themes are supported for element blocks.
+
+## Extra additions for the style
+
+- [Twitter - Custom font](https://github.com/krisu5/userstyles/raw/master/_Misc/twitter_-_custom_font.user.css) - Change the font of Twitter to some other font on PC (my recommentation: ["IBM Plex Sans"](https://fonts.google.com/specimen/IBM+Plex+Sans))
+- [Twitter - Hide FB-like DM drawer](https://github.com/krisu5/userstyles/raw/master/_Misc/twitter_-_hide_fb-like_dm_drawer.user.css) - Hide direct message box from bottom right
 
 ## Recommended userscripts
 
 Totally optional, but makes Twitter so much better again.
 
 - [I like latest tweets !](https://greasyfork.org/en/scripts/400695-i-like-latest-tweets) - Always changes to "latest tweets" in the home timeline
-  - [Latest Tweets](https://greasyfork.org/en/scripts/393400-latest-tweets) - Same idea, but doesn't work as well (technically script made by me)
 - [Twitter Direct](https://greasyfork.org/en/scripts/404632-twitter-direct) - Removes t.co URL tracking
 - [MoreTweetsBuster](https://greasyfork.org/en/scripts/397988-moretweetsbuster) - Redirects to actual twitter thread from "more tweets" layout when clicking Twitter link outside of Twitter (works 90% of the time)
 
 ## Changelog
 
+- *2022-02-24:* Lots of fixes and style tweaks, but most important addition is that "light blue colors" for default theme are now toggleable (enabled by default)
 - *2021-10-16:* Minor fixes and cleanup
 - *2021-09-09:* Fixed those blocks / tweaks that Twitter UI design update broke
 - *2021-03-31:* Revue promo blocked at tweet compose modal, margin fixes for "X Retweeted / Liked" etc. text

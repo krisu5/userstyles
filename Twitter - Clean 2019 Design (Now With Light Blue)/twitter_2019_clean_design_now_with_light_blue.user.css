@@ -1,40 +1,64 @@
 /* ==UserStyle==
-@name         Twitter - Clean 2019 Design (Now With Light Blue™)
-@description  It's same new Twitter, except much cleaner and little bit better.
-@author       krisu (https://github.com/krisu5)
-@namespace    github.com/krisu5/userstyles
-@homepageURL  https://github.com/krisu5/userstyles/tree/master/Twitter%20-%20Clean%202019%20Design%20(Now%20With%20Light%20Blue)
-@supportURL   https://github.com/krisu5/userstyles/issues
-@version      1.4.5
-@license      unlicense
-@preprocessor uso
+@name           Twitter - Clean 2019 Design (Now With Light Blue™)
+@description    It's same new Twitter, except much cleaner and little bit better.
+@author         krisu (https://github.com/krisu5)
+@namespace      github.com/krisu5/userstyles
+@homepageURL    https://github.com/krisu5/userstyles/tree/master/Twitter%20-%20Clean%202019%20Design%20(Now%20With%20Light%20Blue)
+@supportURL     https://github.com/krisu5/userstyles/issues
+@version        1.4.6
+@license        unlicense
+@preprocessor   stylus
+@var checkbox   enable-light-blue   "Enable light blue colors for 'Default' theme"   1
 ==/UserStyle== */
 
 @-moz-document domain("twitter.com") {
-/* --------- Main Stylings, Tweaks, Blocks ---------- */
 
-/* ==================================================
-   ====== Colors (only enabled in white theme) ======
-   ================================================== */
+/* --------- Global Values, Light Blue Color Stylings, Blocks, Tweaks ---------- */
 
-body[style^="background-color: rgb(255, 255, 255);"],
-body[style^="background-color: rgb(255, 255, 255);"] div[data-testid="sidebarColumn"] form[role="search"]
-{
-    background-color: rgba(24, 161, 242, 0.05) !important;
+:root {
+    --thin-scrollbar: 8px;
+    --twitter-scrollbar-color-1: rgb(247, 249, 249); /* Twitter's default `scrollbar-color` CSS color #1 */
+    --twitter-scrollbar-color-2: rgb(185, 202, 211); /* Twitter's default `scrollbar-color` CSS color #2 */
 }
 
-body[style^="background-color: rgb(255, 255, 255);"] .r-1u4rsef { /* <--- Hover / focus color [TWEETS] */
-    background-color: rgba(230, 236, 240, 0.55) !important;
+/* ===================================================================
+   ====== [TOGGLE] Enable light blue colors for 'Default' theme ======
+   =================================================================== */
+
+if enable-light-blue {
+    /* v--- Body background & sidebar's search form BG fix ---v */
+    body[style^="background-color: rgb(255"],
+    body[style^="background-color: rgb(255"] div[data-testid="sidebarColumn"] form[role="search"],
+    body[style^="background-color: #FFFFFF"],
+    body[style^="background-color: #FFFFFF"] div[data-testid="sidebarColumn"] form[role="search"]
+    {
+        background-color: rgba(24, 161, 242, 0.05) !important;
+    }
+
+    /* v--- Search form #1 [SIDEBAR] ---v */
+    body[style^="background-color: rgb(255"] div[data-testid="sidebarColumn"] form[role="search"] > div > div,
+    body[style^="background-color: #FFFFFF"] div[data-testid="sidebarColumn"] form[role="search"] > div > div
+    {
+        background-color: #fff !important;
+    }
+
+    /* v--- Search form #2 [SIDEBAR] ---v */
+    body[style^="background-color: rgb(255"] div[data-testid="sidebarColumn"] form[role="search"]:not(:focus-within) > div > div,
+    body[style^="background-color: #FFFFFF"] div[data-testid="sidebarColumn"] form[role="search"]:not(:focus-within) > div > div
+    {
+        border-color: rgba(207, 217, 222, 0.55) !important;  
+    }
+
+    /* v--- Missing BG to sections [SETTINGS] ---v */ 
+    body[style^="background-color: rgb(255"] section[aria-label="Section navigation"],
+    body[style^="background-color: rgb(255"] section[aria-label="Section details"],
+    body[style^="background-color: #FFFFFF"] section[aria-label="Section navigation"],
+    body[style^="background-color: #FFFFFF"] section[aria-label="Section details"]
+    {
+        background: #fff !important;
+    }
 }
-
-/* v--- Missing BG to sections [SETTINGS] ---v */ 
-body[style^="background-color: rgb(255, 255, 255);"] section[aria-label="Section navigation"],
-body[style^="background-color: rgb(255, 255, 255);"] section[aria-label="Section details"]
-{
-    background: #fff !important;
-}
-
-
+    
 /* ==============================
    ====== Blocked elements ======
    ============================== */
@@ -70,51 +94,36 @@ div[aria-label^="Timeline:"]:not([aria-label$="Explore"]) > div > div[style^="po
    ====== Misc. tweaks ====== 
    ========================== */
 
-div[data-testid="sidebarColumn"] form[role="search"] {
+div[data-testid="sidebarColumn"] form[role="search"] { /* <--- Search form [SIDEBAR] */
     padding-top: 15px;
     margin-top: -7px;
 }
 
-div[data-testid="sidebarColumn"] div + .css-1dbjc4n.r-1h3ijdo { /* <--- "Element spacer" between search box and another element [SIDEBAR]  */
-    margin-bottom: 3px;
-}
-
-form[role="search"] .r-1upvrn0 { /* <--- Search suggestions box */
+/* v--- Search suggestions box [SIDEBAR] ---v */
+form[role="search"] div[style^="left:"][style*="width:"], /* Empty */
+form[role="search"] [id^="typeaheadDropdown"] /* With search suggestions */
+{
     margin-top: 8px;
     border-radius: 10px;
     scrollbar-width: thin; /* Experimental CSS, Firefox only for now */
-    scrollbar-color: #1da1f2 transparent; /* Experimental CSS, Firefox only for now */
 }
 
-form[role="search"] .r-z2wwpe::-webkit-scrollbar { /* <--- Scrollbar #1, Chromium & Safari only [SEARCH SUGGESTIONS BOX] */
-    width: 6px;
-    background: transparent;
+form[role="search"] [id^="typeaheadDropdown"]::-webkit-scrollbar { /* <--- Scrollbar #1, Chromium & Safari only [SEARCH SUGGESTIONS BOX] */
+    width: var(--thin-scrollbar);
+    background: var(--twitter-scrollbar-color-1);
+}
+    
+form[role="search"] [id^="typeaheadDropdown"]::-webkit-scrollbar-thumb { /* <--- Scrollbar #2, Chromium & Safari only [SEARCH SUGGESTIONS BOX] */
+    background: var(--twitter-scrollbar-color-2);
 }
 
-form[role="search"] .r-z2wwpe::-webkit-scrollbar-thumb { /* <--- Scrollbar #2, Chromium & Safari only [SEARCH SUGGESTIONS BOX] */
-    background-color: #1da1f2;
-}
-
-div > .css-1dbjc4n.r-qklmqi.r-1adg3ll:empty { /* <--- Empty element with border [TIMELINE] */
-    border-bottom-width: 0;
+nav[aria-label="Footer"] [role="button"] { /* <--- Push Twitter copyright text more down [FOOTER] */
+    padding-bottom: 11px;
 }
 
 div[data-testid="card.wrapper"] { /* <--- Link with thumbnail left or top [TWEETS] */
     margin-top: 1px;
     margin-bottom: 1px;
-}
-
-div[data-testid="tweet"] .css-1dbjc4n.r-18u37iz.r-1wtj0ep { /* <--- Div with name, username, time and "more" menu [TWEETS] */
-    margin-bottom: 1px;
-}
-
-/* v--- Line-height fixes for links ---v */
-div[data-testid="tweet"] div[dir="auto"] a[target="_blank"], /* <--- Normal tweet [TWEETS] */
-div[data-testid="tweet"] div[role="link"] div[dir="auto"] span[aria-hidden="true"], /* <--- Quote retweet [TWEETS] */
-div[data-testid="sidebarColumn"] div[data-testid="UserCell"] a[target="_blank"], /* <--- "Relevant people" sidebar [TWEET CONVERSATION] */
-div[aria-label="Timeline: Conversation"] div[data-testid="tweet"] + div div[role="link"] div[dir="auto"] span[dir="ltr"] /* <--- Quote retweet of main tweet [TWEET CONVERSATION] */
-{
-    line-height: 0;
 }
 
 div[data-testid="previewInterstitial"] * { /* <--- For videos / GIFs, prevents accidental selecting [TWEETS] */
@@ -133,14 +142,32 @@ div[aria-label^="Timeline"] article .css-1dbjc4n.r-18u37iz > .r-ttdzmv.r-1iusvr4
     margin-bottom: 4px !important;
 }
 
-[data-testid="socialContext"], /* <--- "X Retweeted / Liked" etc. text [TWEETS] */
-li[data-testid="TypeaheadUser"] div[style="-webkit-line-clamp: 2;"] span /* <--- "Following" text [SEARCH SUGGESTIONS] */
-{
+[data-testid="socialContext"] { /* <--- "X Retweeted / Liked" etc. text [TWEETS] */
     font-weight: normal !important;
 }
 
 svg.r-yucp9h { /* <--- Retweet / like / follower icons [NOTIFICATIONS] */
     height: 1.45em;
+}
+    
+/* v--- Direct message sections [MESSAGES] ---v */
+section[aria-label="Section navigation"] div,
+section[aria-label="Section details"] div
+{
+    scrollbar-width: thin; /* Experimental CSS, Firefox only for now */
+}
+
+/* v--- Scrollbar #1, Chromium & Safari only [MESSAGES] ---v */
+section[aria-label="Section navigation"] div::-webkit-scrollbar,
+section[aria-label="Section details"] div::-webkit-scrollbar {
+    width: var(--thin-scrollbar);
+    background: var(--twitter-scrollbar-color-1);
+}
+
+/* v--- Scrollbar #2, Chromium & Safari only [MESSAGES] ---v */
+section[aria-label="Section navigation"] div::-webkit-scrollbar-thumb,
+section[aria-label="Section details"] div::-webkit-scrollbar-thumb {
+    background: var(--twitter-scrollbar-color-2); 
 }
 
 @media (min-width: 1282px) {
@@ -183,7 +210,7 @@ svg.r-yucp9h { /* <--- Retweet / like / follower icons [NOTIFICATIONS] */
 }
 }
 
-@-moz-document regexp(".*\\://twitter.com/settings/.*"), regexp(".*\\://twitter.com/.*\\/follow.*"), regexp(".*\\://twitter.com/.*\\/status/.*\\/(likes|retweets).*"), regexp(".*\\://twitter.com/(search|hashtag).*[?&]f=user.*"), regexp(".*\\://twitter.com/.*\\/lists/.*\\/members") {
+@-moz-document regexp(".*\\://twitter.com/settings/.*"), regexp(".*\\://twitter.com/.*(?<!intent)\\/follow.*"), regexp(".*\\://twitter.com/.*\\/status/.*\\/(likes|retweets).*"), regexp(".*\\://twitter.com/(search|hashtag).*[?&]f=user.*"), regexp(".*\\://twitter.com/.*\\/lists/.*\\/members") {
 /* ==========================
    ====== Whitelist #1 ======
    ========================== */
@@ -206,7 +233,7 @@ div.css-1dbjc4n.r-1adg3ll > a[href^="/i/related_users/"]
 }
 }
 
-@-moz-document regexp(".*\\://twitter.com/i/events.*") {
+@-moz-document regexp(".*\\://twitter.com/i/events.*"), regexp(".*\\://twitter.com/.*\\/topics/.*") {
 /* ==========================
    ====== Whitelist #3 ======
    ========================== */
