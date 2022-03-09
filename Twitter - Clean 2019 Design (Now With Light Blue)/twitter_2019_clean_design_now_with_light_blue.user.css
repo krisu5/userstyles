@@ -5,7 +5,7 @@
 @namespace      github.com/krisu5/userstyles
 @homepageURL    https://github.com/krisu5/userstyles/tree/master/Twitter%20-%20Clean%202019%20Design%20(Now%20With%20Light%20Blue)
 @supportURL     https://github.com/krisu5/userstyles/issues
-@version        1.4.6
+@version        1.4.7
 @license        unlicense
 @preprocessor   stylus
 @var checkbox   enable-light-blue   "Enable light blue colors for 'Default' theme"   1
@@ -47,6 +47,15 @@ if enable-light-blue {
     body[style^="background-color: #FFFFFF"] div[data-testid="sidebarColumn"] form[role="search"]:not(:focus-within) > div > div
     {
         border-color: rgba(207, 217, 222, 0.55) !important;  
+    }
+    
+    /* v--- Search suggestions box [SIDEBAR] ---v */
+    body[style^="background-color: rgb(255"] div[data-testid="sidebarColumn"] form[role="search"] div[style^="left:"][style*="width:"], /* Empty #1 */
+    body[style^="background-color: rgb(255"] div[data-testid="sidebarColumn"] form[role="search"] [id^="typeaheadDropdown"] /* With search suggestions #1 */
+    body[style^="background-color: #FFFFFF"] div[data-testid="sidebarColumn"] form[role="search"] div[style^="left:"][style*="width:"], /* Empty #2 */
+    body[style^="background-color: #FFFFFF"] div[data-testid="sidebarColumn"] form[role="search"] [id^="typeaheadDropdown"] /* With search suggestions #2 */
+    {
+        box-shadow: rgba(101, 119, 134, 0.05) 0px 0px 10px, rgba(101, 119, 134, 0.09) 0px 0px 3px 1px !important;
     }
 
     /* v--- Missing BG to sections [SETTINGS] ---v */ 
@@ -93,19 +102,23 @@ div[aria-label^="Timeline:"]:not([aria-label$="Explore"]) > div > div[style^="po
 /* ==========================
    ====== Misc. tweaks ====== 
    ========================== */
-
+   
 div[data-testid="sidebarColumn"] form[role="search"] { /* <--- Search form [SIDEBAR] */
     padding-top: 15px;
     margin-top: -7px;
 }
 
-/* v--- Search suggestions box [SIDEBAR] ---v */
-form[role="search"] div[style^="left:"][style*="width:"], /* Empty */
+/* v--- Search suggestions box [SIDEBAR / EXPLORE] ---v */
+form[role="search"] > div:nth-child(2) > div:not([id^="typeaheadDropdown"]), /* Empty */
 form[role="search"] [id^="typeaheadDropdown"] /* With search suggestions */
 {
-    margin-top: 8px;
+    margin-top: 10px;
     border-radius: 10px;
     scrollbar-width: thin; /* Experimental CSS, Firefox only for now */
+}
+
+[data-testid="typeaheadEmptySearch"] { /* <--- Search suggestion box, "Try searching ..." text [SIDEBAR / EXPLORE] */
+    padding-top: 36px;
 }
 
 form[role="search"] [id^="typeaheadDropdown"]::-webkit-scrollbar { /* <--- Scrollbar #1, Chromium & Safari only [SEARCH SUGGESTIONS BOX] */
@@ -132,21 +145,11 @@ div[data-testid="previewInterstitial"] * { /* <--- For videos / GIFs, prevents a
     user-select: none;
 }
 
-div[aria-label^="Timeline:"]:not([aria-label$="Notifications"]) article div.r-1hwvwag > svg { /* <--- Icon next to "X Retweeted / Liked" text [TWEETS] */
-    width: 16px !important;
-    margin-top: -1px !important;
-}
-
-div[aria-label^="Timeline"] article .css-1dbjc4n.r-18u37iz > .r-ttdzmv.r-1iusvr4.r-16y2uox > .r-15zivkp { /* <--- Outer layer divs of "X Retweeted / Liked" etc. text [TWEETS] */
-    margin-top: -1px !important;
-    margin-bottom: 4px !important;
-}
-
 [data-testid="socialContext"] { /* <--- "X Retweeted / Liked" etc. text [TWEETS] */
     font-weight: normal !important;
 }
 
-svg.r-yucp9h { /* <--- Retweet / like / follower icons [NOTIFICATIONS] */
+div[aria-label="Timeline: Notifications"] div:not([role="button"]) svg { /* <--- Retweet / like / follower notification icons [NOTIFICATIONS] */
     height: 1.45em;
 }
     
