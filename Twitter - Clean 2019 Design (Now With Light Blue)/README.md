@@ -47,6 +47,7 @@ Totally optional, but makes Twitter so much better again.
 
 ## Changelog
 
+- *2022-03-24:* Fixes for communities
 - *2022-03-09:* Minor style tweaks and removals of some rules
 - *2022-02-24:* Lots of fixes and style tweaks, but most important addition is that "light blue colors" for default theme are now toggleable (enabled by default)
 - *2021-10-16:* Minor fixes and cleanup

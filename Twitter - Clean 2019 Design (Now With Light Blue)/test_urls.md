@@ -18,3 +18,5 @@ CHANGELOG FOR TWITTER: https://twitter.com/i/release_notes
 - https://twitter.com/PixelProspector/lists
 - https://twitter.com/i/events/1265330601034256384
 - https://twitter.com/i/topics/839543165002506240
+- https://twitter.com/i/communities
+- https://twitter.com/i/communities/1453877367030484992/about

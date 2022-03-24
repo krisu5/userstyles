@@ -5,7 +5,7 @@
 @namespace      github.com/krisu5/userstyles
 @homepageURL    https://github.com/krisu5/userstyles/tree/master/Twitter%20-%20Clean%202019%20Design%20(Now%20With%20Light%20Blue)
 @supportURL     https://github.com/krisu5/userstyles/issues
-@version        1.4.7
+@version        1.4.8
 @license        unlicense
 @preprocessor   stylus
 @var checkbox   enable-light-blue   "Enable light blue colors for 'Default' theme"   1
@@ -80,7 +80,7 @@ div[role="menu"] a[href^="/i/newsletters"], /* <--- "Newsletters" menu link (pro
 
 div[aria-labelledby="modal-header"][aria-modal="true"] > div:nth-child(2), /* <--- Another Revue promo (after pressing "+" button) [TWEET COMPOSE MODAL] */
 
-div[aria-label^="Timeline:"]:not([aria-label$="Explore"]) div[style*="position: absolute;"] .r-109y4c4.r-1p6iasa:empty, /* <--- Empty space [TIMELINES] */
+div[aria-label^="Timeline:"]:not([aria-label$="Explore"]) div[style*="position: absolute;"] .r-109y4c4.r-1p6iasa:empty, /* <--- Light gray seperator [TIMELINES] */
 
 div[aria-label="Timeline: Explore"] a[href^="/i/connect_people"], /* <--- "Show more" link [EXPLORE PAGE] */
 
@@ -213,7 +213,7 @@ section[aria-label="Section details"] div::-webkit-scrollbar-thumb {
 }
 }
 
-@-moz-document regexp(".*\\://twitter.com/settings/.*"), regexp(".*\\://twitter.com/.*(?<!intent)\\/follow.*"), regexp(".*\\://twitter.com/.*\\/status/.*\\/(likes|retweets).*"), regexp(".*\\://twitter.com/(search|hashtag).*[?&]f=user.*"), regexp(".*\\://twitter.com/.*\\/lists/.*\\/members") {
+@-moz-document regexp(".*\\://twitter.com/settings/.*"), regexp(".*\\://twitter.com/.*(?<!intent)\\/follow.*"), regexp(".*\\://twitter.com/.*\\/status/.*\\/(likes|retweets).*"), regexp(".*\\://twitter.com/(search|hashtag).*[?&]f=user.*"), regexp(".*\\://twitter.com/.*\\/lists/.*\\/members"), regexp(".*\\://twitter.com/.*\\/communities/.*\\/about") {
 /* ==========================
    ====== Whitelist #1 ======
    ========================== */
@@ -236,12 +236,12 @@ div.css-1dbjc4n.r-1adg3ll > a[href^="/i/related_users/"]
 }
 }
 
-@-moz-document regexp(".*\\://twitter.com/i/events.*"), regexp(".*\\://twitter.com/.*\\/topics/.*") {
+@-moz-document regexp(".*\\://twitter.com/i/events.*"), regexp(".*\\://twitter.com/.*\\/topics/.*"), regexp(".*\\://twitter.com/.*\\/communities.*") {
 /* ==========================
    ====== Whitelist #3 ======
    ========================== */
 
-div[aria-label^="Timeline:"]:not([aria-label$="Explore"]) div[style*="position: absolute;"] .r-109y4c4.r-1p6iasa:empty /* <--- WHITELISTED: Empty space [TIMELINES] */
+div[aria-label^="Timeline:"]:not([aria-label$="Explore"]) div[style*="position: absolute;"] .r-109y4c4.r-1p6iasa:empty /* <--- WHITELISTED: Light gray seperator [TIMELINES] */
 {
     display: flex !important;
 }
