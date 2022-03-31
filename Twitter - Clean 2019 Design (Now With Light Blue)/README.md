@@ -91,10 +91,10 @@ Optional userscripts by other developers, that in my option makes Twitter so muc
 - *2019-08-10:* Moved toaster alert on the bottom little bit to the left (more center to the timeline element)
 - *2019-08-06:* Twitter made changes, so one of the fixes is removed from userstyle and moved to filterlist
 - *2019-08-05:* Smaller icons on the notifications page, added margin to some link elements on the tweets
-- *2019-08-03 #3:* More fixes to search page
-- *2019-08-03 #2:* Search page fixed (now shows accounts on "people" section), explore page fixed
-- *2019-08-03 #1:* Small minor fix
+- *2019-08-03 r3:* More fixes to search page
+- *2019-08-03 r2:* Search page fixed (now shows accounts on "people" section), explore page fixed
+- *2019-08-03 r1:* Small minor fix
 - *2019-08-02:* New element blocked, code cleanup
 - *2019-07-29:* "Retweeted by" and "favorited by" modals fixed
-- *2019-07-28 #2:* Small border-related fix
-- *2019-07-28 #1:* Initial release
+- *2019-07-28 r2:* Small border-related fix
+- *2019-07-28 r1:* Initial release
