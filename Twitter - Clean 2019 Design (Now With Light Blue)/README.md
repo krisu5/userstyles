@@ -34,19 +34,23 @@ Works best with default white theme, but other themes are supported for element 
 
 ## Extra additions for the style
 
+Optional userstyles, made by me.
+
 - [Twitter - Custom font](https://github.com/krisu5/userstyles/raw/master/_Misc/twitter_-_custom_font.user.css) - Change the font of Twitter to some other font on PC (my recommentation: ["IBM Plex Sans"](https://fonts.google.com/specimen/IBM+Plex+Sans))
-- [Twitter - Hide FB-like DM drawer](https://github.com/krisu5/userstyles/raw/master/_Misc/twitter_-_hide_fb-like_dm_drawer.user.css) - Hide direct message box from bottom right
+- [Twitter - Hide FB-like DM drawer](https://github.com/krisu5/userstyles/raw/master/_Misc/twitter_-_hide_fb-like_dm_drawer.user.css) - Hide direct message box from bottom right.
 
 ## Recommended userscripts
 
-Totally optional, but makes Twitter so much better again.
+Optional userscripts by other developers, that in my option makes Twitter so much better again.
 
 - [I like latest tweets !](https://greasyfork.org/en/scripts/400695-i-like-latest-tweets) - Always changes to "latest tweets" in the home timeline
-- [Twitter Direct](https://greasyfork.org/en/scripts/404632-twitter-direct) - Removes t.co URL tracking
+- [Twitter Direct](https://greasyfork.org/en/scripts/404632-twitter-direct) - Replaces t.co URLs in tweets to actual URLs
 - [MoreTweetsBuster](https://greasyfork.org/en/scripts/397988-moretweetsbuster) - Redirects to actual twitter thread from "more tweets" layout when clicking Twitter link outside of Twitter (works 90% of the time)
+- [Remove "more tweets" from shared links on twitter](https://greasyfork.org/en/scripts/434551-remove-more-tweets-from-shared-links-on-twitter) - Similar function to "MoreTweetsBuster" (I recommended installing both).
 
 ## Changelog
 
+- *2022-03-31:* Small fixes
 - *2022-03-24:* Fixes for communities
 - *2022-03-09:* Minor style tweaks and removals of some rules
 - *2022-02-24:* Lots of fixes and style tweaks, but most important addition is that "light blue colors" for default theme are now toggleable (enabled by default)

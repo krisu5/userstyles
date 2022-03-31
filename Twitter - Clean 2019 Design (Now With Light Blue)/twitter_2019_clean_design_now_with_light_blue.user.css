@@ -5,15 +5,27 @@
 @namespace      github.com/krisu5/userstyles
 @homepageURL    https://github.com/krisu5/userstyles/tree/master/Twitter%20-%20Clean%202019%20Design%20(Now%20With%20Light%20Blue)
 @supportURL     https://github.com/krisu5/userstyles/issues
-@version        1.4.8
+@version        1.4.9
 @license        unlicense
 @preprocessor   stylus
 @var checkbox   enable-light-blue   "Enable light blue colors for 'Default' theme"   1
+
+
+<--------------------------------------------- NOTE --------------------------------------------->
+
+Read about recommended uBlock filterlist! Otherwise, not all of the annoying elements are blocked!
+
+Visit this page for more info (copy & paste it to new tab):
+https://github.com/krisu5/userstyles/tree/master/Twitter%20-%20Clean%202019%20Design%20(Now%20With%20Light%20Blue)#notes
+
+<------------------------------------------------------------------------------------------------>
+
+
 ==/UserStyle== */
 
 @-moz-document domain("twitter.com") {
 
-/* --------- Global Values, Light Blue Color Stylings, Blocks, Tweaks ---------- */
+/* --------- Global Values, Light Blue Color Stylings, Blocked Elements, Tweaks ---------- */
 
 :root {
     --thin-scrollbar: 8px;
@@ -28,8 +40,8 @@
 if enable-light-blue {
     /* v--- Body background & sidebar's search form BG fix ---v */
     body[style^="background-color: rgb(255"],
-    body[style^="background-color: rgb(255"] div[data-testid="sidebarColumn"] form[role="search"],
     body[style^="background-color: #FFFFFF"],
+    body[style^="background-color: rgb(255"] div[data-testid="sidebarColumn"] form[role="search"],
     body[style^="background-color: #FFFFFF"] div[data-testid="sidebarColumn"] form[role="search"]
     {
         background-color: rgba(24, 161, 242, 0.05) !important;
@@ -51,17 +63,17 @@ if enable-light-blue {
     
     /* v--- Search suggestions box [SIDEBAR] ---v */
     body[style^="background-color: rgb(255"] div[data-testid="sidebarColumn"] form[role="search"] div[style^="left:"][style*="width:"], /* Empty #1 */
-    body[style^="background-color: rgb(255"] div[data-testid="sidebarColumn"] form[role="search"] [id^="typeaheadDropdown"] /* With search suggestions #1 */
     body[style^="background-color: #FFFFFF"] div[data-testid="sidebarColumn"] form[role="search"] div[style^="left:"][style*="width:"], /* Empty #2 */
-    body[style^="background-color: #FFFFFF"] div[data-testid="sidebarColumn"] form[role="search"] [id^="typeaheadDropdown"] /* With search suggestions #2 */
+    body[style^="background-color: rgb(255"] div[data-testid="sidebarColumn"] form[role="search"] [id^="typeaheadDropdown"]:not([role="listbox"]), /* With search suggestions #1 */
+    body[style^="background-color: #FFFFFF"] div[data-testid="sidebarColumn"] form[role="search"] [id^="typeaheadDropdown"]:not([role="listbox"])  /* With search suggestions #2 */
     {
         box-shadow: rgba(101, 119, 134, 0.05) 0px 0px 10px, rgba(101, 119, 134, 0.09) 0px 0px 3px 1px !important;
     }
 
     /* v--- Missing BG to sections [SETTINGS] ---v */ 
     body[style^="background-color: rgb(255"] section[aria-label="Section navigation"],
-    body[style^="background-color: rgb(255"] section[aria-label="Section details"],
     body[style^="background-color: #FFFFFF"] section[aria-label="Section navigation"],
+    body[style^="background-color: rgb(255"] section[aria-label="Section details"],
     body[style^="background-color: #FFFFFF"] section[aria-label="Section details"]
     {
         background: #fff !important;
@@ -99,9 +111,9 @@ div[aria-label^="Timeline:"]:not([aria-label$="Explore"]) > div > div[style^="po
 }
 
 
-/* ==========================
-   ====== Misc. tweaks ====== 
-   ========================== */
+/* ====================
+   ====== Tweaks ====== 
+   ==================== */
    
 div[data-testid="sidebarColumn"] form[role="search"] { /* <--- Search form [SIDEBAR] */
     padding-top: 15px;
