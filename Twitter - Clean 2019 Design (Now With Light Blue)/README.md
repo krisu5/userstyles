@@ -46,7 +46,7 @@ Optional userscripts by other developers, that in my option makes Twitter so muc
 - [I like latest tweets !](https://greasyfork.org/en/scripts/400695-i-like-latest-tweets) - Always changes to "latest tweets" in the home timeline
 - [Twitter Direct](https://greasyfork.org/en/scripts/404632-twitter-direct) - Replaces t.co URLs in tweets to actual URLs
 - [MoreTweetsBuster](https://greasyfork.org/en/scripts/397988-moretweetsbuster) - Redirects to actual twitter thread from "more tweets" layout when clicking Twitter link outside of Twitter (works 90% of the time)
-- [Remove "more tweets" from shared links on twitter](https://greasyfork.org/en/scripts/434551-remove-more-tweets-from-shared-links-on-twitter) - Similar function to "MoreTweetsBuster" (I recommended installing both).
+- [Remove "more tweets" from shared links on twitter](https://greasyfork.org/en/scripts/434551-remove-more-tweets-from-shared-links-on-twitter) - Similar function to "MoreTweetsBuster" (I recommend installing both).
 
 ## Changelog
 
