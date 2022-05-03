@@ -18,12 +18,9 @@ twitter.com##div[aria-label^="Timeline:"]:not([aria-label$="Topics"]):not([aria-
 twitter.com##div[aria-label^="Timeline:"]:not([aria-label$="Lists"]):not([aria-label$="List"]) div[style*="position: absolute;"]:not(:has(article)):has(a[href^="/i/lists/"])
 twitter.com##div[aria-label^="Timeline:"] div[style*="position: absolute;"]:has(h2:has(span:has-text(/^Discover new Lists|Expand your timeline|Topics to follow/i)))
 twitter.com##div[aria-label="Timeline: Your Home Timeline"] div[style*="position: absolute;"]:has([aria-describedby="tweet-education-header"]:has-text(/^Follow Topic/i))
-twitter.com##div[aria-label="Timeline: Your Lists"] div[style*="position: absolute;"]:has(a[href^="/i/lists/"]:has(div[role="button"]:has-text(/^Follow|Unfollow/i)))
+twitter.com##div[aria-label="Timeline: Your Lists"] div[style*="position: absolute;"]:has(div[role="button"]:has-text(/^Follow|Unfollow/i))
 twitter.com##div[aria-label="Timeline: Your Lists"] div[style*="position: absolute;"]:has(a[href="/i/lists/suggested"])
 twitter.com##div[aria-label="Timeline: Your Lists"] div[style*="position: relative;"] div:nth-child(4):has(div:matches-css(height: 12px))
 twitter.com##div[aria-label="Timeline: Explore"] div[data-testid="UserCell"]:upward(2)
 twitter.com##div[style*="position: absolute; width: 100%;"]:has(a[href="/i/timeline"]):has(div:matches-css(min-width: 70px))
 twitter.com##div[style*="position: absolute; width: 100%;"]:has(h2:has(span:has-text(/^People|More replies/i)))
-
-! twitter.com##div[data-testid="primaryColumn"] .css-1dbjc4n:has(div[data-testid="tweet"]) div[style*="position: absolute; width: 100%;"]:has(div[data-testid="UserCell"])
-! twitter.com##div[data-testid="sidebarColumn"] .r-t23y2h:has(div[aria-label="Timeline: Trending now"])
