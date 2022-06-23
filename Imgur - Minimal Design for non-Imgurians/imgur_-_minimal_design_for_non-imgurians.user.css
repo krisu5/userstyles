@@ -5,7 +5,7 @@
 @namespace    github.com/krisu5/userstyles
 @homepageURL  https://github.com/krisu5/userstyles/tree/master/Imgur%20-%20Minimal%20and%20Anti-Social%20for%20non-Imgurians
 @supportURL   https://github.com/krisu5/userstyles/issues
-@version      1.2.5
+@version      1.2.6
 @license      unlicense
 @preprocessor default
 ==/UserStyle== */
@@ -71,13 +71,26 @@ body, html { overflow-y: hidden !important; }
 [class*="share-btn"]:not(.share-btn-other):not(.share-btn-download), .CoverPostMeta.Display,
 .Gallery-EngagementBarContainer, .ButtonBackToTop, .Gallery-Content--tags, .TagManager.PostOptions-section,
 .TagSuggestion-container, .toast2, [class*="bottomad"], [class*="BottomAd"], .Footer-whitelist,
-.BottomRecirc, .btn-wall--no, .BannerTop3, .UploadSpinner-contentWrapper, .Page404-contentWrapper, iframe
+.BottomRecirc, .btn-wall--no, .BannerTop3, .UploadSpinner-contentWrapper, .Page404-contentWrapper
 { display: none !important; }
 
 body:not([class=""]) {
     background-color: #27292d;
     overflow: auto;
 }
+
+/* -----------------------------------------------
+   Change the Ukraine colors of the logo to white
+   ----------------------------------------------- */
+    
+/* NOTE: I wholeheartedly support Ukraine, but that Imgur logo is tacky and ugly. This is not political stance. */
+
+.Navbar-logo [fill] { fill: #fff; }
+
+/* v--- Last three blue colored paths ---v */
+.Navbar-logo [fill="#FFD500"]:nth-child(-n+6) { transform: translateY(-1px); }
+
+/* ----------------------------------------------- */
 
 .Button.upload { font-size: 0; }
 
@@ -246,6 +259,4 @@ ul.post-options-extra { margin-top: 20px !important; }
 }
 }
 
-@-moz-document url-prefix("https://zip.imgur.com/") {
-body { background: #fff !important; }
-}
+@-moz-document url-prefix("https://zip.imgur.com/") { * { color: #fff !important; } }
