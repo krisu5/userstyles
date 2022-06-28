@@ -22,7 +22,7 @@ Works with old and new gallery design!
 
 ## Changelog
 
-- *2022-06-28:* Imgur logo's letter "i" dot to green
+- *2022-06-28:* Imgur logo's letter "i" dot to green.
 - *2022-06-23:* Changed the Ukraine colors of the logo to white (note: I wholeheartedly support Ukraine, but that Imgur logo is tacky and ugly. This is not political stance).
 - *2021-10-22:* Blocked iframes, this might break the site one day, but it works now. [Imgur has been sold to Medialab](https://www.theverge.com/2021/9/28/22697957/imgur-acquisition-medialab-kik-genius-whisper-worldstarhiphop), expect more crap coming up in near future.
 - *2021-08-10:* Element block for frontpage that makes page load look seamless again.
