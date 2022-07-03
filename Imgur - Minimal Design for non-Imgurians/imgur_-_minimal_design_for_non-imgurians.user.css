@@ -5,7 +5,7 @@
 @namespace    github.com/krisu5/userstyles
 @homepageURL  https://github.com/krisu5/userstyles/tree/master/Imgur%20-%20Minimal%20and%20Anti-Social%20for%20non-Imgurians
 @supportURL   https://github.com/krisu5/userstyles/issues
-@version      1.2.7
+@version      1.2.8
 @license      unlicense
 @preprocessor default
 ==/UserStyle== */
@@ -79,24 +79,22 @@ body:not([class=""]) {
     overflow: auto;
 }
 
-/* --------------------------------------------------------
-   Change the Ukraine colors of the logo to original colors
-   -------------------------------------------------------- */
-    
-/* NOTE: I wholeheartedly support Ukraine, but that Imgur logo is tacky and ugly. This is not political stance. */
+/* ------------------------------
+   Logo always in original colors
+   ------------------------------ */
 
-.Navbar-logo :not([fill="#FFF"]),
-.Navbar-logo :not([fill="#FFFFFF"]),
-.Navbar-logo :not([fill="#1BB76E"])
-{ fill: #fff; }
+.Navbar-logo path:not([fill="#ffffff"]),
+.Navbar-logo path:not([fill="#1BB76E"])
+{ fill: #fff !important; }
     
 /* v--- Letter "i" dot's color ---v */
-.Navbar-logo [fill="#005BBB"]:last-child { fill: #1BB76E; }
+.Navbar-logo path[d^="M3.51952 0.756104C1.58599 0.756104"]
+{ fill: #1BB76E !important; }
 
-/* v--- Last three blue colored paths on top ---v */
-.Navbar-logo [fill="#FFD500"]:nth-child(-n+6) { transform: translateY(-1px); }
+/* v--- Last three blue colored paths on top (OUTDATED, for example purpose) ---v
+.Navbar-logo [fill="#FFD500"]:nth-child(-n+6) { transform: translateY(-1px); } */
 
-/* -------------------------------------------------------- */
+/* ------------------------------ */
 
 .Button.upload { font-size: 0; }
 
