@@ -22,6 +22,7 @@ Works with old and new gallery design!
 
 ## Changelog
 
+- *2022-09-18:* Hide "Request Deletion" button ("Download button always visible" related fix)
 - *2022-07-03:* Logo related changes, because it's back to original colors. Made so logo related color changes should never happen.
 - *2022-06-28:* Imgur logo's letter "i" dot to green.
 - *2022-06-23:* Changed the Ukraine colors of the logo to white (note: I wholeheartedly support Ukraine, but that Imgur logo is tacky and ugly. This is not political stance).
