@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Description: Recommended Additional Filters for "Twitter - Clean 2019 Design (Now With Light Blue™)" Userstyle
 ! Homepage: https://github.com/krisu5/userstyles/raw/master/Twitter%20-%20Clean%202019%20Design%20(Now%20With%20Light%20Blue)/
-! Last updated: 2022-08-19
+! Last updated: 2022-09-25
 
 ! How to add this filterlist: https://github.com/gorhill/uBlock/wiki/Filter-lists-from-around-the-web
 
@@ -21,6 +21,7 @@ twitter.com##div[aria-label^="Timeline:"]:not([aria-label$="Topics"]):not([aria-
 twitter.com##div[aria-label^="Timeline:"]:not([aria-label$="Topics"]):not([aria-label$="Explore"]):not([aria-label$="List"]):not([aria-label$="About Community"]) div[style*="position: absolute; width: 100%;"]:has(a[href^="/i/"]:has-text(/^More Topics|Show more/i):not(:has-text(replies)))
 twitter.com##div[aria-label^="Timeline:"]:not([aria-label$="Topics"]):not([aria-label$="Explore"]):not([aria-label$="List"]):not([aria-label$="About Community"]) div[style*="position: absolute; width: 100%;"]:has(a[href^="twitter://"]:has-text(/^More Topics|Show more/i):not(:has-text(replies)))
 twitter.com##div[aria-label^="Timeline:"]:not([aria-label$="Topics"]):not([aria-label$="Your Lists"]) div[style*="position: absolute; width: 100%;"]:has(div[aria-label="Timeline: Carousel"])
-twitter.com##div[data-testid="primaryColumn"] div[style*="position: absolute; width: 100%;"]:has(h2:has(span:has-text(/^Who to follow/i)))
+twitter.com##div[data-testid="primaryColumn"] div[data-testid="cellInnerDiv"]:has(h2:has-text(/^Who to follow/i))
 twitter.com##div[style*="position: absolute; width: 100%;"]:has(a[href="/i/timeline"]):has(div:matches-css(min-width: 70px))
-twitter.com##div[style*="position: absolute; width: 100%;"]:has(h2:has(span:has-text(/^People|More replies/i)))
+
+! twitter.com##div[data-testid="cellInnerDiv"]:has(h2:has-text(/^People|More replies/i))
