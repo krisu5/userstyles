@@ -14,7 +14,7 @@
 
 ⚠ ***Read the notes at the bottom!***
 
-![Userstyle screenshot](screenshots/1_screenshot.jpg)
+![Userstyle screenshot](https://raw.githubusercontent.com/krisu5/userstyles/master/Twitter%20-%20Clean%202019%20Design%20(Now%20With%20Light%20Blue)/screenshots/1_screenshot.jpg)
 
 ## Notes
 
