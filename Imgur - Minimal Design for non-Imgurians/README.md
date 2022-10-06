@@ -11,17 +11,16 @@ Works with old and new gallery design!
 
 **Use adblocker! This userstyle doesn't replace the job of the adblocker.**
 
-![Userstyle screenshot, Imgur frontpage after](screenshots/1_frontpage_after.png)
+![Userstyle screenshot, Imgur frontpage after](https://raw.githubusercontent.com/krisu5/userstyles/master/Imgur%20-%20Minimal%20Design%20for%20non-Imgurians/screenshots/1_frontpage_after.png)
 
 **Other screenshots:**
-1. [Frontpage before](screenshots/2_frontpage_before.jpg)
-2. [New gallery page after](screenshots/3_new_gallery_after.jpg)
-3. [New gallery page before](screenshots/4_new_gallery_before.jpg)
-4. [Old gallery page after](screenshots/5_old_gallery_after.jpg)
-5. [Old gallery page before](screenshots/6_old_gallery_before.jpg)
+1. [Frontpage before](../../../raw/master/Imgur%20-%20Minimal%20Design%20for%20non-Imgurians/screenshots/2_frontpage_before.jpg)
+2. [Gallery page after](../../../raw/master/Imgur%20-%20Minimal%20Design%20for%20non-Imgurians/screenshots/3_gallery_after.jpg)
+3. [Gallery page before](../../../raw/master/Imgur%20-%20Minimal%20Design%20for%20non-Imgurians/screenshots/4_gallery_before.jpg)
 
 ## Changelog
 
+- *2022-10-06:* Fix the @homepageURL address, remove old gallery related code
 - *2022-09-18:* Hide "Request Deletion" button ("Download button always visible" related fix)
 - *2022-07-03:* Logo related changes, because it's back to original colors. Made so logo related color changes should never happen.
 - *2022-06-28:* Imgur logo's letter "i" dot to green.
