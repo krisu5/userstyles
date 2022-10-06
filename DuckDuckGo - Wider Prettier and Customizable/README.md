@@ -20,13 +20,13 @@ Also adds style tweaks for ["Try Google on Duck Duck Go - WF" userscript](https:
 
 ⚠ ***Read the notes at the bottom!***
 
-![Userstyle screenshot, all settings enabled](screenshots/1_default.png)
+![Userstyle screenshot, all settings enabled](https://raw.githubusercontent.com/krisu5/userstyles/master/DuckDuckGo%20-%20Wider%20Prettier%20and%20Customizable/screenshots/1_default.png)
 
 **Other screenshots:**
-1. [Wider layout disabled](screenshots/2_no_wider_layout.png)
-2. [Bigger font disabled](screenshots/3_no_bigger_font.png)
-3. [IBM Plex Sans font disabled](screenshots/4_no_ibm_plex.png)
-4. [All settings enabled but with DDG's official dark theme](screenshots/5_all_settings_but_with_dark_theme.png)
+1. [Wider layout disabled](../../../raw/master/DuckDuckGo%20-%20Wider%20Prettier%20and%20Customizable/screenshots/2_no_wider_layout.png)
+2. [Bigger font disabled](../../../raw/master/DuckDuckGo%20-%20Wider%20Prettier%20and%20Customizable/screenshots/3_no_bigger_font.png)
+3. [IBM Plex Sans font disabled](../../../raw/master/DuckDuckGo%20-%20Wider%20Prettier%20and%20Customizable/screenshots/4_no_ibm_plex.png)
+4. [All settings enabled but with DDG's official dark theme](../../../raw/master/DuckDuckGo%20-%20Wider%20Prettier%20and%20Customizable/screenshots/5_all_settings_but_with_dark_theme.png)
 
 ## Notes
 
