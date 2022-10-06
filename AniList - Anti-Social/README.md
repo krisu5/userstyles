@@ -9,10 +9,10 @@
 
 If you want to hide forums and reviews too, check out [extras](https://gist.github.com/krisu5/7bd54d2e0a07a00630370c14d62563b2#gistcomment-3630296)!
 
-![Userstyle screenshot](screenshots/1_homepage_bottom.jpg)
+![Userstyle screenshot](https://raw.githubusercontent.com/krisu5/userstyles/master/AniList%20-%20Anti-Social/screenshots/1_homepage_bottom.jpg)
 
 **Other screenshots:**
-- [Top of the homepage](screenshots/2_homepage_top.jpg)
+- [Top of the homepage](../../../raw/master/AniList%20-%20Anti-Social/screenshots/2_homepage_top.jpg)
 
 ## Changelog
 
