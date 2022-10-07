@@ -7,8 +7,6 @@
 
 *Removes all the unnecessary stuff, for people that's not interested about Imgur culture.* 📷
 
-Works with old and new gallery design!
-
 **Use adblocker! This userstyle doesn't replace the job of the adblocker.**
 
 ![Userstyle screenshot, Imgur frontpage after](https://raw.githubusercontent.com/krisu5/userstyles/master/Imgur%20-%20Minimal%20Design%20for%20non-Imgurians/screenshots/1_frontpage_after.png)
