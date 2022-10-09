@@ -2,7 +2,7 @@
 
 ### 📦 [Click to install](https://github.com/krisu5/userstyles/raw/master/DuckDuckGo%20-%20Wider%20Prettier%20and%20Customizable/duckduckgo_wider_prettier_and_customizable.user.css)
 
-> Also available at [Greasy Fork](https://greasyfork.org/en/scripts/397561-duckduckgo-wider-prettier-and-customizable) and [UserStyles.world](https://userstyles.world/style/127/duckduckgo-wider-prettier-and-customizable)
+> Also available at [Greasy Fork](https://greasyfork.org/en/scripts/397561-duckduckgo-wider-prettier-and-customizable) & [UserStyles.world](https://userstyles.world/style/127/duckduckgo-wider-prettier-and-customizable)
 
 *Customizable UserCSS for DuckDuckGo* 🦆
 
