@@ -17,6 +17,7 @@
 
 ## Changelog
 
+- *2022-11-19:* Blocked award badges for galleries
 - *2022-10-06:* Fix the @homepageURL address, remove old gallery related code
 - *2022-09-18:* Hide "Request Deletion" button ("Download button always visible" related fix)
 - *2022-07-03:* Logo related changes, because it's back to original colors. Made so logo related color changes should never happen.

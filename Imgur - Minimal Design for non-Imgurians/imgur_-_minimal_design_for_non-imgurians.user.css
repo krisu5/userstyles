@@ -5,7 +5,7 @@
 @namespace    github.com/krisu5/userstyles
 @homepageURL  https://github.com/krisu5/userstyles/tree/master/Imgur%20-%20Minimal%20Design%20for%20non-Imgurians
 @supportURL   https://github.com/krisu5/userstyles/issues
-@version      1.3.0
+@version      1.3.1
 @license      unlicense
 @preprocessor default
 ==/UserStyle== */
@@ -66,8 +66,8 @@ body, html { overflow-y: hidden !important; }
 .CommentsList, .Footer, .Gallery-Sidebar, .NavbarNotifications, .Searchbar, .Navigation-Container,
 [class*="share-btn"]:not(.share-btn-other):not(.share-btn-download), .CoverPostMeta.Display,
 .Gallery-EngagementBarContainer, .ButtonBackToTop, .Gallery-Content--tags, .TagManager.PostOptions-section,
-.TagSuggestion-container, .toast2, [class*="bottomad"], [class*="BottomAd"], .Footer-whitelist,
-.BottomRecirc, .btn-wall--no, .BannerTop3, .UploadSpinner-contentWrapper, .Page404-contentWrapper
+.TagSuggestion-container, .toast2, [class*="bottomad"], [class*="BottomAd"], .Footer-whitelist, .BottomRecirc,
+.btn-wall--no, .BannerTop3, .UploadSpinner-contentWrapper, .Page404-contentWrapper, .Gallery-AccoladesBadge
 { display: none !important; }
 
 body {
