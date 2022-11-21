@@ -4,7 +4,7 @@
 @author       krisu (https://github.com/krisu5)
 @namespace    github.com/krisu5/userstyles
 @homepageURL  https://github.com/krisu5/userstyles/tree/master/_Misc
-@version      0.0.1
+@version      0.0.2
 @license      unlicense
 ==/UserStyle== */
 
@@ -17,19 +17,21 @@
 { display: inherit !important; }
 
 #related:first-child:before {
-	content: "Hover here to see other related videos";
-	background: #eee;
-    color: #484848 !important;
-	font-size: 15px;
-    margin: 0px 0 16px;
-	padding: 20px 0;
-    display: flex;
-    justify-content: center;
+  content: "Hover here to see other related videos";
+  font-weight: 500;
+  border-radius: 18px;
+  background: #f2f2f2;
+  color: #0f0f0f;
+  font-size: 14px;
+  margin: 0 0 16px;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
 }
 
 ytd-comments {
-	border-right: 1px solid #e0e0e0;
-	padding-right: 30px;
+  border-right: 1px solid #e0e0e0 !important;
+  padding-right: 30px !important;
 }
 
 }
