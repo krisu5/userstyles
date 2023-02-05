@@ -49,6 +49,7 @@ Optional userscripts by other developers, that in my option makes Twitter so muc
 
 ## Changelog
 
+- *2023-02-05:* Some fixes since the Elon takeover. Because I fucking hate Elon and everything he has done for Twitter, I barely have interest to update this anymore. Mastodon is the future.
 - *2022-03-31:* Small fixes
 - *2022-03-24:* Fixes for communities
 - *2022-03-09:* Minor style tweaks and removals of some rules

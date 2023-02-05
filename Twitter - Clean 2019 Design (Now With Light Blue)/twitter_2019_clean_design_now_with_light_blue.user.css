@@ -5,7 +5,7 @@
 @namespace      github.com/krisu5/userstyles
 @homepageURL    https://github.com/krisu5/userstyles/tree/master/Twitter%20-%20Clean%202019%20Design%20(Now%20With%20Light%20Blue)
 @supportURL     https://github.com/krisu5/userstyles/issues
-@version        1.4.9
+@version        1.5.0
 @license        unlicense
 @preprocessor   stylus
 @var checkbox   enable-light-blue   "Enable light blue colors for 'Default' theme"   1
@@ -83,6 +83,8 @@ if enable-light-blue {
 /* ==============================
    ====== Blocked elements ======
    ============================== */
+   
+nav a[href="/i/twitter_blue_sign_up"], /* <--- "Twitter Blue" promo [NAVIGATION] */
 
 section[aria-labelledby^="accessible-list"] a[href^="/search?q="][href*="&f=user"], /* <--- "See more" link [SEARCH PAGE] */
 
@@ -100,6 +102,8 @@ div[data-testid="sidebarColumn"] .css-1dbjc4n.r-1867qdf.r-1phboty.r-rs99b7.r-1ud
 
 div[data-testid="sidebarColumn"] [aria-label="Timeline: Trending now"], /* <--- "What's happening" box (just in case) [SIDEBAR] */
 
+div[data-testid="primaryColumn"] aside[aria-label="Who to follow"], /* <--- "Suggested" box [PROFILE BIO] */
+
 /* v--- "Who to follow" boxes [PROFILE TIMELINE] ---v */ 
 div[aria-label^="Timeline: "][aria-label$="’s Tweets"] div .r-1or9b2r:empty,
 div > .css-1dbjc4n.r-qklmqi.r-1adg3ll > .css-1dbjc4n.r-1wtj0ep,
@@ -114,7 +118,7 @@ div[aria-label^="Timeline:"]:not([aria-label$="Explore"]) > div > div[style^="po
 /* ====================
    ====== Tweaks ====== 
    ==================== */
-   
+  
 div[data-testid="sidebarColumn"] form[role="search"] { /* <--- Search form [SIDEBAR] */
     padding-top: 15px;
     margin-top: -7px;
@@ -129,8 +133,12 @@ form[role="search"] [id^="typeaheadDropdown"] /* With search suggestions */
     scrollbar-width: thin; /* Experimental CSS, Firefox only for now */
 }
 
+[role="search"] [style="width: 374px;"] { /* <--- Div before "search suggestion box" [SIDEBAR / EXPLORE] */
+    width: 350px !important;
+}
+
 [data-testid="typeaheadEmptySearch"] { /* <--- Search suggestion box, "Try searching ..." text [SIDEBAR / EXPLORE] */
-    padding-top: 36px;
+    padding-top: 36px !important;
 }
 
 form[role="search"] [id^="typeaheadDropdown"]::-webkit-scrollbar { /* <--- Scrollbar #1, Chromium & Safari only [SEARCH SUGGESTIONS BOX] */
@@ -225,12 +233,12 @@ section[aria-label="Section details"] div::-webkit-scrollbar-thumb {
 }
 }
 
-@-moz-document regexp(".*\\://twitter.com/settings/.*"), regexp(".*\\://twitter.com/.*(?<!intent)\\/follow.*"), regexp(".*\\://twitter.com/.*\\/status/.*\\/(likes|retweets).*"), regexp(".*\\://twitter.com/(search|hashtag).*[?&]f=user.*"), regexp(".*\\://twitter.com/.*\\/lists/.*\\/members"), regexp(".*\\://twitter.com/.*\\/communities/.*\\/about") {
+@-moz-document regexp(".*\\://twitter.com/settings/.*"), regexp(".*\\://twitter.com/.*(?<!intent)\\/follow.*"), regexp(".*\\://twitter.com/.*\\/status/.*\\/(likes|retweets).*"), regexp(".*\\://twitter.com/(search|hashtag).*[?&]f=user.*"), regexp(".*\\://twitter.com/.*\\/lists/.*\\/members"), regexp(".*\\://twitter.com/.*\\/communities/.*\\/about"), regexp(".*\\://twitter.com/follower_requests") {
 /* ==========================
    ====== Whitelist #1 ======
    ========================== */
 
-div[aria-label^="Timeline:"]:not([aria-label$="Explore"]) div[data-testid="UserCell"] /* <--- WHITELISTED: "Who to follow" boxes [PROFILE TIMELINE] ---v */ {
+div[aria-label^="Timeline:"]:not([aria-label$="Explore"]) div[data-testid="UserCell"] { /* <--- WHITELISTED: "Who to follow" boxes [PROFILE TIMELINE] ---v */
     display: flex !important;
 }
 }
@@ -253,8 +261,7 @@ div.css-1dbjc4n.r-1adg3ll > a[href^="/i/related_users/"]
    ====== Whitelist #3 ======
    ========================== */
 
-div[aria-label^="Timeline:"]:not([aria-label$="Explore"]) div[style*="position: absolute;"] .r-109y4c4.r-1p6iasa:empty /* <--- WHITELISTED: Light gray seperator [TIMELINES] */
-{
+div[aria-label^="Timeline:"]:not([aria-label$="Explore"]) div[style*="position: absolute;"] .r-109y4c4.r-1p6iasa:empty { /* <--- WHITELISTED: Light gray seperator [TIMELINES] */
     display: flex !important;
 }
 }
