@@ -36,6 +36,7 @@ Also adds style tweaks for ["Try Google on Duck Duck Go - WF" userscript](https:
 
 ## Changelog
 
+- *2023-05-13:* Fixed *some* of the issues, that happen from assumed React-based redesign
 - *2022-01-17:* Fix for "Wider layout" + other tweaks
 - *2021-01-28:* "IBM Plex Sans" font is not enabled by default anymore, added ["Try Google on Duck Duck Go - WF" userscript](https://greasyfork.org/en/scripts/389801-try-google-on-duck-duck-go-wf) style tweaks
 - *2020-11-24:* DuckDuckGo changed their [CSP](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP), so unfortunately external webfonts won't work anymore. You need to install the fonts, if you want to keep using "IBM Plex Sans" as main font ([more info here](installing_ibm-plex-sans.md))

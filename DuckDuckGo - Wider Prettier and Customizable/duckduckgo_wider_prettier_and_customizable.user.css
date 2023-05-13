@@ -5,7 +5,7 @@
 @namespace      github.com/krisu5/userstyles
 @homepageURL    https://github.com/krisu5/userstyles/tree/master/DuckDuckGo%20-%20Wider%20Prettier%20and%20Customizable
 @supportURL     https://github.com/krisu5/userstyles/issues
-@version        1.0.8
+@version        1.0.9
 @license        unlicense
 @preprocessor   stylus
 @var checkbox   ibm-plex-font      "Use 'IBM Plex Sans' font (needs installation)"              0
@@ -17,6 +17,7 @@
 ==/UserStyle== */
 
 @-moz-document domain("duckduckgo.com") {
+
 /* ==============================================================
    === [TOGGLE] Use "IBM Plex Sans" font (needs installation) ===
    ============================================================== */
@@ -42,17 +43,38 @@ if ibm-plex-font {
          - SemiBoldItalic
     */
     
-    body, input, textarea, a { font-family: "IBM Plex Sans", "DDG_ProximaNova", "DDG_ProximaNova_UI_0", "DDG_ProximaNova_UI_1", "DDG_ProximaNova_UI_2", "DDG_ProximaNova_UI_3", "DDG_ProximaNova_UI_4", "DDG_ProximaNova_UI_5", "DDG_ProximaNova_UI_6", "Proxima Nova", system, -apple-system, ".SFNSText-Regular", "San Francisco", "Segoe UI", "Roboto", "Helvetica Neue", "Lucida Grande", sans-serif !important; }
-
-    #zero_click_wrapper *:not(option):not(a) { font-family: "DDG_ProximaNova", "DDG_ProximaNova_UI_0", "DDG_ProximaNova_UI_1", "DDG_ProximaNova_UI_2", "DDG_ProximaNova_UI_3", "DDG_ProximaNova_UI_4", "DDG_ProximaNova_UI_5", "DDG_ProximaNova_UI_6", "Proxima Nova", system, -apple-system, ".SFNSText-Regular", "San Francisco", "Segoe UI", "Roboto", "Helvetica Neue", "Lucida Grande", sans-serif !important; }
+    :root {
+        --ibm-fontstack-1: "IBM Plex Sans", "DDG_ProximaNova", "DDG_ProximaNova_UI_0", "DDG_ProximaNova_UI_1", "DDG_ProximaNova_UI_2", "DDG_ProximaNova_UI_3", "DDG_ProximaNova_UI_4", "DDG_ProximaNova_UI_5", "DDG_ProximaNova_UI_6", "Proxima Nova", system, -apple-system, ".SFNSText-Regular", "San Francisco", "Segoe UI", "Roboto", "Helvetica Neue", "Lucida Grande", sans-serif;
         
-    #zero_click_wrapper option { font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Segoe UI", "Roboto", "Helvetica Neue", "Lucida Grande", sans-serif !important; }
+        --ibm-fontstack-2: "DDG_ProximaNova", "DDG_ProximaNova_UI_0", "DDG_ProximaNova_UI_1", "DDG_ProximaNova_UI_2", "DDG_ProximaNova_UI_3", "DDG_ProximaNova_UI_4", "DDG_ProximaNova_UI_5", "DDG_ProximaNova_UI_6", "Proxima Nova", system, -apple-system, ".SFNSText-Regular", "San Francisco", "Segoe UI", "Roboto", "Helvetica Neue", "Lucida Grande", sans-serif;
+        
+        --ibm-fontstack-3: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Segoe UI", "Roboto", "Helvetica Neue", "Lucida Grande", sans-serif;
+    }
+    
+    body, *:not(.play_pause) a               { font-family: var(--ibm-fontstack-1); }
+    
+    input, textarea                          { font-family: var(--ibm-fontstack-1) !important; }
 
-    .result__title, #links .result__title b, #links .result__title strong, a.result__sitelink-title {
-        padding-bottom: 1px;
+    #zero_click_wrapper *:not(option):not(a) { font-family: var(--ibm-fontstack-2); }
+        
+    #zero_click_wrapper option               { font-family: var(--ibm-fontstack-3); }
+    
+    .zci--timer .corner_btn.add_minute { line-height: 1.5em; }
+        
+    .zci--timer .corner_btn.close {
+        top: -5px !important;
+        right: 5px !important;
+    }
+    
+    :is(#links, [data-testid="result"]) :where(h2, h3) {
+        padding-bottom: 2px;
         font-weight: 500 !important;
     }
     
+    [data-testid="result-title-a"] {
+        font-weight: 500 !important;
+    }
+        
     .about-profiles__link { font-size: 0.8em; }
         
     .about-profiles__item { padding-top: 13px; }
@@ -67,17 +89,20 @@ if wideScreen {
     @media (min-width: 1460px) {
         .cw { max-width: 1700px; }
 
-        .header__search-wrap { max-width: 905px; }
-
-        .zcm-wrap--header { max-width: inherit; }
+        .header__search-wrap, .zcm-wrap--header { max-width: 905px; }
 
         .header__search-wrap, .content__internal { padding-right: 0; }
 
         .modal--dropdown--settings.is-showing { margin-left: -108px; }
 
-        .results--main {
-            max-width: 900px;
+        .results--main, [data-testid="mainline"] {
+            max-width: 900px !important;
             margin-right: 50px;
+        }
+        
+        [data-testid="mainline"] {
+          -webkit-flex: 0 0 900px !important;
+          flex: 0 0 900px !important;
         }
         
         .result__sitelink-col { width: 415px !important; }
@@ -113,6 +138,8 @@ if biggerFont {
     #zci-color_picker { font-size: 14px; }
         
     .module__link--two-line { font-size: 1.6em; }
+        
+    .zci--stopwatch .goodie-pane { width: 39.5%; }
         
     if ibm-plex-font {
         .result__sitelink-title {
@@ -152,7 +179,7 @@ if sidebarAnimation {
    ==================================================== */
 
 if hideFeedback {
-    .feedback-btn, [class^="feedback-prompt"], .header--text_promo { display: none; }
+    .feedback-btn, [class^="feedback-prompt"], .header--text_promo, [data-layout="spreadCTA"] { display: none; }
 }
 
 
@@ -160,20 +187,27 @@ if hideFeedback {
    === Results ===
    =============== */
 
-.result.highlight { background: hsl(0, 0%, 98%); }
+:is(#links, .react-results--main) article:hover {
+    background: hsl(0, 0%, 98%);
+    border-color: var(--theme-col-border-ui);
+}
 
-.result__a { line-height: 1.3; }
+:is(#links, .react-results--main) h3:hover { text-decoration: underline; }
 
-.result__icon { margin-top: -6px; }
+#links img[src^="//external-content.duckduckgo.com"],
+.react-results--main [src^="/assets/icons/favicons/"] { margin-top: -4px; }
+
+.result__a, [data-testid="result-title-a"] { line-height: 1.3; }
 
 
 /* =========================
    === Results seperator ===
    ========================= */
 
-.result__pagenum {
-    font-size: 15px;
+.result__pagenum, [arial-label^="Page "] span {
+    font-size: 15px !important;
     margin-top: -4px;
+    min-width: unset !important;
 }
 
 .result__pagenum--side {
@@ -183,11 +217,18 @@ if hideFeedback {
     border: 1px solid #d9d9d9;
 }
 
+[arial-label^="Page "] span {
+    padding: 5px 12px;
+    background-color: #fafafa !important;
+    border-radius: 50%;
+    border: 1px solid #d9d9d9 !important;
+}
+
 .result--sep { margin: 1em auto 1.25em; }
 
-.result--sep--hr::before {
-    background-color: #d9d9d9;
-    right: 0px;
+.result--sep--hr::before, [arial-label^="Page "] hr {
+    background-color: #d9d9d9 !important;
+    border-top: 1px solid #d9d9d9 !important;
 }
 
 
@@ -216,6 +257,17 @@ if hideFeedback {
     user-select: none;
 }
 
+.zci--stopwatch .goodie-pane *, .zci--stopwatch #split_list * { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace !important; }
+
+.zci--stopwatch .goodie-pane { width: 38.5% !important; }
+
+.zci--stopwatch .time {
+    font-size: 32px !important;
+    font-variant-numeric: tabular-nums;
+}
+
+.zci--stopwatch #split_list .lap-num { font-weight: bold !important; }
+
 
 /* =========================
    === Userscript Tweaks ===
@@ -235,14 +287,14 @@ if hideFeedback {
 */
 
 .header__search a[style*="background: #4285F4;"][href^="https://www.google.com/search?"] {
-	padding: 3px 8px !important;
-	margin: 4px 11px 0 0;
-	border-radius: 3px;
+    padding: 3px 8px !important;
+    margin: 4px 11px 0 0;
+    border-radius: 3px;
 }
 
 .header__search a[style*="background: #4285F4;"][href^="https://www.google.com/search?"]:hover {
-	background: #0e61ea !important;
-	text-decoration: none !important;
+    background: #0e61ea !important;
+    text-decoration: none !important;
 }
 
 
@@ -258,8 +310,6 @@ if hideFeedback {
 
 .dropdown__button::after { margin-top: -5px; }
 
-.module__link--two-line { padding-bottom: 5px; }
-    
-.about-profiles { padding-bottom: 5px; }
+.about-profiles, .module__link--two-line { padding-bottom: 5px; }
     
 }
